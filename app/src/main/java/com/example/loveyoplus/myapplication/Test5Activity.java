@@ -48,11 +48,13 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
 
                 @Override
                 public void onFinish() {
-                    tvTimer.setText("倒數時間:結束");Intent intent = new Intent();
-                    intent.setClass(Test5Activity.this, Test6Activity.class);
-                    startActivity(intent);
-                    Test5Activity.this.finish();
-
+                    tvTimer.setText("倒數時間:結束");
+                    if(remainNum!=1) {
+                        Intent intent = new Intent();
+                        intent.setClass(Test5Activity.this, Test6Activity.class);
+                        startActivity(intent);
+                        Test5Activity.this.finish();
+                    }
                 }
             }.start();
         }
@@ -389,6 +391,14 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
                 touchMap.removeView(findViewById(200 + id));
 
                 remainNum --;
+                if(remainNum==1){
+                    Log.d("end","");
+                    Intent intent = new Intent();
+                    intent.setClass(Test5Activity.this, Test6Activity.class);
+                    startActivity(intent);
+                    Test5Activity.this.finish();
+                }
+
             }
         });
         touchMap.addView(stationListener);

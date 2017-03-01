@@ -5,32 +5,32 @@
     density="mdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="460709177108008"
-    token="-3108339897021638395"
+    timestamp="4920411971323"
+    token="-4511691858354236835"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="158" />
+        duration="334" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="20" />
+        duration="210" />
     <task
         name="verifier"
-        duration="4" />
+        duration="65" />
 
     <artifact
-        location="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\outputs\apk\app-debug.apk"
+        location="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="460709177108008"
+        timestamp="4920411971323"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\outputs\apk\app-debug.apk"
+            location="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
 

@@ -32,7 +32,7 @@ public class Test4Activity extends AppCompatActivity implements View.OnClickList
     private Handler mHandler;
     int[] result;
     int randomNumLen=56;//1~56的數字
-    final int GAMETIME=1000*300;//遊戲時間
+    final int GAMETIME=1000*5;//遊戲時間
 
     @Override
     protected void onCreate(Bundle savedInstanceState){

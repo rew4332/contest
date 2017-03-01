@@ -90,7 +90,7 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
                     Intent intent = new Intent();
                     intent.setClass(Test2Activity.this, Test3Activity.class);
                     startActivity(intent);
-                    finish();
+                    Test2Activity.this.finish();
 
                 }
             }.start();

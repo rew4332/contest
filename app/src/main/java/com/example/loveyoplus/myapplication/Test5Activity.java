@@ -35,11 +35,12 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
     TextView tvTitle; // 題目描述區塊
     int[] result;
     private Handler mHandler; // 計時物件之執行序
+    final int GAMETIME=1000*60;
 
     // 計時物件
     private Runnable countdowntimer = new Runnable() {
         public void run() {
-            new CountDownTimer(60000, 1000) {
+            new CountDownTimer(GAMETIME, 1000) {
                 @Override
                 public void onTick(long millisUntilFinished) {
                     tvTimer.setText("倒數時間:"+new SimpleDateFormat("m").format(millisUntilFinished)+":"+ new SimpleDateFormat("s").format(millisUntilFinished));
@@ -50,7 +51,7 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
                     tvTimer.setText("倒數時間:結束");Intent intent = new Intent();
                     intent.setClass(Test5Activity.this, Test6Activity.class);
                     startActivity(intent);
-                    finish();
+                    Test5Activity.this.finish();
 
                 }
             }.start();

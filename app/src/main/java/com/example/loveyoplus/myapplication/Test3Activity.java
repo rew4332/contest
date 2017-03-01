@@ -25,14 +25,16 @@ public class Test3Activity extends AppCompatActivity implements View.OnTouchList
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private Handler mHandler;
-    String sTemp="";
+    //String sTemp="";
     RelativeLayout r1;
     ImageView iv[];
     int[][] tag;
     int[] result;
     String answer[];
     TextView tvTimer,tvTitle;
-    final int GAMETIME=1000*1;//遊戲時間
+    final int GAMETIME=1000*10;//遊戲時間
+    int destroyRunnable=0;
+
 
 
     @Override
@@ -82,7 +84,6 @@ public class Test3Activity extends AppCompatActivity implements View.OnTouchList
         iv[0].setOnTouchListener(this);
 
 
-
     }
     private Runnable countdowntimer = new Runnable() {
         public void run() {
@@ -94,18 +95,21 @@ public class Test3Activity extends AppCompatActivity implements View.OnTouchList
                     //倒數秒數中要做的事
 
                     tvTimer.setText("倒數時間:"+new SimpleDateFormat("m").format(millisUntilFinished)+":"+ new SimpleDateFormat("s").format(millisUntilFinished));
+                    Log.e("還在倒數",mHandler.obtainMessage()+"qaq");
+
                 }
 
                 @Override
                 public void onFinish() {
                     tvTimer.setText("倒數時間:結束");
                     //iv[0].setVisibility(View.INVISIBLE);
-                    Log.e("answerXD:",sTemp);
-                    Intent intent = new Intent();
-                    intent.setClass(Test3Activity.this, Test4Activity.class);
-                    startActivity(intent);
-                    finish();
-
+                    //Log.e("answerXD:",sTemp);
+                    if(destroyRunnable==0) {
+                        Intent intent = new Intent();
+                        intent.setClass(Test3Activity.this, Test4Activity.class);
+                        startActivity(intent);
+                        Test3Activity.this.finish();
+                    }
                 }
             }.start();
 
@@ -131,7 +135,7 @@ public class Test3Activity extends AppCompatActivity implements View.OnTouchList
             //Log.v("Touch y >>>",touchY+"\n");
             Log.v("Image x >>>",imageX+"");
             Log.v("Image y >>>",imageY+"\n");
-            sTemp+=imageX+","+imageY+";";
+            //sTemp+=imageX+","+imageY+";";
 
             RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT,RelativeLayout.LayoutParams.WRAP_CONTENT);
             ImageView ivX = new ImageView(this);
@@ -172,15 +176,18 @@ public class Test3Activity extends AppCompatActivity implements View.OnTouchList
                         else{
                             Intent intent = new Intent();
                             intent.setClass(Test3Activity.this, Test4Activity.class);
+                            destroyRunnable=1;
+
+                            Log.e("remove",countdowntimer+"");
                             startActivity(intent);
-                            finish();
+                            Test3Activity.this.finish();
                         }
                         break;
                     }
                 }
             }
         ((TextView)findViewById(R.id.tv2)).setText("O:"+result[1]+"\nX:"+result[0]);
-        Log.e("answerXD:",sTemp);
+        //Log.e("answerXD:",sTemp);
         return false;
     }
     //

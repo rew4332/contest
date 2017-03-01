@@ -15,30 +15,50 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.loveyoplus.myapplication.MainActivity" >
-        </activity>
-        <activity android:name="com.example.loveyoplus.myapplication.Test2Activity" >
-        </activity>
-        <activity android:name="com.example.loveyoplus.myapplication.Test3Activity" >
-        </activity>
-        <activity android:name="com.example.loveyoplus.myapplication.Test4Activity" >
-        </activity>
-        <activity android:name="com.example.loveyoplus.myapplication.Test5Activity" >
+        <activity
+            android:name="com.example.loveyoplus.myapplication.MainActivity"
+            android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.loveyoplus.myapplication.Test6Activity" >
+        <activity
+            android:name="com.example.loveyoplus.myapplication.Test2Activity"
+            android:screenOrientation="landscape" >
         </activity>
-        <activity android:name="com.example.loveyoplus.myapplication.Test7Activity" >
+        <activity
+            android:name="com.example.loveyoplus.myapplication.Test3Activity"
+            android:screenOrientation="landscape" >
         </activity>
-        <activity android:name="com.example.loveyoplus.myapplication.Test8Activity" >
+        <activity
+            android:name="com.example.loveyoplus.myapplication.Test4Activity"
+            android:screenOrientation="landscape" >
         </activity>
-        <activity android:name="com.example.loveyoplus.myapplication.Test9Activity" >
+        <activity
+            android:name="com.example.loveyoplus.myapplication.Test5Activity"
+            android:screenOrientation="landscape" >
         </activity>
-        <activity android:name="com.example.loveyoplus.myapplication.Test10Activity" >
+        <activity
+            android:name="com.example.loveyoplus.myapplication.Test6Activity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.loveyoplus.myapplication.Test7Activity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.loveyoplus.myapplication.Test8Activity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.loveyoplus.myapplication.Test9Activity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.example.loveyoplus.myapplication.Test10Activity"
+            android:screenOrientation="landscape" >
         </activity>
 
         <meta-data

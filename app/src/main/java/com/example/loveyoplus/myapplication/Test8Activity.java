@@ -27,7 +27,7 @@ public class Test8Activity extends AppCompatActivity implements View.OnClickList
     TextView tv[],timer;
     int[] result;
     private Handler mHandler;
-    final int GAMETIME=1000*1;//遊戲時間
+    final int GAMETIME=1000*60;//遊戲時間
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -91,7 +91,7 @@ public class Test8Activity extends AppCompatActivity implements View.OnClickList
                     Intent intent = new Intent();
                     intent.setClass(Test8Activity.this, Test9Activity.class);
                     startActivity(intent);
-                    finish();
+                    Test8Activity.this.finish();
                 }
             }.start();
 

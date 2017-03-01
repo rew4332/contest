@@ -1,119 +1,139 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:2:1-57:12
+ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:2:1-57:12
 	package
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:3:5-51
-		INJECTED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:3:5-51
+		INJECTED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:5:5-55:19
-MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\AndroidManifest.xml:23:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta5] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta5\AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\AndroidManifest.xml:25:5-20
+ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:5:5-55:19
+MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta5] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta5\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:8:9-41
 	android:supportsRtl
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:9:9-35
 	android:allowBackup
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:6:9-35
 	android:icon
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:7:9-43
 	android:theme
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:10:9-40
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:10:9-40
 activity#com.example.loveyoplus.myapplication.MainActivity
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:13:9-15:20
+ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:13:9-21:20
+	android:screenOrientation
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:13:48-85
 	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:13:19-47
-activity#com.example.loveyoplus.myapplication.Test2Activity
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:16:9-18:20
-	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:16:19-48
-activity#com.example.loveyoplus.myapplication.Test3Activity
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:19:9-22:20
-	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:19:19-48
-activity#com.example.loveyoplus.myapplication.Test4Activity
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:23:9-25:20
-	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:23:19-48
-activity#com.example.loveyoplus.myapplication.Test5Activity
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:26:9-34:20
-	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:26:19-48
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:13:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:27:13-33:29
+ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:14:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:28:17-69
+ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:15:17-69
 	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:28:25-66
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:15:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:30:17-77
+ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:30:27-74
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:17:27-74
+activity#com.example.loveyoplus.myapplication.Test2Activity
+ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:22:9-24:20
+	android:screenOrientation
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:22:49-86
+	android:name
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:22:19-48
+activity#com.example.loveyoplus.myapplication.Test3Activity
+ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:25:9-28:20
+	android:screenOrientation
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:25:50-87
+	android:name
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:25:19-48
+activity#com.example.loveyoplus.myapplication.Test4Activity
+ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:29:9-31:20
+	android:screenOrientation
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:29:49-86
+	android:name
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:29:19-48
+activity#com.example.loveyoplus.myapplication.Test5Activity
+ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:32:9-34:20
+	android:screenOrientation
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:32:49-86
+	android:name
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:32:19-48
 activity#com.example.loveyoplus.myapplication.Test6Activity
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:35:9-37:20
+ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:35:9-37:20
+	android:screenOrientation
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:35:49-86
 	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:35:19-48
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:35:19-48
 activity#com.example.loveyoplus.myapplication.Test7Activity
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:38:9-41:20
+ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:38:9-41:20
+	android:screenOrientation
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:38:49-86
 	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:38:19-48
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:38:19-48
 activity#com.example.loveyoplus.myapplication.Test8Activity
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:42:9-45:20
+ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:42:9-45:20
+	android:screenOrientation
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:42:49-86
 	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:42:19-48
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:42:19-48
 activity#com.example.loveyoplus.myapplication.Test9Activity
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:46:9-48:20
+ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:46:9-48:20
+	android:screenOrientation
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:46:49-86
 	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:46:19-48
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:46:19-48
 activity#com.example.loveyoplus.myapplication.Test10Activity
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:49:9-51:20
+ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:49:9-51:20
+	android:screenOrientation
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:49:50-87
 	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:49:19-49
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:49:19-49
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:52:9-54:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
+ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:52:9-54:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:54:13-66
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:54:13-66
 	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:53:13-58
+		ADDED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml:53:13-58
 uses-sdk
-INJECTED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\AndroidManifest.xml:21:5-43
-MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta5] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta5\AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-fragment:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-media-compat:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-beta5] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta5\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\AndroidManifest.xml:21:5-23:58
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.1.1] C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:25.1.1] C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\src\main\AndroidManifest.xml

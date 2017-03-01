@@ -32,7 +32,7 @@ public class Test4Activity extends AppCompatActivity implements View.OnClickList
     private Handler mHandler;
     int[] result;
     int randomNumLen=56;//1~56的數字
-    final int GAMETIME=1000*2;//遊戲時間
+    final int GAMETIME=1000*300;//遊戲時間
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -75,10 +75,10 @@ public class Test4Activity extends AppCompatActivity implements View.OnClickList
         setBtn();
 
         //程式區
+
+        setQuestion();
         mHandler = new Handler();
         mHandler.post(countdowntimer);
-        setQuestion();
-
 
 
 
@@ -99,11 +99,12 @@ public class Test4Activity extends AppCompatActivity implements View.OnClickList
                 @Override
                 public void onFinish() {
                     timer.setText("倒數時間:結束");
-                    disableBtn();
+
                     Intent intent = new Intent();
-                    intent.setClass(Test4Activity.this, Test6Activity.class);
+                    intent.setClass(Test4Activity.this, Test5Activity.class);
                     startActivity(intent);
-                    finish();
+
+                    Test4Activity.this.finish();
 
                 }
             }.start();

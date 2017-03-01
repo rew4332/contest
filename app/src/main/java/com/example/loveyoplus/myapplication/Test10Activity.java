@@ -29,7 +29,7 @@ public class Test10Activity extends AppCompatActivity implements View.OnClickLis
     int[] result,soundResult;
     private Handler mHandler;
     MediaPlayer mp[];
-    final int GAMETIME=1000*1;//遊戲時間
+    final int GAMETIME=1000*150;//遊戲時間
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -105,7 +105,7 @@ public class Test10Activity extends AppCompatActivity implements View.OnClickLis
 
                 @Override
                 public void onFinish() {
-
+                    Test10Activity.this.finish();
 
 
                 }

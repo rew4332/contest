@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     int[] viewSize;//左半邊測驗區大小
     String[] answer;//題目
     int[] result;//紀錄目前對錯數量
-    final int GAMETIME=1000*60;//遊戲時間
+    final int GAMETIME=1000*1;//遊戲時間
     String randomNum[]={"1","2","3","4","5","6","7","8","9"};
    private Handler mHandler;
 
@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Intent intent = new Intent();
                     intent.setClass(MainActivity.this, Test2Activity.class);
                     startActivity(intent);
-                    finish();
+                    MainActivity.this.finish();
 
                 }
             }.start();

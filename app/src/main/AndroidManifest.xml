@@ -10,20 +10,7 @@
         android:theme="@style/AppTheme"
         >
 
-        <activity android:name=".MainActivity" >
-
-        </activity>
-        <activity android:name=".Test2Activity">
-
-        </activity>
-        <activity android:name=".Test3Activity" >
-
-
-        </activity>
-        <activity android:name=".Test4Activity">
-
-        </activity>
-        <activity android:name=".Test5Activity">
+        <activity android:name=".MainActivity" android:screenOrientation="landscape" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,21 +19,34 @@
 
             </intent-filter>
         </activity>
-        <activity android:name=".Test6Activity">
+        <activity android:name=".Test2Activity" android:screenOrientation="landscape">
 
         </activity>
-        <activity android:name=".Test7Activity">
-
-
-        </activity>
-        <activity android:name=".Test8Activity">
+        <activity android:name=".Test3Activity"  android:screenOrientation="landscape">
 
 
         </activity>
-        <activity android:name=".Test9Activity">
+        <activity android:name=".Test4Activity" android:screenOrientation="landscape">
 
         </activity>
-        <activity android:name=".Test10Activity">
+        <activity android:name=".Test5Activity" android:screenOrientation="landscape">
+
+        </activity>
+        <activity android:name=".Test6Activity" android:screenOrientation="landscape">
+
+        </activity>
+        <activity android:name=".Test7Activity" android:screenOrientation="landscape">
+
+
+        </activity>
+        <activity android:name=".Test8Activity" android:screenOrientation="landscape">
+
+
+        </activity>
+        <activity android:name=".Test9Activity" android:screenOrientation="landscape">
+
+        </activity>
+        <activity android:name=".Test10Activity" android:screenOrientation="landscape">
 
         </activity>
         <meta-data

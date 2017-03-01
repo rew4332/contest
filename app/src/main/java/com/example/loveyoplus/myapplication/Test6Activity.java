@@ -27,7 +27,7 @@ public class Test6Activity extends AppCompatActivity implements View.OnClickList
     int[] result;
     private Handler mHandler;
     int randomNumLen=37;
-    final int GAMETIME=1000*1;//遊戲時間
+    final int GAMETIME=1000*60;//遊戲時間
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -89,7 +89,7 @@ public class Test6Activity extends AppCompatActivity implements View.OnClickList
                     Intent intent = new Intent();
                     intent.setClass(Test6Activity.this, Test7Activity.class);
                     startActivity(intent);
-                    finish();
+                    Test6Activity.this.finish();
 
                 }
             }.start();

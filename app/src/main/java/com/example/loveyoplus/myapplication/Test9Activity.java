@@ -28,7 +28,7 @@ public class Test9Activity extends AppCompatActivity implements View.OnClickList
     int[] result,soundResult;
     private Handler mHandler;
     MediaPlayer mp[];
-    final int GAMETIME=1000*1;//遊戲時間
+    final int GAMETIME=1000*150;//遊戲時間
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -141,7 +141,7 @@ public class Test9Activity extends AppCompatActivity implements View.OnClickList
                     Intent intent = new Intent();
                     intent.setClass(Test9Activity.this, Test10Activity.class);
                     startActivity(intent);
-                    finish();
+                    Test9Activity.this.finish();
 
                 }
             }.start();

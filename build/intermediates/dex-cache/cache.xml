@@ -3,291 +3,156 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.1_833c3abac22c5cce757764e0462930cf290f9f3f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-8.4.0_afb7b846088114542f47d2cc9220a8896e57fffc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-beta5\constraint-layout-solver-1.0.0-beta5.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ff0dad5e4fc720f478ce8b5f6edf76a932d9b886">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.0-beta5_3475c33b50fcef8fb34f6e9a3e8524e900c4c0ec.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.1_821694e7543ed7792a97be431c45e12bbbebd49d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.1_16459ae54ed6f1282eb81f7c881f1511def39cb2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jar="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-8.4.0_92e9f9621b191a855add71a7ebc1b257cec8616e.jar" />
+        <dex dex="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-8.4.0_1b06b4c48f372c2f00f60be9393db0576f9618f6.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jar="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.1_ae8b6535d3e5db6c895acb36d5e250c57944e4a0.jar" />
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.1_57222e9d8f30b50e7468a715fd568e1b922ff62b.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.1_8bd8b3ef2aaee7c3218ca8c5a5a01ce98e3a00d2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta5\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="dce0f3de11781e1ee758cba483871b598c9d4931">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.0-beta5_4a5f718c584f4bfe7ba4ba99367afe35d3eef777.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.1_8bd8b3ef2aaee7c3218ca8c5a5a01ce98e3a00d2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
+        jar="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.1_b95c7e564cad39e62c72f24dc6cb0508a08cb51c.jar" />
+        <dex dex="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.1_6c26ef4bbfe016cccafa2e0905db67da0ef683bd.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-8.4.0_3f9a88e56083976bca44acd533dee4ab68d9a40c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.1_b3dbd2869bccc2a31fc12d4c8032424ecabbc9d9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.1_ae8b6535d3e5db6c895acb36d5e250c57944e4a0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta5\jars\classes.jar"
+        jar="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta5\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="dce0f3de11781e1ee758cba483871b598c9d4931">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.0-beta5_4a5f718c584f4bfe7ba4ba99367afe35d3eef777.jar" />
+        <dex dex="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\pre-dexed\debug\com.android.support.constraint-constraint-layout-1.0.0-beta5_7dcfe11e51328e05b66e9b8d06db5e93506b3416.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.1_16459ae54ed6f1282eb81f7c881f1511def39cb2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.1_f844e7ae769483ee29924bd29d0708accd4b70d8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-8.4.0_92e9f9621b191a855add71a7ebc1b257cec8616e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jar="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.1_f844e7ae769483ee29924bd29d0708accd4b70d8.jar" />
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.1_dd9635fe4a87d7318028f6f972af609755d999f8.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jar="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.1.1_fd4d1523f8b5ce8a734edc5ecbfb2210e0add58e.jar" />
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-8.4.0_3533f167224c8b5b406ef202a254f4709e31b9c6.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
-        jumboMode="false"
+        jar="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.1_821694e7543ed7792a97be431c45e12bbbebd49d.jar" />
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.1_35c2b937c73305eac269973e6757e7f062bfe4dd.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\loveyoplus\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-beta5\constraint-layout-solver-1.0.0-beta5.jar"
+        jar="C:\Users\Yoga\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-beta5\constraint-layout-solver-1.0.0-beta5.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="ff0dad5e4fc720f478ce8b5f6edf76a932d9b886">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.0-beta5_3475c33b50fcef8fb34f6e9a3e8524e900c4c0ec.jar" />
+        <dex dex="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.0-beta5_07ec7def9e1b640714ceccca9eb7bddf58858fce.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
-        jumboMode="false"
+        jar="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="598c920573c1fb8220dad715550dff960c94d926">
+        <dex dex="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\pre-dexed\debug\instant-run_a561aa744801b1591844107e17358b95636a4dd1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.1\jars\classes.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.1.1_fd4d1523f8b5ce8a734edc5ecbfb2210e0add58e.jar" />
+        <dex dex="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.1.1_0e498d1d279058518804791f7104adcef39694e7.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="6d74509967e00ef44bdae2ff4658b0d66c66075d">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_2afe484a99c2ea13ec6ae9e4163127304d871128.jar" />
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.1_5ff847769c9d98a4acb662f97eff8b85a31cbb51.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
+        jar="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.1_fcc0d6eedfabb50e79cbc5555c43818abec04007.jar" />
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.1_edceec7aec61a50bae804b50016bdbae6369318f.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-8.4.0_afb7b846088114542f47d2cc9220a8896e57fffc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jar="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.1_833c3abac22c5cce757764e0462930cf290f9f3f.jar" />
+        sha1="0475fc1e9ceb3644648a13cda1f9795cde4c5741">
+        <dex dex="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_b710e1f9ba04099b972a93871e1d3f433f8371d4.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.1_b95c7e564cad39e62c72f24dc6cb0508a08cb51c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.1_fcc0d6eedfabb50e79cbc5555c43818abec04007.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-8.4.0_3f9a88e56083976bca44acd533dee4ab68d9a40c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f110257965f502312bd54345e6bd7f0160db73e8">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\instant-run_4f830e8f34736d3a49562f9863701bf11e82e5d5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
+        jar="C:\Users\Yoga\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\MyApplication\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.1_b3dbd2869bccc2a31fc12d4c8032424ecabbc9d9.jar" />
+        <dex dex="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.1_74d1cce5ed39a373d06f2e2438a03f50a93d6b4e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.1_d00c9b4fd291b88039917447ea8b639e67e1b1da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-8.4.0_e41e37d67a421aaab1e237c45b86923bbf648c4a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="C:\Users\Yoga\AndroidStudioProjects\conTestProject\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.1_6f35a271cc47200e40230dc19ab1aace8e6ef7c4.jar" />
     </item>
 
 </items>

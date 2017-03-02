@@ -1,6 +1,8 @@
 package com.example.loveyoplus.myapplication;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
@@ -26,7 +28,7 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
     int[] viewSize;//左半邊測驗區大小
     String[] answer;//題目
     int[] result;//紀錄目前對錯數量
-    final int GAMETIME=1000*1;//遊戲時間
+    final int GAMETIME=1000*10;//遊戲時間
     String randomNum[]={"一","二","三","四","五","六","七","八","九"};
     private Handler mHandler;
 
@@ -34,8 +36,11 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_t1);
+
         getSupportActionBar().hide(); //隱藏標題
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
+
+
         //initialize
         result = new int[2];
         rl1 = (RelativeLayout) findViewById(R.id.rl1);
@@ -47,8 +52,8 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
             btn[i].setOnClickListener(this);
         }
 
-        tv =new TextView[4];
-        for(int i=0;i<4;i++){
+        tv =new TextView[3];
+        for(int i=0;i<3;i++){
             tv[i] =  (TextView)findViewById(getResources().getIdentifier("tv" + (i + 1), "id", getPackageName()));
         }
         tv[0].setText("限時時間內找出數字:");
@@ -67,7 +72,14 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
         mHandler = new Handler();
         mHandler.post(countdowntimer);
 
-
+        //rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
+        //llStart = (LinearLayout) findViewById(R.id.llStart);
+        //Log.e("llStart",llStart+"");
+        //llStart.setLayoutParams(rlp);
+        //llStart.setMinimumWidth(viewSize[0]);
+        //llStart.setMinimumHeight(viewSize[1]);
+        //llStart.setBackgroundColor(getResources().getColor(R.color.common_google_signin_btn_text_dark_focused));
+        //((ViewGroup)findViewById(R.id.rlParent)).addView(llStart);
 
     }
     //timer
@@ -117,7 +129,7 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
             answer[i]=randomNum[selected];
             randomNum[selected]=randomNum[9-1-i];
             randomNum[9-1-i]=temp;
-            s+=answer[i]+",";
+            s+=answer[i]+"\t\t\t\t";
 
         }
         tv[1].setText(s);
@@ -125,21 +137,31 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
     //設定按鈕位置及按鈕數字
     public void setBtn(){
 
-        int hdiv5=viewSize[1]/5;
+        int btnSize=viewSize[0]/5;
         int hdiv3=viewSize[1]/3;
         int wdiv3=viewSize[0]/3;
 
+
         //Set the button position
+        GradientDrawable gdDefault = new GradientDrawable();
+        gdDefault.setColor(Color.parseColor("#0066FF"));
+        gdDefault.setCornerRadius(btnSize/2);
+
         RelativeLayout.LayoutParams params;
         for(int i = 0 ;i<9;i++){
             btn[i].setVisibility(View.VISIBLE);
-            params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT,RelativeLayout.LayoutParams.WRAP_CONTENT);
-            params.width=hdiv5;
-            params.height=hdiv5;
 
-            int wRan=/* 0;*/ (int)(Math.random()*(wdiv3-hdiv5));
+            //btn[i].setBackgroundDrawable(gdDefault);
+            btn[i].setBackground(gdDefault);
+
+            params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT,RelativeLayout.LayoutParams.WRAP_CONTENT);
+            params.width=btnSize;
+            params.height=btnSize;
+
+
+            int wRan=/* 0;*/ (int)(Math.random()*(wdiv3-btnSize));
             Log.d("wRan",wRan+"");
-            int hRan=/* 0;*/ (int)(Math.random()*(hdiv3-hdiv5));
+            int hRan=/* 0;*/ (int)(Math.random()*(hdiv3-btnSize));
             Log.d("hRan",wRan+"");
             if (i<3)
                 params.setMargins(i%3*wdiv3+wRan,0+hRan,0,0);
@@ -173,8 +195,8 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
 
 
-        int width =(2*displayMetrics.widthPixels/3);// rl1.getMeasuredWidth();
-        int height = displayMetrics.heightPixels;//rl1.getMeasuredHeight();
+        int width =(displayMetrics.widthPixels);// rl1.getMeasuredWidth();
+        int height = 2*displayMetrics.heightPixels/3;//rl1.getMeasuredHeight();
         int[] viewSize={width,height};
         Log.e("viewWidth",viewSize[0]+"");
         Log.e("viewHeight",viewSize[1]+"");
@@ -193,7 +215,7 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
                     if (answer[j].equals(btn[i].getText().toString())) {
                         result[1]++;
                         result[0]--;
-                        tv[1].setText(tv[1].getText().toString().replace(answer[j]+",",""));
+                        tv[1].setText(tv[1].getText().toString().replace(answer[j]+"\t\t\t\t",""));
                     }
 
                 }
@@ -201,7 +223,7 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
                     setBtn();
                     setQuestion();
                 }
-                tv[3].setText("O:"+result[1]+"\nX:"+result[0]);
+                Log.e("result","O:"+result[1]+"\nX:"+result[0]);
             }
         }
     }

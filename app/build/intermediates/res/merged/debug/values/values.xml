@@ -426,9 +426,9 @@
     <dimen name="notification_subtext_size">13sp</dimen>
     <dimen name="notification_top_pad">10dp</dimen>
     <dimen name="notification_top_pad_large_text">5dp</dimen>
-    <dimen name="q_font_size">50sp</dimen>
+    <dimen name="q_font_size">70sp</dimen>
     <dimen name="time_font_size">30sp</dimen>
-    <dimen name="title_font_size">40sp</dimen>
+    <dimen name="title_font_size">50sp</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>
     <item name="action_bar_activity_content" type="id"/>

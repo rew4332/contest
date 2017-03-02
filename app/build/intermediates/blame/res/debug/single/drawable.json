@@ -104,24 +104,24 @@
         "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\t3_5a.jpg"
     },
     {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\t6_34.png",
-        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\t6_34.png"
-    },
-    {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
         "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\t6_34.png",
+        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\t6_34.png"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\t6_18.png",
         "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\t6_18.png"
     },
     {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
-        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable\\notification_icon_background.xml"
-    },
-    {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\t7_1.png",
         "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\t7_1.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.1\\res\\drawable\\notification_icon_background.xml"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",

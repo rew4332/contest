@@ -2,6 +2,9 @@ package com.example.loveyoplus.myapplication;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,6 +23,9 @@ import java.text.SimpleDateFormat;
 import java.util.Random;
 import android.os.Handler;
 
+import static android.R.attr.strokeColor;
+import static android.R.attr.strokeWidth;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button[] btn;
@@ -29,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     int[] viewSize;//左半邊測驗區大小
     String[] answer;//題目
     int[] result;//紀錄目前對錯數量
-    final int GAMETIME=1000*1;//遊戲時間
+    final int GAMETIME=1000*10;//遊戲時間
     String randomNum[]={"1","2","3","4","5","6","7","8","9"};
    private Handler mHandler;
 
@@ -53,8 +59,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             btn[i].setOnClickListener(this);
         }
 
-        tv =new TextView[4];
-        for(int i=0;i<4;i++){
+        tv =new TextView[3];
+        for(int i=0;i<3;i++){
             tv[i] =  (TextView)findViewById(getResources().getIdentifier("tv" + (i + 1), "id", getPackageName()));
         }
         tv[0].setText("限時時間內找出數字:");
@@ -130,7 +136,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             answer[i]=randomNum[selected];
             randomNum[selected]=randomNum[9-1-i];
             randomNum[9-1-i]=temp;
-            s+=answer[i]+",";
+            s+=answer[i]+"\t\t\t\t";
 
         }
         tv[1].setText(s);
@@ -138,21 +144,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //設定按鈕位置及按鈕數字
     public void setBtn(){
 
-        int hdiv5=viewSize[1]/5;
+        int btnSize=viewSize[0]/5;
         int hdiv3=viewSize[1]/3;
         int wdiv3=viewSize[0]/3;
 
+
         //Set the button position
+        GradientDrawable gdDefault = new GradientDrawable();
+        gdDefault.setColor(Color.parseColor("#0066FF"));
+        gdDefault.setCornerRadius(btnSize/2);
+
         RelativeLayout.LayoutParams params;
         for(int i = 0 ;i<9;i++){
             btn[i].setVisibility(View.VISIBLE);
-            params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT,RelativeLayout.LayoutParams.WRAP_CONTENT);
-            params.width=hdiv5;
-            params.height=hdiv5;
 
-            int wRan=/* 0;*/ (int)(Math.random()*(wdiv3-hdiv5));
+            //btn[i].setBackgroundDrawable(gdDefault);
+            btn[i].setBackground(gdDefault);
+
+            params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT,RelativeLayout.LayoutParams.WRAP_CONTENT);
+            params.width=btnSize;
+            params.height=btnSize;
+
+
+            int wRan=/* 0;*/ (int)(Math.random()*(wdiv3-btnSize));
             Log.d("wRan",wRan+"");
-            int hRan=/* 0;*/ (int)(Math.random()*(hdiv3-hdiv5));
+            int hRan=/* 0;*/ (int)(Math.random()*(hdiv3-btnSize));
             Log.d("hRan",wRan+"");
             if (i<3)
                 params.setMargins(i%3*wdiv3+wRan,0+hRan,0,0);
@@ -186,8 +202,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
 
 
-        int width =(2*displayMetrics.widthPixels/3);// rl1.getMeasuredWidth();
-        int height = displayMetrics.heightPixels;//rl1.getMeasuredHeight();
+        int width =(displayMetrics.widthPixels);// rl1.getMeasuredWidth();
+        int height = 2*displayMetrics.heightPixels/3;//rl1.getMeasuredHeight();
         int[] viewSize={width,height};
         Log.e("viewWidth",viewSize[0]+"");
         Log.e("viewHeight",viewSize[1]+"");
@@ -206,7 +222,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     if (answer[j].equals(btn[i].getText().toString())) {
                         result[1]++;
                         result[0]--;
-                        tv[1].setText(tv[1].getText().toString().replace(answer[j]+",",""));
+                        tv[1].setText(tv[1].getText().toString().replace(answer[j]+"\t\t\t\t",""));
                     }
 
                 }
@@ -214,7 +230,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     setBtn();
                     setQuestion();
                 }
-                tv[3].setText("O:"+result[1]+"\nX:"+result[0]);
+                Log.e("result","O:"+result[1]+"\nX:"+result[0]);
             }
         }
     }

@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="15"
+        android:minSdkVersion="16"
         android:targetSdkVersion="25" />
 
     <application
@@ -16,7 +16,15 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.loveyoplus.myapplication.MainActivity"
-            android:screenOrientation="landscape" >
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.loveyoplus.myapplication.Test2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.loveyoplus.myapplication.Test3Activity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,40 +32,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.loveyoplus.myapplication.Test2Activity"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
-            android:name="com.example.loveyoplus.myapplication.Test3Activity"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity
             android:name="com.example.loveyoplus.myapplication.Test4Activity"
-            android:screenOrientation="landscape" >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.loveyoplus.myapplication.Test5Activity"
-            android:screenOrientation="landscape" >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.loveyoplus.myapplication.Test6Activity"
-            android:screenOrientation="landscape" >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.loveyoplus.myapplication.Test7Activity"
-            android:screenOrientation="landscape" >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.loveyoplus.myapplication.Test8Activity"
-            android:screenOrientation="landscape" >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.loveyoplus.myapplication.Test9Activity"
-            android:screenOrientation="landscape" >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="com.example.loveyoplus.myapplication.Test10Activity"
-            android:screenOrientation="landscape" >
+            android:screenOrientation="portrait" >
         </activity>
 
         <meta-data

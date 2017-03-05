@@ -7,346 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8d585a6-c468-4992-a816-5be35c440ac7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test1Activity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/MainActivity$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/MainActivity$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_t2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/MainActivity$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_t2.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/MainActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$mipmap.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$mipmap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$raw.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$raw.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test2Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test2Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test2Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test2Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test3Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test3Activity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test3Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test3Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test3Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test3Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test4Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test4Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test4Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test4Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$11.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$12.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$13.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$14.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$15.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$16.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$16.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$17.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$17.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$18.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$19.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$19.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$20.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$20.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$21.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$21.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$22.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$22.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$23.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$23.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$24.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$24.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$25.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$25.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$26.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$26.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$27.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$27.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$28.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$28.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$29.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$29.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$30.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$30.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$31.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$31.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$32.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$32.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$33.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$33.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$34.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$34.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$35.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$35.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$36.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$36.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$37.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$37.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$38.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$38.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$39.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$39.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$40.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$40.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$41.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$41.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test6Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test6Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test7Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test7Activity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test7Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test7Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test7Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test7Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test8Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test8Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/google/android/gms/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/google/android/gms/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/google/android/gms/appindexing/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/google/android/gms/appindexing/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/google/android/gms/base/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/google/android/gms/base/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/android/support/v7/appcompat/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/MainActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$mipmap.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$mipmap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$raw.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$raw.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test10Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test10Activity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test10Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test10Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test10Activity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test10Activity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test10Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test10Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test2Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test2Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test2Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test2Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test3Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test3Activity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test3Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test3Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test3Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test3Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test4Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test4Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test4Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test4Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$11.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$12.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$13.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$14.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$15.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$16.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$16.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$17.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$17.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$18.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$19.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$19.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$20.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$20.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$21.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$21.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$22.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$22.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$23.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$23.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$24.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$24.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$25.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$25.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$26.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$26.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$27.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$27.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$28.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$28.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$29.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$29.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$30.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$30.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$31.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$31.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$32.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$32.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$33.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$33.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$34.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$34.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$35.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$35.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$36.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$36.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$37.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$37.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$38.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$38.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$39.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$39.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$40.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$40.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$41.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$41.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test5Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test6Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test6Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test7Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test7Activity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test7Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test7Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test7Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test7Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test8Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test8Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test9Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test9Activity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test9Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test9Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test9Activity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test9Activity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test9Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/example/loveyoplus/myapplication/Test9Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/google/android/gms/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/google/android/gms/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/google/android/gms/appindexing/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/google/android/gms/appindexing/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/google/android/gms/base/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental-verifier/debug/com/google/android/gms/base/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_1.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_1a.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_1a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_2.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_2a.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_2a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_3.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_3a.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_3a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_4.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_4a.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_4a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_5.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_5a.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_5a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_6.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_6a.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_6a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_7.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_7a.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_7a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_8.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_8a.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_8a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_9.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_9a.jpg" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t3_9a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/v7/appcompat/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/android/support/v7/appcompat/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/MainActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/MainActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$mipmap.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$mipmap.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$raw.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$raw.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test10Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test10Activity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test10Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test10Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test10Activity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test10Activity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test10Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test10Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test2Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test2Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test2Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test2Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test3Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test3Activity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test3Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test3Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test3Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test3Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test4Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test4Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test4Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test4Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$11.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$12.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$13.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$14.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$15.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$16.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$16.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$17.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$17.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$18.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$19.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$19.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$20.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$20.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$21.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$21.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$22.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$22.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$23.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$23.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$24.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$24.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$25.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$25.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$26.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$26.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$27.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$27.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$28.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$28.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$29.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$29.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$3.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$30.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$30.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$31.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$31.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$32.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$32.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$33.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$33.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$34.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$34.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$35.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$35.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$36.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$36.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$37.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$37.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$38.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$38.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$39.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$39.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$4.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$40.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$40.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$41.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$41.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$5.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$6.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$7.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test5Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test6Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test6Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test7Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test7Activity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test7Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test7Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test7Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test7Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test8Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test8Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test9Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test9Activity$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test9Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test9Activity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test9Activity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test9Activity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test9Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/example/loveyoplus/myapplication/Test9Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appindexing/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/appindexing/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/base/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/instantRun/debug/folders/1/5/main/com/google/android/gms/base/R$drawable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_1.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_1a.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_1a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_2.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_2a.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_2a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_3.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_3a.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_3a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_4.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_4a.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_4a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_5.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_5a.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_5a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_6.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_6a.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_6a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_7.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_7a.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_7a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_8.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_8a.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_8a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_9.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_9.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t3_9a.jpg" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t3_9a.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/loveyoplus/myapplication/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/loveyoplus/myapplication/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/appindexing/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/appindexing/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/base/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/google/android/gms/base/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageInstantRunResourcesDebug/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/manifest.crc" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/manifest.crc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/manifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/instant-run-support/debug/manifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/instant-run/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/instant-run/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_t1.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_t1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_t3.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_t3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_t4.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_t4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_t5.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_t5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_t6.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_t6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_t7.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_t7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_t9.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout/activity_t9.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/restart-dex/debug/build-info.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test10Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test10Activity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test2Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test2Activity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test3Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test3Activity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test4Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test4Activity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test5Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test5Activity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test6Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test6Activity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test7Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test7Activity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test8Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test8Activity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test9Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test9Activity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_t1.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_t1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_t3.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_t3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_t4.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_t4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_t5.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_t5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_t6.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_t6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_t7.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_t7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_t9.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_t9.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle2.png" />
     </list>
     <ignored path="contest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -369,7 +30,7 @@
             <file leaf-file-name="activity_login.xml" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
                 <provider editor-type-id="text-editor">
-                  <state relative-caret-position="503">
+                  <state relative-caret-position="1007">
                     <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
                     <folding />
                   </state>
@@ -434,12 +95,9 @@
             <file leaf-file-name="activity_t6.xml" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t6.xml">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="342">
+                  <state relative-caret-position="1140">
                     <caret line="60" column="22" selection-start-line="8" selection-start-column="8" selection-end-line="60" selection-end-column="22" />
-                    <folding>
-                      <element signature="e#1341#1365#0" expanded="true" />
-                      <element signature="e#1653#1676#0" expanded="true" />
-                    </folding>
+                    <folding />
                   </state>
                 </provider>
                 <provider editor-type-id="android-designer2">
@@ -452,10 +110,7 @@
                 <provider editor-type-id="text-editor">
                   <state relative-caret-position="380">
                     <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-                    <folding>
-                      <element signature="e#1377#1401#0" expanded="true" />
-                      <element signature="e#1689#1712#0" expanded="true" />
-                    </folding>
+                    <folding />
                   </state>
                 </provider>
                 <provider selected="true" editor-type-id="android-designer2">
@@ -466,12 +121,9 @@
             <file leaf-file-name="activity_t9.xml" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t9.xml">
                 <provider editor-type-id="text-editor">
-                  <state relative-caret-position="-48">
+                  <state relative-caret-position="703">
                     <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
-                    <folding>
-                      <element signature="e#1397#1421#0" expanded="true" />
-                      <element signature="e#1709#1732#0" expanded="true" />
-                    </folding>
+                    <folding />
                   </state>
                 </provider>
                 <provider selected="true" editor-type-id="android-designer2">
@@ -549,7 +201,7 @@
       <file leaf-file-name="Test9Activity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test9Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
+            <state relative-caret-position="1596">
               <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
               <folding />
             </state>
@@ -559,7 +211,7 @@
       <file leaf-file-name="Test10Activity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test10Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="1520">
               <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="47" />
               <folding />
             </state>
@@ -569,7 +221,7 @@
       <file leaf-file-name="Test4Activity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test4Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
+            <state relative-caret-position="304">
               <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
               <folding />
             </state>
@@ -2407,66 +2059,12 @@
               <option name="myItemId" value="contest" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contest" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contest" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="myapplication" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="contest" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="manifests" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
     </panes>
   </component>
@@ -2796,37 +2394,37 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5191898" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.48081023" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5191898" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.48081023" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2852,10 +2450,7 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1397#1421#0" expanded="true" />
-            <element signature="e#1709#1732#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
@@ -2869,7 +2464,6 @@
           <folding>
             <element signature="method#GenStationList#0;class#Test5Activity#0" expanded="false" />
             <element signature="method#PickUpStationIds#0;class#Test5Activity#0" expanded="false" />
-            <element signature="e#10571#10619#0" expanded="true" />
             <element signature="method#onTouch#0;class#Test5Activity#0" expanded="false" />
           </folding>
         </state>
@@ -2887,7 +2481,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3458">
           <caret line="202" column="27" selection-start-line="202" selection-start-column="26" selection-end-line="202" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="e#6082#7697#0" expanded="true" />
+            <element signature="e#7696#7697#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2895,30 +2492,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1653">
           <caret line="111" column="47" selection-start-line="108" selection-start-column="20" selection-end-line="111" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t2.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t2.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test2Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3838">
           <caret line="217" column="92" selection-start-line="217" selection-start-column="84" selection-end-line="217" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2945,7 +2527,6 @@
           <folding>
             <element signature="method#GenStationList#0;class#Test5Activity#0" expanded="false" />
             <element signature="method#PickUpStationIds#0;class#Test5Activity#0" expanded="false" />
-            <element signature="e#10571#10619#0" expanded="true" />
             <element signature="method#onTouch#0;class#Test5Activity#0" expanded="false" />
           </folding>
         </state>
@@ -2955,7 +2536,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#6082#7697#0" expanded="true" />
+            <element signature="e#7696#7697#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2963,30 +2547,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t2.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t2.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test2Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3021,7 +2590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3029,7 +2597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3040,7 +2607,6 @@
           <folding>
             <element signature="method#GenStationList#0;class#Test5Activity#0" expanded="false" />
             <element signature="method#PickUpStationIds#0;class#Test5Activity#0" expanded="false" />
-            <element signature="e#10571#10619#0" expanded="true" />
             <element signature="method#onTouch#0;class#Test5Activity#0" expanded="false" />
           </folding>
         </state>
@@ -3050,9 +2616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3068,7 +2631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3076,7 +2638,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3085,10 +2646,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="5900" column="16" selection-start-line="5900" selection-start-column="16" selection-end-line="5900" selection-end-column="16" />
-          <folding>
-            <element signature="e#230459#230460#0" expanded="false" />
-            <element signature="e#230513#230514#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3096,7 +2653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="4618" column="16" selection-start-line="4618" selection-start-column="16" selection-end-line="4618" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3140,12 +2696,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t6.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="1140">
           <caret line="60" column="22" selection-start-line="8" selection-start-column="8" selection-end-line="60" selection-end-column="22" />
-          <folding>
-            <element signature="e#1341#1365#0" expanded="true" />
-            <element signature="e#1653#1676#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer2">
@@ -3156,10 +2709,7 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
-          <folding>
-            <element signature="e#1377#1401#0" expanded="true" />
-            <element signature="e#1689#1712#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
@@ -3168,29 +2718,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t9.xml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="-48">
+        <state relative-caret-position="703">
           <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
-          <folding>
-            <element signature="e#1397#1421#0" expanded="true" />
-            <element signature="e#1709#1732#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1007">
-          <caret line="53" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t2.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t1.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="1368">
@@ -3206,7 +2743,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
@@ -3217,11 +2753,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="534">
           <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1421#1833#0" expanded="true" />
-            <element signature="e#1832#1833#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3238,7 +2769,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="503">
+        <state relative-caret-position="1007">
           <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
           <folding />
         </state>
@@ -3251,9 +2782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3314,7 +2842,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test4Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="304">
           <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
           <folding />
         </state>
@@ -3322,7 +2850,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test10Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
+        <state relative-caret-position="1520">
           <caret line="94" column="23" selection-start-line="94" selection-start-column="23" selection-end-line="94" selection-end-column="47" />
           <folding />
         </state>
@@ -3330,7 +2858,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test9Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
+        <state relative-caret-position="1596">
           <caret line="99" column="49" selection-start-line="99" selection-start-column="49" selection-end-line="99" selection-end-column="49" />
           <folding />
         </state>

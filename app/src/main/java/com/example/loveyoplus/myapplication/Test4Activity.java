@@ -32,7 +32,7 @@ public class Test4Activity extends AppCompatActivity implements View.OnClickList
     private Handler mHandler;
     int[] result;
     int randomNumLen=56;//1~56的數字
-    final int GAMETIME=1000*5;//遊戲時間
+    final int GAMETIME=1000*60;//遊戲時間
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -41,8 +41,8 @@ public class Test4Activity extends AppCompatActivity implements View.OnClickList
         getSupportActionBar().hide(); //隱藏標題
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
 
-        tv2 = (TextView)findViewById(R.id.textView5);
-        tv1 = (TextView)findViewById(R.id.textView2);
+        tv2 = (TextView)findViewById(R.id.tv2);
+        tv1 = (TextView)findViewById(R.id.tv1);
         timer= (TextView)findViewById(R.id.tv3);
         tl1 = (TableLayout) findViewById(R.id.tl1);
         btn = new Button[100];
@@ -137,14 +137,17 @@ public class Test4Activity extends AppCompatActivity implements View.OnClickList
         answer = new String[15];
         tv1.setText("限時時間內找出數字:");
         String s="";
+        int count=1;
         for(int i = 0 ;i<15;i++){
             Random random = new Random();
             int selected= random.nextInt(randomNumLen-i);
             answer[i]=randomNum[selected];
             randomNum[selected]=randomNum[randomNumLen-1-i];
-            s+=answer[i]+",";
-
-
+            if(Integer.parseInt(answer[i])<10)s+="  ";
+            s+=answer[i];
+            if(count%5==0)s+="\n";
+            else s+="\t\t\t\t";
+            count++;
 
         }
         tv2.setText(s);
@@ -169,9 +172,15 @@ public class Test4Activity extends AppCompatActivity implements View.OnClickList
                     setQuestion();
                 }
                 String s="";
+                int count=1;
                 for(int j=0;j<15;j++){
-                    if(!answer[j].equals(""))
-                    s+=answer[j]+",";
+                    if(!answer[j].equals("")){
+                        if(Integer.parseInt(answer[j])<10)s+="  ";
+                        s+=answer[j];
+                        if(count%5==0)s+="\n";
+                        else s+="\t\t\t\t";
+                        count++;
+                    }
                 }
                 tv2.setText(s);
                 Log.v("result","O:"+result[1]+"\nX:"+result[0]);

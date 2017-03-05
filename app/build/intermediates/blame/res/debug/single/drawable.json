@@ -56,6 +56,14 @@
         "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\t3_5.jpg"
     },
     {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\t3_10a.jpg",
+        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\t3_10a.jpg"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\circle2.png",
+        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\circle2.png"
+    },
+    {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\t6_29.png",
         "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\t6_29.png"
     },
@@ -342,6 +350,10 @@
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\t6_37.png",
         "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\t6_37.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\t3_10.jpg",
+        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\t3_10.jpg"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\t6_8.png",

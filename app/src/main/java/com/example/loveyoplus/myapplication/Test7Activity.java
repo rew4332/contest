@@ -39,7 +39,7 @@ public class Test7Activity extends AppCompatActivity implements View.OnClickList
         tv = new TextView[3];
         tv[0]= (TextView) findViewById(R.id.textView2);
         tv[1]= (TextView) findViewById(R.id.textView6);timer=tv[1];
-        tv[2]= (TextView) findViewById(R.id.textView5);
+
 
         tv[0].setText("選下列所顯示之圖案");
 
@@ -63,6 +63,12 @@ public class Test7Activity extends AppCompatActivity implements View.OnClickList
 
         setQuestion();
         answerNum=setImageView();
+        while(answerNum<4){
+            setQuestion();
+            answerNum=setImageView();
+        }
+
+
 
 
 
@@ -158,6 +164,10 @@ public class Test7Activity extends AppCompatActivity implements View.OnClickList
                 removeAllMark();
                 setQuestion();
                 answerNum=setImageView();
+                while(answerNum<4){
+                    setQuestion();
+                    answerNum=setImageView();
+                }
 
             }
         }
@@ -166,7 +176,11 @@ public class Test7Activity extends AppCompatActivity implements View.OnClickList
             removeAllMark();
             setQuestion();
             answerNum=setImageView();
+            while(answerNum<4){
+                setQuestion();
+                answerNum=setImageView();
+            }
         }
-        tv[2].setText("O:"+result[1]+"X:"+result[0]);
+        Log.e("result","O:"+result[1]+"X:"+result[0]);
     }
 }

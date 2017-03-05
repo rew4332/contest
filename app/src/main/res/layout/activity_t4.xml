@@ -3,14 +3,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="match_parent">
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <TableLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0sp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="標題"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv1"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="3"
+                    android:textSize="@dimen/title_font_size"
+                    />
+
+                <TextView
+                    android:text="計時器"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv3"
+                    android:textSize="@dimen/time_font_size"
+                    android:layout_below="@+id/tv2"
+                    android:layout_alignLeft="@+id/btnStart"
+                    android:layout_alignStart="@+id/btnStart" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:text="題目"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/tv2"
+
+
+                    android:textSize="@dimen/q_font_size"
+                    android:gravity="center_vertical|center_horizontal" />
+            </TableRow>
+
+        </TableLayout>
+
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_weight="2"
             android:id="@+id/tl1">
 
         </TableLayout>
@@ -22,33 +79,9 @@
 
 
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="2">
 
-            <TextView
-                android:text="標題"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView2"
-                android:textSize="@dimen/title_font_size" />
 
-            <TextView
-                android:text="計時器"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/time_font_size"
-                android:id="@+id/tv3" />
 
-            <TextView
-                android:text="題目"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView5"
-                android:textSize="@dimen/q_font_size"/>
-        </LinearLayout>
     </LinearLayout>
 
 </RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llStart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.loveyoplus.myapplication.MainActivity">
+
+
+    <TextView
+        android:text="說明文字"
+        android:layout_width="match_parent"
+        android:id="@+id/tvStart"
+        android:layout_weight="3"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="學號"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView3"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30sp" />
+
+        <EditText
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etId"
+            android:layout_weight="3"
+            android:textSize="30sp"
+            android:contentDescription="請輸入學號" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="4">
+
+        <Button
+            android:text="登\t\t\t入"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_marginTop="50sp"
+            android:layout_weight="1"
+            android:id="@+id/btnStart"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:background="@android:color/holo_orange_light" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0sp"></LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

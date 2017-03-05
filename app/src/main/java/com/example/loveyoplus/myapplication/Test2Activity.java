@@ -28,7 +28,7 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
     int[] viewSize;//左半邊測驗區大小
     String[] answer;//題目
     int[] result;//紀錄目前對錯數量
-    final int GAMETIME=1000*10;//遊戲時間
+    final int GAMETIME=1000*60;//遊戲時間
     String randomNum[]={"一","二","三","四","五","六","七","八","九"};
     private Handler mHandler;
 

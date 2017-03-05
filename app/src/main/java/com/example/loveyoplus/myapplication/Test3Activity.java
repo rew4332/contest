@@ -1,11 +1,17 @@
 package com.example.loveyoplus.myapplication;
 
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.media.Image;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
@@ -20,7 +26,7 @@ import java.text.SimpleDateFormat;
  * Created by loveyoplus on 2017/2/16.
  */
 
-public class Test3Activity extends AppCompatActivity implements View.OnTouchListener {
+public class Test3Activity extends AppCompatActivity {
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -29,13 +35,15 @@ public class Test3Activity extends AppCompatActivity implements View.OnTouchList
     //String sTemp="";
     RelativeLayout r1;
     ImageView iv[];
-    int[][] tag;
+    String[] tag;
     int[] result;
     String answer[];
     TextView tvTimer,tvTitle;
-    final int GAMETIME=1000*1000;//遊戲時間
-    final int QUESTIONNUM=1;
+    final int GAMETIME=1000*60;//遊戲時間
+    final int QUESTIONNUM=10;
     int destroyRunnable=0;
+    int restQuestionNum;
+
 
 
 
@@ -53,38 +61,44 @@ public class Test3Activity extends AppCompatActivity implements View.OnTouchList
         tvTitle = (TextView)findViewById(R.id.tv3);
         iv =new ImageView[2];
         iv[0] = (ImageView) findViewById(R.id.iv1) ;
+        iv[1]  = (ImageView)findViewById(R.id.iv2) ;
 
 
 
-        //抓取資源tag[x][0]=獲取圖片id
-        tag = new int[QUESTIONNUM][2];
+        //抓取資源tag[x]=獲取圖片id
+        tag = new String[QUESTIONNUM];
         //t3_1~t3_9
         for(int i = 0;i<QUESTIONNUM;i++){
-            tag[i][0] = getResources().getIdentifier("t3_"+(i+1),"drawable",getPackageName());
+            tag[i] = "t3_"+(i+1);
         }
         //作答後結果
         result = new int[2];
 
-        //answer tag[x][1]=可作答數量 每touch一次 tag[x][1]--
+
         answer = new String[QUESTIONNUM];
-        answer[0]="259,229,45,50;18,398,100,20;309,546,70,80;385,443,60,100";tag[0][1]=4;
-    /*    answer[1]="21,442;218,600";tag[1][1]=2;
-        answer[2]="82,292;166,122;358,97;359,229";tag[2][1]=4;
-        answer[3]="81,288;368,225;365,543";tag[3][1]=3;
-        answer[4]="111,165;240,429;281,577";tag[4][1]=3;
-        answer[5]="285,409;400,253;35,459";tag[5][1]=3;
-        answer[6]="307,647;162,158";tag[6][1]=2;
-        answer[7]="31,235;92,430;297,460";tag[7][1]=3;
-        answer[8]="404,253;343,357;36,366";tag[8][1]=3;
-*/
+        answer[0]="3451,0,776,356;2693,1840,200,200;1996,1836,676,672;3981,2028,364,840;0,1772,400,600";
+        answer[1]="422,1058,181,262;2552,877,181,277;3350,901,173,439;0,0,1197,601;1870,1699,397,765";
+        answer[2]="651,1814,167,267;2115,1667,225,199;1171,1741,143,97;2977,1843,625,763;0,2655,361,457";
+        answer[3]="1035,1881,431,609;2415,1993,129,243;415,1201,1525,437;2103,973,621,757;4189,0,865,297";
+        answer[4]="1077,1137,269,311;733,1231,133,121;3094,1843,297,303;3420,1585,307,291;0,2457,1285,837";
+        answer[5]="431,317,599,307;2406,1749,305,531;2838,1585,123,769;4289,1427,115,711;4633,1107,239,265";
+        answer[6]="2313,287,341,189;0,0,1549,765;0,2591,833,321;2903,2149,161,265;2775,2905,713,565";
+        answer[7]="1221,1797,755,353;125,2897,525,223;4197,2893,177,417;3225,665,1593,393;3773,2231,163,257";
+        answer[8]="1933,431,249,717;3052,1853,205,319;3020,2705,675,311;3776,323,249,267;4303,387,141,769";
+        answer[9]="1641,1279,179,255;1783,583,1301,425;2981,1111,111,637;3318,2243,215,477;3583,1473,533,1653";
+
+
+
         mHandler = new Handler();
         mHandler.post(countdowntimer);
 
         tvTitle.setText("選取不同處(選左圖)");
-        iv[0].setImageResource(tag[0][0]);
-        iv[0].setTag(tag[0][0]);
-        iv[0].setOnTouchListener(this);
-        for(int setId= 0;setId<4;setId++) {
+        Log.d("drawableTag",tag[0]);
+
+        restQuestionNum=5;//剩下的答案數量
+        //binListener 每題有五個答案
+        for(int setId= 0;setId<5;setId++) {
+            //bind the first question
             bindListener(0,setId);
         }
 
@@ -120,111 +134,104 @@ public class Test3Activity extends AppCompatActivity implements View.OnTouchList
         }
     };
 
-    public void bindListener(int index,final int id){
+    public void bindListener(final int index,final int id){
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+
+        iv[0].setImageResource(getResources().getIdentifier(tag[index],"drawable",getPackageName()));
+        iv[1].setImageResource(getResources().getIdentifier(tag[index]+"a","drawable",getPackageName()));
+
+        int width =(displayMetrics.widthPixels);// rl1.getMeasuredWidth();
+        int height = 3*displayMetrics.heightPixels/8;//rl1.getMeasuredHeight();
+        int location[] = new int[2];
+        //Log.d("location",getRelativeLeft(iv[0])+"");
+        iv[0].measure(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+
+        final int shiftX=(int)(width-(height*4918/3264.0f))/2;
+
+
 
 
         String a[]=answer[index].split(";");
+        final float ratio = height/3264.0f;
+        final String a2[] = a[id].split(",");
+        ImageView iv =  new ImageView(this);
 
-            String a2[] = a[id].split(",");
-            ImageView iv =  new ImageView(this);
+        iv.setImageResource(R.drawable.dot);
+        iv.setScaleType(ImageView.ScaleType.FIT_XY);
+        iv.setX(shiftX+Float.parseFloat(a2[0])*ratio);
+        iv.setY(Float.parseFloat(a2[1])*ratio);
 
-            iv.setImageResource(R.drawable.dot);
-            iv.setScaleType(ImageView.ScaleType.FIT_XY);
-            iv.setX(Float.parseFloat(a2[0]));
-            iv.setY(Float.parseFloat(a2[1]));
-            iv.setMinimumWidth(Integer.parseInt(a2[2]));
-            iv.setMinimumHeight(Integer.parseInt(a2[3]));
+        iv.setMinimumWidth((int)(Integer.parseInt(a2[2])*ratio));
+        iv.setMinimumHeight((int)(Integer.parseInt(a2[3])*ratio));
 
-            iv.setAlpha(1.0f);
-            iv.setId(100+id);
-            r1.addView(iv);
-            iv.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    r1.removeView(findViewById(100+id));
-                }
-            });
+        iv.setAlpha(1.0f);
+        iv.setId(100+id);
 
+        r1.addView(iv);
+        iv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                //r1.removeView(v);
+                int w=(int)(Integer.parseInt(a2[2])*ratio);
+                int h=(int)(Integer.parseInt(a2[3])*ratio);
+                ((ImageView) v).setImageResource(R.drawable.circle2);
+                v.setAlpha(0.0f);
+                v.getLayoutParams().width=w;
+                v.getLayoutParams().height=h;
+                Log.d("work","work");
+                v.setOnClickListener(null);
 
-    }
+                //剩餘答案-1
+                restQuestionNum--;
+                //記錄對的數量
+                result[1]++;
+                Log.d("restQuestionNum",restQuestionNum+"");
 
-    @Override
-    public boolean onTouch(View v, MotionEvent event) {
-
-            result[0]++;
-
-            int[] viewCoords = new int[2];
-            int touchX = (int) event.getX();
-            int touchY = (int) event.getY();
-            int imageX ; // viewCoords[0] is the X coordinate
-            int imageY ; // viewCoords[1] is the y coordinate
-
-            //Log.e("resource");
-            iv[0].getLocationOnScreen(viewCoords);
-            imageX = touchX - viewCoords[0];
-            imageY = touchY - viewCoords[1];
-            //Log.v("Touch x >>>",touchX+"");
-            //Log.v("Touch y >>>",touchY+"\n");
-            Log.v("Image x >>>",imageX+"");
-            Log.v("Image y >>>",imageY+"\n");
-            //sTemp+=imageX+","+imageY+";";
-
-            RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT,RelativeLayout.LayoutParams.WRAP_CONTENT);
-            ImageView ivX = new ImageView(this);
-
-            //圈選大小
-            params.width = 200;
-            params.height = 200;
-
-            ivX = new ImageView(this.getApplicationContext());
-            ivX.setImageResource(R.drawable.circle);
-            //圈圈位置
+                if(restQuestionNum==0){
 
 
-            for(int i = 0 ;i<QUESTIONNUM;i++) {
-                //Log.d("\tv.getTag", v.getTag() + "");
-                //Log.d("\ttag", tag[i][0] + "");
-                if (v.getTag().equals(tag[i][0])) {
-                    tag[i][1]--;
-                    //判斷是否為答案IsAnswer((int)第幾題,x,y)
-                    int p[] = IsAnswer(i, imageX, imageY);
-                    if (p != null) {
-                        //Log.e("p", p[0] + " " + p[1]);
-                        params.setMargins(p[0]-100 , p[1]-100 , 0, 0);
-                        ivX.setLayoutParams(params);
-                        r1.addView(ivX);
-                        result[1]++;
-                        result[0]--;
-
+                    //若是最後一題
+                    if(index==QUESTIONNUM-1){
+                        //跳下個測驗
+                        Intent intent = new Intent();
+                        intent.setClass(Test3Activity.this, Test4Activity.class);
+                        startActivity(intent);
+                        Test3Activity.this.finish();
                     }
-                    //if作答次數歸零 換下一題refresh UI
-                    if (tag[i][1] == 0) {
+                    else{
 
-                        ((ViewGroup)iv[0].getParent()).removeAllViews();
-                        if(i<8) {
-                            iv[0].setImageResource(tag[i + 1][0]);
-                            iv[0].setTag(tag[i + 1][0]);
-                            r1.addView(iv[0]);
-                        }
-                        else{
-                            Intent intent = new Intent();
-                            intent.setClass(Test3Activity.this, Test4Activity.class);
-                            destroyRunnable=1;
+                        r1.removeViewAt(1);r1.removeViewAt(1);r1.removeViewAt(1);r1.removeViewAt(1);r1.removeViewAt(1);
+                        //跳下一題
+                        for (int setId = 0; setId < 5; setId++) {
 
-                            Log.e("remove",countdowntimer+"");
-                            startActivity(intent);
-                            Test3Activity.this.finish();
+                            //bind the first question
+                            restQuestionNum = 5;
+                            bindListener(index + 1, setId);
                         }
-                        break;
                     }
+
+
+
+
                 }
+
+
+
             }
-        Log.e("result","O:"+result[1]+"\nX:"+result[0]);
-        //Log.e("answerXD:",sTemp);
-        return false;
+        });
+
+
+
     }
-    //
+
+
+
+
+
+
+
     public int[] IsAnswer(int answerIndex,int x,int y){
         String a[]=answer[answerIndex].split(";");
         String position=x+","+y;

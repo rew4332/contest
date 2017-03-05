@@ -40,7 +40,7 @@ public class Test8Activity extends AppCompatActivity implements View.OnClickList
         tv = new TextView[3];
         tv[0]= (TextView) findViewById(R.id.textView2);
         tv[1]= (TextView) findViewById(R.id.textView6);timer=tv[1];
-        tv[2]= (TextView) findViewById(R.id.textView5);
+
 
         tv[0].setText("選下列所顯示之數字");
 
@@ -172,8 +172,12 @@ public class Test8Activity extends AppCompatActivity implements View.OnClickList
             while(answerNum<4){
                 setQuestion();
                 answerNum=setImageView();
+                while(answerNum<4){
+                    setQuestion();
+                    answerNum=setImageView();
+                }
             }
         }
-        tv[2].setText("O:"+result[1]+"X:"+result[0]);
+        Log.e("result","O:"+result[1]+"X:"+result[0]);
     }
 }

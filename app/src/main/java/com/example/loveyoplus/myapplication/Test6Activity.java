@@ -41,7 +41,7 @@ public class Test6Activity extends AppCompatActivity implements View.OnClickList
         result = new int[2];
         tv[0] =(TextView) findViewById(R.id.textView2);
         tv[1] =(TextView) findViewById(R.id.textView6);
-        tv[2] =(TextView) findViewById(R.id.textView5);
+
         tv[0].setText("找出下面所顯示之注音符號");
         timer = tv[1];
         answerIv= (ImageView) findViewById(R.id.imageView);
@@ -125,6 +125,7 @@ public class Test6Activity extends AppCompatActivity implements View.OnClickList
                 Object o = getResources().getIdentifier("t6_"+randomNum[selected],"drawable",getPackageName());
                 iv[i][j].setImageResource((Integer) o);
                 iv[i][j].setTag(o);
+
                 randomNum[selected]=randomNum[randomNumLen-1-(i*3+j)];
             }
 
@@ -140,7 +141,7 @@ public class Test6Activity extends AppCompatActivity implements View.OnClickList
         }
         else
             result[0]++;
-        tv[2].setText("O:"+result[1]+"X:"+result[0]);
+        Log.e("result","O:"+result[1]+"X:"+result[0]);
         setImage();
         setQuestion();
 

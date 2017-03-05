@@ -5,12 +5,17 @@ import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
@@ -28,7 +33,7 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
     private ArrayList<ArrayList<Float>> stationPositionList; // 放置捷運圖之區塊(左側)
     public int remainNum; // 未被許取之站點數量
 
-    LinearLayout stationBar; // 放置題目站名之區塊(右側)
+    GridLayout stationBar; // 放置題目站名之區塊(右側)
     RelativeLayout touchMap; // 放置捷運圖之區塊(左側)
     TextView tvTimer; // 計時器區塊
 
@@ -76,10 +81,11 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
         result = new int[2];
         // Initialization of Env Paramater
         this.GenStationList();
-        stationBar = (LinearLayout) findViewById(R.id.stationBar);
+        stationBar = (GridLayout) findViewById(R.id.stationBar);
         touchMap = (RelativeLayout) findViewById(R.id.r1);
         tvTimer = (TextView) findViewById(R.id.tvTimer);
         tvTitle = (TextView) findViewById(R.id.tvTitle);
+        tvTitle.setText("找出如下所示之捷運站");
 
 
         touchMap.setOnTouchListener(this);
@@ -365,15 +371,26 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
         return idList.subList(0, number - 1);
     }
 
-    protected void BindEvent(final int id, final RelativeLayout touchMap, final LinearLayout displayBar) {
+    protected void BindEvent(final int id, final RelativeLayout touchMap, final GridLayout displayBar) {
         String stationName = this.stationNameList.get(id);
         float stationPostionX = this.stationPositionList.get(id).get(0);
         float stationPostionY = this.stationPositionList.get(id).get(1);
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
 
         TextView stationNameText = new TextView(this);
         stationNameText.setText(stationName);
+        stationNameText.setTextSize(getResources().getDimension(R.dimen.q_font_size)-20);
+        stationNameText.setGravity(Gravity.CENTER | Gravity.BOTTOM);
+        stationNameText.setMinimumWidth(displayMetrics.widthPixels/3);
         stationNameText.setId(100 + id);
+        GridLayout.LayoutParams params = new GridLayout.LayoutParams();
+
+        stationNameText.setLayoutParams(params);
+
         displayBar.addView(stationNameText);
+
+
 
         //RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
         ImageView stationListener = new ImageView(this);
@@ -387,9 +404,12 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
         stationListener.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                displayBar.removeView(findViewById(100 + id));
-                touchMap.removeView(findViewById(200 + id));
 
+             displayBar.removeView(findViewById(100 + id));
+
+
+                touchMap.removeView(findViewById(200 + id));
+                result[1]++;
                 remainNum --;
                 if(remainNum==1){
                     Log.d("end","");

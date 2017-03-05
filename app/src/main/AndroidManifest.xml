@@ -12,35 +12,32 @@
         >
 
         <activity android:name=".MainActivity" android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Test1Activity" android:screenOrientation="portrait" >
 
         </activity>
         <activity android:name=".Test2Activity" android:screenOrientation="portrait">
 
         </activity>
         <activity android:name=".Test3Activity"  android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-
-
-            </intent-filter>
         </activity>
         <activity android:name=".Test4Activity" android:screenOrientation="portrait">
-
         </activity>
         <activity android:name=".Test5Activity" android:screenOrientation="portrait">
 
         </activity>
         <activity android:name=".Test6Activity" android:screenOrientation="portrait">
-
         </activity>
         <activity android:name=".Test7Activity" android:screenOrientation="portrait">
 
 
         </activity>
         <activity android:name=".Test8Activity" android:screenOrientation="portrait">
-
 
         </activity>
         <activity android:name=".Test9Activity" android:screenOrientation="portrait">

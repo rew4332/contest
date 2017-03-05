@@ -28,7 +28,7 @@ public class Test9Activity extends AppCompatActivity implements View.OnClickList
     int[] result,soundResult;
     private Handler mHandler;
     MediaPlayer mp[];
-    final int GAMETIME=1000*150;//遊戲時間
+    final int GAMETIME=1000*60;//遊戲時間
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -42,7 +42,7 @@ public class Test9Activity extends AppCompatActivity implements View.OnClickList
         tv = new TextView[3];
         tv[0]= (TextView) findViewById(R.id.textView2);
         tv[1]= (TextView) findViewById(R.id.textView6);timer=tv[1];
-        tv[2]= (TextView) findViewById(R.id.textView5);
+
         mp = new MediaPlayer[3];
         mp[0] = MediaPlayer.create(this, R.raw.drumsound);
         mp[1] = MediaPlayer.create(this, R.raw.pianosound);
@@ -89,7 +89,7 @@ public class Test9Activity extends AppCompatActivity implements View.OnClickList
     }
     private Runnable soundtimer = new Runnable() {
         public void run() {
-            new CountDownTimer(100000, 4000) {
+            new CountDownTimer(GAMETIME, 4000) {
 
                 @Override
 
@@ -97,7 +97,7 @@ public class Test9Activity extends AppCompatActivity implements View.OnClickList
                     //倒數秒數中要做的事
                     removeSoundAllMark();
 
-                    if(millisUntilFinished<=99000){
+                    if(millisUntilFinished>4000&&millisUntilFinished<=GAMETIME-4000){
                         if(soundAnswer!=-1)soundResult[0]++;
                         setSoundQuestion();
                         Log.d("setSoundQ answer",soundAnswer+"");
@@ -276,7 +276,7 @@ public class Test9Activity extends AppCompatActivity implements View.OnClickList
                 answerNum=setImageView();
             }
         }
-        tv[2].setText("Image:\n\t O:"+result[1]+"X:"+result[0]+"\nSound:\n\tO:"+soundResult[1]+"X:"+soundResult[0]);
+        Log.e("result","Image:\n\t O:"+result[1]+"X:"+result[0]+"\nSound:\n\tO:"+soundResult[1]+"X:"+soundResult[0]);
 
 
     }

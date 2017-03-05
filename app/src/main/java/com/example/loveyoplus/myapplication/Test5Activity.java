@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -106,250 +107,310 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
         ArrayList<String> station_name = new ArrayList<>();
         ArrayList<ArrayList<Float>> station_poses = new ArrayList<>();
 
-        // 紅線
-        station_name.add("圓山");
+        station_name.add("蘆洲");
         station_poses.add(new ArrayList<Float>() {{
-            add(170.0f);
-            add(128.0f);
+            add(99.0f);
+            add(52.0f);
+        }});
 
+        station_name.add("三民高中");
+        station_poses.add(new ArrayList<Float>() {{
+            add(130.0f);
+            add(85.0f);
+        }});
+
+        station_name.add("徐匯中學");
+        station_poses.add(new ArrayList<Float>() {{
+            add(159.0f);
+            add(113.0f);
+        }});
+
+        station_name.add("三和國中");
+        station_poses.add(new ArrayList<Float>() {{
+            add(188.0f);
+            add(142.0f);
+        }});
+
+        station_name.add("三重國小");
+        station_poses.add(new ArrayList<Float>() {{
+            add(216.0f);
+            add(172.0f);
+        }});
+
+        station_name.add("新莊");
+        station_poses.add(new ArrayList<Float>() {{
+            add(41.0f);
+            add(411.0f);
+        }});
+
+        station_name.add("頭前庄");
+        station_poses.add(new ArrayList<Float>() {{
+            add(78.0f);
+            add(374.0f);
+        }});
+
+        station_name.add("先嗇宮");
+        station_poses.add(new ArrayList<Float>() {{
+            add(115.0f);
+            add(337.0f);
+        }});
+
+        station_name.add("三重");
+        station_poses.add(new ArrayList<Float>() {{
+            add(151.0f);
+            add(302.0f);
+        }});
+
+        station_name.add("菜寮");
+        station_poses.add(new ArrayList<Float>() {{
+            add(188.0f);
+            add(265.0f);
+        }});
+
+        station_name.add("台北橋");
+        station_poses.add(new ArrayList<Float>() {{
+            add(222.0f);
+            add(230.0f);
+        }});
+
+        station_name.add("大橋頭");
+        station_poses.add(new ArrayList<Float>() {{
+            add(299.0f);
+            add(203.0f);
         }});
 
         station_name.add("民權西路");
         station_poses.add(new ArrayList<Float>() {{
-            add(170.0f);
-            add(192.0f);
-        }});
-
-        station_name.add("雙連");
-        station_poses.add(new ArrayList<Float>() {{
-            add(170.0f);
-            add(249.0f);
-        }});
-
-        station_name.add("中山");
-        station_poses.add(new ArrayList<Float>() {{
-            add(170.0f);
-            add(311.0f);
-        }});
-
-        station_name.add("台北車站");
-        station_poses.add(new ArrayList<Float>() {{
-            add(170.0f);
-            add(384.0f);
-        }});
-
-        station_name.add("台大醫院");
-        station_poses.add(new ArrayList<Float>() {{
-            add(170.0f);
-            add(426.0f);
-        }});
-
-        station_name.add("中正紀念堂");
-        station_poses.add(new ArrayList<Float>() {{
-            add(202.0f);
-            add(471.0f);
-        }});
-
-        station_name.add("東門");
-        station_poses.add(new ArrayList<Float>() {{
-            add(281.0f);
-            add(471.0f);
-        }});
-
-        station_name.add("大安森林公園");
-        station_poses.add(new ArrayList<Float>() {{
-            add(429.0f);
-            add(471.0f);
-        }});
-
-        station_name.add("大安");
-        station_poses.add(new ArrayList<Float>() {{
-            add(513.0f);
-            add(473.0f);
-        }});
-
-        station_name.add("信義安和");
-        station_poses.add(new ArrayList<Float>() {{
-            add(653.0f);
-            add(471.0f);
-        }});
-
-        station_name.add("台北101/世貿");
-        station_poses.add(new ArrayList<Float>() {{
-            add(787.0f);
-            add(471.0f);
-        }});
-
-        // 橘線
-        station_name.add("大橋頭");
-        station_poses.add(new ArrayList<Float>() {{
-            add(84.0f);
-            add(187.0f);
+            add(362.0f);
+            add(203.0f);
         }});
 
         station_name.add("中山國小");
         station_poses.add(new ArrayList<Float>() {{
-            add(304.0f);
-            add(188.0f);
+            add(446.0f);
+            add(204.0f);
         }});
 
         station_name.add("行天宮");
         station_poses.add(new ArrayList<Float>() {{
-            add(364.0f);
-            add(249.0f);
-        }});
-
-        station_name.add("頂溪");
-        station_poses.add(new ArrayList<Float>() {{
-            add(190.0f);
-            add(561.0f);
-        }});
-
-        station_name.add("永安市場");
-        station_poses.add(new ArrayList<Float>() {{
-            add(151.0f);
-            add(596.0f);
-        }});
-
-
-        // 咖啡線
-        station_name.add("松山機場");
-        station_poses.add(new ArrayList<Float>() {{
-            add(512.0f);
-            add(135.0f);
-        }});
-
-        station_name.add("中山國中");
-        station_poses.add(new ArrayList<Float>() {{
-            add(512.0f);
-            add(222.0f);
-        }});
-
-        station_name.add("科技大樓");
-        station_poses.add(new ArrayList<Float>() {{
-            add(513.0f);
-            add(516.0f);
-        }});
-
-        station_name.add("六張犁");
-        station_poses.add(new ArrayList<Float>() {{
-            add(597.0f);
-            add(562.0f);
-        }});
-
-        station_name.add("麟光");
-        station_poses.add(new ArrayList<Float>() {{
-            add(638.0f);
-            add(604.0f);
-        }});
-
-        // 綠線
-        station_name.add("南京三民");
-        station_poses.add(new ArrayList<Float>() {{
-            add(806.0f);
-            add(306.0f);
-        }});
-
-        station_name.add("台北小巨蛋");
-        station_poses.add(new ArrayList<Float>() {{
-            add(676.0f);
-            add(306.0f);
-        }});
-
-        station_name.add("南京復興");
-        station_poses.add(new ArrayList<Float>() {{
-            add(512.0f);
-            add(310.0f);
+            add(474.0f);
+            add(239.0f);
         }});
 
         station_name.add("松江南京");
         station_poses.add(new ArrayList<Float>() {{
-            add(364.0f);
-            add(308.0f);
-        }});
-
-        station_name.add("北門");
-        station_poses.add(new ArrayList<Float>() {{
-            add(78.0f);
-            add(334.0f);
-        }});
-
-        station_name.add("西門");
-        station_poses.add(new ArrayList<Float>() {{
-            add(77.0f);
-            add(426.0f);
-        }});
-
-        station_name.add("小南門");
-        station_poses.add(new ArrayList<Float>() {{
-            add(114.0f);
-            add(464.0f);
-        }});
-
-        station_name.add("古亭");
-        station_poses.add(new ArrayList<Float>() {{
-            add(240.0f);
-            add(507.0f);
-        }});
-
-        station_name.add("台電大樓");
-        station_poses.add(new ArrayList<Float>() {{
-            add(279.0f);
-            add(545.0f);
-        }});
-
-        station_name.add("公館");
-        station_poses.add(new ArrayList<Float>() {{
-            add(309.0f);
-            add(579.0f);
-        }});
-
-        station_name.add("萬隆");
-        station_poses.add(new ArrayList<Float>() {{
-            add(347.0f);
-            add(613.0f);
-        }});
-
-
-
-
-
-
-        // 藍線
-        station_name.add("市政府");
-        station_poses.add(new ArrayList<Float>() {{
-            add(779.0f);
-            add(383.0f);
-        }});
-
-        station_name.add("國父紀念館");
-        station_poses.add(new ArrayList<Float>() {{
-            add(691.0f);
-            add(382.0f);
-        }});
-
-        station_name.add("忠孝敦化");
-        station_poses.add(new ArrayList<Float>() {{
-            add(598.0f);
-            add(381.0f);
-        }});
-
-        station_name.add("忠孝復興");
-        station_poses.add(new ArrayList<Float>() {{
-            add(512.0f);
-            add(383.0f);
+            add(475.0f);
+            add(284.0f);
         }});
 
         station_name.add("忠孝新生");
         station_poses.add(new ArrayList<Float>() {{
-            add(363.0f);
-            add(381.0f);
+            add(474.0f);
+            add(350.0f);
+        }});
+
+        station_name.add("東門");
+        station_poses.add(new ArrayList<Float>() {{
+            add(466.0f);
+            add(444.0f);
+        }});
+
+        station_name.add("古亭");
+        station_poses.add(new ArrayList<Float>() {{
+            add(422.0f);
+            add(491.0f);
+        }});
+
+        station_name.add("頂溪");
+        station_poses.add(new ArrayList<Float>() {{
+            add(376.0f);
+            add(554.0f);
+        }});
+
+        station_name.add("芝山");
+        station_poses.add(new ArrayList<Float>() {{
+            add(362.0f);
+            add(33.0f);
+        }});
+
+        station_name.add("士林");
+        station_poses.add(new ArrayList<Float>() {{
+            add(362.0f);
+            add(72.0f);
+        }});
+
+        station_name.add("劍潭");
+        station_poses.add(new ArrayList<Float>() {{
+            add(361.0f);
+            add(109.0f);
+        }});
+
+        station_name.add("圓山");
+        station_poses.add(new ArrayList<Float>() {{
+            add(362.0f);
+            add(148.0f);
+        }});
+
+        station_name.add("雙連");
+        station_poses.add(new ArrayList<Float>() {{
+            add(362.0f);
+            add(240.0f);
+        }});
+
+        station_name.add("中山");
+        station_poses.add(new ArrayList<Float>() {{
+            add(362.0f);
+            add(285.0f);
+        }});
+
+        station_name.add("台北車站");
+        station_poses.add(new ArrayList<Float>() {{
+            add(362.0f);
+            add(350.0f);
+        }});
+
+        station_name.add("臺大醫院");
+        station_poses.add(new ArrayList<Float>() {{
+            add(361.0f);
+            add(384.0f);
+        }});
+
+        station_name.add("中正紀念堂");
+        station_poses.add(new ArrayList<Float>() {{
+            add(385.0f);
+            add(441.0f);
+        }});
+
+        station_name.add("大安森林公園");
+        station_poses.add(new ArrayList<Float>() {{
+            add(551.0f);
+            add(437.0f);
+        }});
+
+        station_name.add("大安");
+        station_poses.add(new ArrayList<Float>() {{
+            add(606.0f);
+            add(436.0f);
+        }});
+
+        station_name.add("府中");
+        station_poses.add(new ArrayList<Float>() {{
+            add(56.0f);
+            add(561.0f);
+        }});
+
+        station_name.add("板橋");
+        station_poses.add(new ArrayList<Float>() {{
+            add(90.0f);
+            add(527.0f);
+        }});
+
+        station_name.add("新埔");
+        station_poses.add(new ArrayList<Float>() {{
+            add(124.0f);
+            add(495.0f);
+        }});
+
+        station_name.add("江子翠");
+        station_poses.add(new ArrayList<Float>() {{
+            add(164.0f);
+            add(454.0f);
+        }});
+
+        station_name.add("龍山寺");
+        station_poses.add(new ArrayList<Float>() {{
+            add(226.0f);
+            add(436.0f);
+        }});
+
+        station_name.add("西門");
+        station_poses.add(new ArrayList<Float>() {{
+            add(266.0f);
+            add(384.0f);
         }});
 
         station_name.add("善導寺");
         station_poses.add(new ArrayList<Float>() {{
-            add(273.0f);
-            add(381.0f);
+            add(410.0f);
+            add(349.0f);
+        }});
+
+        station_name.add("忠孝復興");
+        station_poses.add(new ArrayList<Float>() {{
+            add(606.0f);
+            add(350.0f);
+        }});
+
+        station_name.add("忠孝敦化");
+        station_poses.add(new ArrayList<Float>() {{
+            add(673.0f);
+            add(350.0f);
+        }});
+
+        station_name.add("台電大樓");
+        station_poses.add(new ArrayList<Float>() {{
+            add(447.0f);
+            add(534.0f);
+        }});
+
+        station_name.add("小南門");
+        station_poses.add(new ArrayList<Float>() {{
+            add(314.0f);
+            add(415.0f);
+        }});
+
+        station_name.add("北門");
+        station_poses.add(new ArrayList<Float>() {{
+            add(271.0f);
+            add(321.0f);
+        }});
+
+        station_name.add("南京復興");
+        station_poses.add(new ArrayList<Float>() {{
+            add(607.0f);
+            add(285.0f);
+        }});
+
+        station_name.add("台北小巨蛋");
+        station_poses.add(new ArrayList<Float>() {{
+            add(703.0f);
+            add(286.0f);
+        }});
+
+        station_name.add("西湖");
+        station_poses.add(new ArrayList<Float>() {{
+            add(691.0f);
+            add(13.0f);
+        }});
+
+        station_name.add("劍南路");
+        station_poses.add(new ArrayList<Float>() {{
+            add(634.0f);
+            add(42.0f);
+        }});
+
+        station_name.add("大直");
+        station_poses.add(new ArrayList<Float>() {{
+            add(606.0f);
+            add(87.0f);
+        }});
+
+        station_name.add("松山機場");
+        station_poses.add(new ArrayList<Float>() {{
+            add(624.0f);
+            add(134.0f);
+        }});
+
+        station_name.add("中山國中");
+        station_poses.add(new ArrayList<Float>() {{
+            add(605.0f);
+            add(213.0f);
+        }});
+
+        station_name.add("科技大樓");
+        station_poses.add(new ArrayList<Float>() {{
+            add(606.0f);
+            add(474.0f);
         }});
 
 
@@ -392,6 +453,16 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
 
 
 
+
+        int width =(displayMetrics.widthPixels);// rl1.getMeasuredWidth();
+        int height = 3*displayMetrics.heightPixels/5;//rl1.getMeasuredHeight();
+        int location[] = new int[2];
+        //Log.d("location",getRelativeLeft(iv[0])+"");
+
+
+        final int shiftY=(int)(height-(width*569/713.0f))/2;
+        final float ratio = width/713.0f;
+
         //RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
         ImageView stationListener = new ImageView(this);
         stationListener.setMinimumWidth(40);
@@ -399,8 +470,8 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
         stationListener.setImageResource(R.drawable.dot);
         stationListener.setAlpha(0.2f);
         stationListener.setId(200 + id);
-        stationListener.setX(stationPostionX - 20);
-        stationListener.setY(stationPostionY - 20);
+        stationListener.setX(stationPostionX*ratio - 20);
+        stationListener.setY(shiftY+stationPostionY*ratio - 20);
         stationListener.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

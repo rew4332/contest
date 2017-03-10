@@ -3,6 +3,24 @@
 
     <item
         is-multidex="false"
+        jar="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.1_d6ef8acfe5e58d8551b571b30cf59d5830696c04.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.1_e8e54bed9aa17541035d284f7f09c4d573848ab8.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -16,7 +34,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="2457845150aebe9b78b34c56c9bc9e8749487029">
+        sha1="7a15a4939d42ef53588366e556d47109839e7a56">
         <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\instant-run_d718929270f01706bca359ef46b547ad8a10d979.jar" />
     </item>
     <item
@@ -45,51 +63,6 @@
         revision="25.0.2"
         sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
         <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.1_e2aa537fe6f4aef5c1c7086ca80f72fae1fba4f4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.1_c1bfb908a94bf4c81c275633a192baba1edb063f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6c254a8230c4f37103cfd4eb100ae7c789f9b1c0">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_a7b397bc22755abc088fa873966a933854d7bad8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.1_a6d076101ab51ba8cd56be69c82447d5746b84e2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.1_d6ef8acfe5e58d8551b571b30cf59d5830696c04.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.1_e8e54bed9aa17541035d284f7f09c4d573848ab8.jar" />
     </item>
     <item
         is-multidex="false"
@@ -144,6 +117,33 @@
         revision="25.0.2"
         sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
         <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-8.4.0_3b1e64e5707ea3dc6f718dc890d1f308f274b1e9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.1_c1bfb908a94bf4c81c275633a192baba1edb063f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb009dc75078c2cfb032f3d98fe140180f71955f">
+        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_a7b397bc22755abc088fa873966a933854d7bad8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.1_a6d076101ab51ba8cd56be69c82447d5746b84e2.jar" />
     </item>
     <item
         is-multidex="false"

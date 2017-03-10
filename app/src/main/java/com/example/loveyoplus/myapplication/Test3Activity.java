@@ -165,7 +165,7 @@ public class Test3Activity extends AppCompatActivity {
         iv.setMinimumWidth((int)(Integer.parseInt(a2[2])*ratio));
         iv.setMinimumHeight((int)(Integer.parseInt(a2[3])*ratio));
 
-        iv.setAlpha(1.0f);
+        iv.setAlpha(0.0f);
         iv.setId(100+id);
 
         r1.addView(iv);
@@ -177,7 +177,7 @@ public class Test3Activity extends AppCompatActivity {
                 int w=(int)(Integer.parseInt(a2[2])*ratio);
                 int h=(int)(Integer.parseInt(a2[3])*ratio);
                 ((ImageView) v).setImageResource(R.drawable.circle2);
-                v.setAlpha(0.0f);
+                v.setAlpha(1.0f);
                 v.getLayoutParams().width=w;
                 v.getLayoutParams().height=h;
                 Log.d("work","work");

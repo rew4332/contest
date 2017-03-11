@@ -12,6 +12,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Random;
 
 /**
@@ -27,13 +28,19 @@ public class Test6Activity extends AppCompatActivity implements View.OnClickList
     int[] result;
     private Handler mHandler;
     int randomNumLen=37;
-    final int GAMETIME=1000*60;//遊戲時間
+    final int GAMETIME=1000*10;//遊戲時間
+    String ID="";
+    String startDateandTime;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_t6);
         getSupportActionBar().hide(); //隱藏標題
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
+
+        startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        ID=getIntent().getStringExtra("ID");
+
 
         rl= new RelativeLayout[9];
         iv = new ImageView[9][3];
@@ -86,7 +93,13 @@ public class Test6Activity extends AppCompatActivity implements View.OnClickList
                         rl[i].setVisibility(View.INVISIBLE);
                     }
 
+                    fileStorage fs = new fileStorage();
+                    String endDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+                    String content = "test6:\r\n"+startDateandTime+";"+endDateandTime+";true:"+result[1]+";false:"+result[0]+"\r\n";
+                    fs.writeFile(ID,content);
+
                     Intent intent = new Intent();
+                    intent.putExtra("ID",ID);
                     intent.setClass(Test6Activity.this, Test7Activity.class);
                     startActivity(intent);
                     Test6Activity.this.finish();

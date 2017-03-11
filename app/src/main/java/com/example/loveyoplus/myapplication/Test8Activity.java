@@ -14,6 +14,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Random;
 
 /**
@@ -27,7 +28,10 @@ public class Test8Activity extends AppCompatActivity implements View.OnClickList
     TextView tv[],timer;
     int[] result;
     private Handler mHandler;
-    final int GAMETIME=1000*60;//遊戲時間
+    final int GAMETIME=1000*10;//遊戲時間
+    String ID="";
+    String startDateandTime;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +39,8 @@ public class Test8Activity extends AppCompatActivity implements View.OnClickList
         getSupportActionBar().hide(); //隱藏標題
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
 
+        startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        ID=getIntent().getStringExtra("ID");
 
         result = new int[2];
         tv = new TextView[3];
@@ -88,7 +94,13 @@ public class Test8Activity extends AppCompatActivity implements View.OnClickList
                     for(int i=0;i<25;i++) {
                         rl[i].setVisibility(View.INVISIBLE);
                     }
+
+                    fileStorage fs = new fileStorage();
+                    String endDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+                    String content = "test8:\r\n"+startDateandTime+";"+endDateandTime+";true:"+result[1]+";false:"+result[0]+"\r\n";
+                    fs.writeFile(ID,content);
                     Intent intent = new Intent();
+                    intent.putExtra("ID",ID);
                     intent.setClass(Test8Activity.this, Test9Activity.class);
                     startActivity(intent);
                     Test8Activity.this.finish();

@@ -1,0 +1,91 @@
+package com.example.loveyoplus.myapplication;
+
+import android.os.Environment;
+import android.util.Log;
+
+import java.io.BufferedReader;
+import java.io.DataInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+/**
+ * Created by loveyoplus on 2017/3/10.
+ */
+
+public class fileStorage {
+    String fileName = "";
+    String directoryName="/sdcard/brainWaveData";
+    File newDirectory=null;
+    String content = "";
+    File myFile;
+    public void  createDirectory(String directoryName){
+        this.directoryName= "/sdcard/"+directoryName;
+        this.newDirectory= new File(directoryName);
+        newDirectory.mkdir();
+    }
+    public void  createDirectory(){
+        this.directoryName= directoryName;
+        this.newDirectory= new File(directoryName);
+        newDirectory.mkdir();
+    }
+    public void createFile(String fileName){
+        this.fileName= fileName;
+        if(newDirectory==null)
+            this.newDirectory= new File(directoryName);
+        myFile = new File(newDirectory,fileName+".txt");
+
+    }
+    public void writeFile(String ID,String content){
+
+        this.content=content;
+        try {
+            Log.e("file","write");
+            createFile(ID);
+            FileOutputStream fOut = new FileOutputStream(myFile,true);
+            OutputStreamWriter myOutWriter = new OutputStreamWriter(fOut);
+            myOutWriter.append(content);
+            myOutWriter.flush();
+            myOutWriter.close();
+            fOut.close();
+        } catch (Exception e) {
+            Log.e("file","exception");
+            e.printStackTrace();
+        }
+    }
+    public String readFile(String ID){
+        StringBuilder text = new StringBuilder();
+        String myData="";
+
+        try {
+            FileInputStream fis = new FileInputStream(myFile);
+            DataInputStream in = new DataInputStream(fis);
+            BufferedReader br =
+                    new BufferedReader(new InputStreamReader(in));
+            String strLine;
+            while ((strLine = br.readLine()) != null) {
+                myData = myData +"\r\n"+ strLine;
+            }
+            in.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return myData;
+    }
+
+
+    //File path = Environment.getExternalStorageDirectory();
+
+
+
+
+    FileOutputStream writer = null;
+
+
+
+
+}

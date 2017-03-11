@@ -22,6 +22,7 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 import android.os.Handler;
 
@@ -41,7 +42,9 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
     TextView tvTitle; // 題目描述區塊
     int[] result;
     private Handler mHandler; // 計時物件之執行序
-    final int GAMETIME=1000*60;
+    final int GAMETIME=1000*10;
+    String ID="";
+    String startDateandTime;
 
     // 計時物件
     private Runnable countdowntimer = new Runnable() {
@@ -56,7 +59,13 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
                 public void onFinish() {
                     tvTimer.setText("倒數時間:結束");
                     if(remainNum!=1) {
+                        fileStorage fs = new fileStorage();
+                        String endDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+                        String content = "test5:\r\n"+startDateandTime+";"+endDateandTime+";true:"+result[1]+";false:"+result[0]+"\r\n";
+                        fs.writeFile(ID,content);
+
                         Intent intent = new Intent();
+                        intent.putExtra("ID",ID);
                         intent.setClass(Test5Activity.this, Test6Activity.class);
                         startActivity(intent);
                         Test5Activity.this.finish();
@@ -77,6 +86,10 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
         setContentView(R.layout.activity_t5);
         getSupportActionBar().hide(); //隱藏標題
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
+        startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        ID=getIntent().getStringExtra("ID");
+
+
         stationListener    = new ImageView(this);
 
         result = new int[2];
@@ -484,7 +497,15 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
                 remainNum --;
                 if(remainNum==1){
                     Log.d("end","");
+                    fileStorage fs = new fileStorage();
+                    String endDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+                    String content = "test5:\r\n"+startDateandTime+";"+endDateandTime+";true:"+result[1]+";false:"+result[0]+"\r\n";
+                    fs.writeFile(ID,content);
+
+
+
                     Intent intent = new Intent();
+                    intent.putExtra("ID",ID);
                     intent.setClass(Test5Activity.this, Test6Activity.class);
                     startActivity(intent);
                     Test5Activity.this.finish();

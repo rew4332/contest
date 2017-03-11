@@ -20,6 +20,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Random;
 import android.os.Handler;
 
@@ -35,9 +36,12 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
     int[] viewSize;//左半邊測驗區大小
     String[] answer;//題目
     int[] result;//紀錄目前對錯數量
-    final int GAMETIME=1000*60;//遊戲時間
+    final int GAMETIME=1000*10;//遊戲時間
     String randomNum[]={"1","2","3","4","5","6","7","8","9"};
     private Handler mHandler;
+    String ID="";
+    String startDateandTime;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,10 +51,15 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
         getSupportActionBar().hide(); //隱藏標題
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
 
+        startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+
+        ID=getIntent().getStringExtra("ID");
 
         //initialize
         result = new int[2];
         rl1 = (RelativeLayout) findViewById(R.id.rl1);
+
+        
 
         btn = new Button[10];
         for(int i=0;i<9;i++){
@@ -106,7 +115,16 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
                 public void onFinish() {
                     tv[2].setText("倒數時間:結束");
                     disableBtn();
+                    fileStorage fs = new fileStorage();
+
+                    String endDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+                    String content = "test1:\r\n"+startDateandTime+";"+endDateandTime+";true:"+result[1]+";false:"+result[0]+"\r\n";
+                    fs.writeFile(ID,content);
+
+
+
                     Intent intent = new Intent();
+                    intent.putExtra("ID",ID);
                     intent.setClass(Test1Activity.this, Test2Activity.class);
                     startActivity(intent);
                     Test1Activity.this.finish();
@@ -122,6 +140,7 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
             btn[i].setVisibility(View.INVISIBLE);
         }
     }
+
     //設定答案
     public void setQuestion(){
 

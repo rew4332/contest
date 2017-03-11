@@ -1,5 +1,6 @@
 package com.example.loveyoplus.myapplication;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -14,6 +15,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Random;
 
 /**
@@ -29,7 +31,9 @@ public class Test10Activity extends AppCompatActivity implements View.OnClickLis
     int[] result,soundResult;
     private Handler mHandler;
     MediaPlayer mp[];
-    final int GAMETIME=1000*60;//遊戲時間
+    final int GAMETIME=1000*10;//遊戲時間
+    String ID="";
+    String startDateandTime;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -37,6 +41,9 @@ public class Test10Activity extends AppCompatActivity implements View.OnClickLis
         setContentView(R.layout.activity_t9);
         getSupportActionBar().hide(); //隱藏標題
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
+
+        startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        ID=getIntent().getStringExtra("ID");
 
         result = new int[2];
         soundResult= new int[2];
@@ -105,7 +112,17 @@ public class Test10Activity extends AppCompatActivity implements View.OnClickLis
 
                 @Override
                 public void onFinish() {
+                    fileStorage fs = new fileStorage();
+                    String endDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+                    String content = "test10:\r\n"+startDateandTime+";"+endDateandTime+";true:"+result[1]+";false:"+result[0]+";soundTrue:"+soundResult[1]+";soundFalse:"+soundResult[0]+"\r\n";
+                    fs.writeFile(ID,content);
+                    Intent intent = new Intent();
+                    intent.putExtra("ID",ID);
+                    intent.setClass(Test10Activity.this, FinishActivity.class);
+                    startActivity(intent);
+
                     Test10Activity.this.finish();
+
 
 
                 }

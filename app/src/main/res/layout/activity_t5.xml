@@ -38,8 +38,8 @@
                     android:id="@+id/tvTimer"
                     android:textSize="@dimen/time_font_size"
                     android:layout_below="@+id/tv2"
-                    android:layout_alignLeft="@+id/btnStart"
-                    android:layout_alignStart="@+id/btnStart" />
+                    android:layout_alignLeft="@+id/btnEnd"
+                    android:layout_alignStart="@+id/btnEnd" />
 
             </TableRow>
             <TableRow

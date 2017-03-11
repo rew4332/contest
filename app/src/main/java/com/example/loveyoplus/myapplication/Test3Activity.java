@@ -21,6 +21,8 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Random;
 
 /**
  * Created by loveyoplus on 2017/2/16.
@@ -39,11 +41,13 @@ public class Test3Activity extends AppCompatActivity {
     int[] result;
     String answer[];
     TextView tvTimer,tvTitle;
-    final int GAMETIME=1000*60;//遊戲時間
-    final int QUESTIONNUM=10;
+    final int GAMETIME=1000*10;//遊戲時間
+     int QUESTIONNUM=10;
     int destroyRunnable=0;
     int restQuestionNum;
-
+    String ID="";
+    String startDateandTime;
+    String question[]={"0","1","2","3","4","5","6","7","8","9"};
 
 
 
@@ -55,6 +59,8 @@ public class Test3Activity extends AppCompatActivity {
         getSupportActionBar().hide(); //隱藏標題
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
 
+        startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        ID=getIntent().getStringExtra("ID");
 
         r1 = (RelativeLayout)findViewById(R.id.r1);
         tvTimer = (TextView)findViewById(R.id.tv1);
@@ -62,6 +68,10 @@ public class Test3Activity extends AppCompatActivity {
         iv =new ImageView[2];
         iv[0] = (ImageView) findViewById(R.id.iv1) ;
         iv[1]  = (ImageView)findViewById(R.id.iv2) ;
+
+
+
+
 
 
 
@@ -96,10 +106,17 @@ public class Test3Activity extends AppCompatActivity {
         Log.d("drawableTag",tag[0]);
 
         restQuestionNum=5;//剩下的答案數量
+        String temp;
+        Random random = new Random();
+        int selected= random.nextInt(QUESTIONNUM);
+        temp=question[selected];
+
+        question[selected]=question[QUESTIONNUM-1];
+
         //binListener 每題有五個答案
         for(int setId= 0;setId<5;setId++) {
             //bind the first question
-            bindListener(0,setId);
+            bindListener(Integer.parseInt(question[selected]),setId);
         }
 
     }
@@ -123,7 +140,12 @@ public class Test3Activity extends AppCompatActivity {
                     //iv[0].setVisibility(View.INVISIBLE);
                     //Log.e("answerXD:",sTemp);
                     if(destroyRunnable==0) {
+                        fileStorage fs = new fileStorage();
+                        String endDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+                        String content = "test3:\r\n"+startDateandTime+";"+endDateandTime+";true:"+result[1]+";false:"+result[0]+"\r\n";
+                        fs.writeFile(ID,content);
                         Intent intent = new Intent();
+                        intent.putExtra("ID",ID);
                         intent.setClass(Test3Activity.this, Test4Activity.class);
                         startActivity(intent);
                         Test3Activity.this.finish();
@@ -192,10 +214,17 @@ public class Test3Activity extends AppCompatActivity {
                 if(restQuestionNum==0){
 
 
+                    QUESTIONNUM--;
                     //若是最後一題
-                    if(index==QUESTIONNUM-1){
+                    if(0==QUESTIONNUM){
                         //跳下個測驗
+                        fileStorage fs = new fileStorage();
+                        String endDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+                        String content = "test3:\r\n"+startDateandTime+";"+endDateandTime+";true:"+result[1]+";false:"+result[0]+"\r\n";
+                        fs.writeFile(ID,content);
+
                         Intent intent = new Intent();
+                        intent.putExtra("ID",ID);
                         intent.setClass(Test3Activity.this, Test4Activity.class);
                         startActivity(intent);
                         Test3Activity.this.finish();
@@ -204,11 +233,17 @@ public class Test3Activity extends AppCompatActivity {
 
                         r1.removeViewAt(1);r1.removeViewAt(1);r1.removeViewAt(1);r1.removeViewAt(1);r1.removeViewAt(1);
                         //跳下一題
-                        for (int setId = 0; setId < 5; setId++) {
+                        String temp;
+                        Random random = new Random();
+                        int selected= random.nextInt(QUESTIONNUM);
+                        temp=question[selected];
 
+                        question[selected]=question[QUESTIONNUM-1];
+
+                        //binListener 每題有五個答案
+                        for(int setId= 0;setId<5;setId++) {
                             //bind the first question
-                            restQuestionNum = 5;
-                            bindListener(index + 1, setId);
+                            bindListener(Integer.parseInt(question[selected]),setId);
                         }
                     }
 

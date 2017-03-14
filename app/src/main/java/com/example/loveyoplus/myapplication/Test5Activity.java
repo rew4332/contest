@@ -1,6 +1,7 @@
 package com.example.loveyoplus.myapplication;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.support.annotation.Nullable;
@@ -11,6 +12,8 @@ import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -30,7 +33,7 @@ import android.os.Handler;
  * Created by loveyoplus on 2017/2/24.
  */
 
-public class Test5Activity extends AppCompatActivity implements View.OnTouchListener {
+public class Test5Activity extends AppCompatActivity {
     private ArrayList<String> stationNameList; // 放置題目站名之區塊(右側)
     private ArrayList<ArrayList<Float>> stationPositionList; // 放置捷運圖之區塊(左側)
     public int remainNum; // 未被許取之站點數量
@@ -42,7 +45,7 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
     TextView tvTitle; // 題目描述區塊
     int[] result;
     private Handler mHandler; // 計時物件之執行序
-    final int GAMETIME=1000*10;
+    final int GAMETIME=1000*5;
     String ID="";
     String startDateandTime;
 
@@ -86,6 +89,8 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
         setContentView(R.layout.activity_t5);
         getSupportActionBar().hide(); //隱藏標題
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
+
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         ID=getIntent().getStringExtra("ID");
 
@@ -96,25 +101,82 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
         // Initialization of Env Paramater
         this.GenStationList();
         stationBar = (GridLayout) findViewById(R.id.stationBar);
-        touchMap = (RelativeLayout) findViewById(R.id.r1);
+        touchMap = (RelativeLayout) findViewById(R.id.rl1);
         tvTimer = (TextView) findViewById(R.id.tvTimer);
         tvTitle = (TextView) findViewById(R.id.tvTitle);
         tvTitle.setText("找出如下所示之捷運站");
 
 
-        touchMap.setOnTouchListener(this);
-        // Initialization of Layout
-        List<Integer> stationIds = this.PickUpStationIds(QUESTION_NUM);
-        remainNum = QUESTION_NUM;
-        for (int id: stationIds) {
-            this.BindEvent(id, touchMap, stationBar);
-        }
+
+
 
         // Timing
         mHandler = new Handler();
-        mHandler.post(countdowntimer);
+        mHandler.post(startCountdowntimer);
+        RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
+        ImageView tempiv =  new ImageView(Test5Activity.this);
+        tempiv.setScaleType(ImageView.ScaleType.FIT_XY);
+        tempiv.setBackgroundColor(Color.WHITE);
+        tempiv.setLayoutParams(rlp);
+        touchMap.addView(tempiv);
 
     }
+
+    private Runnable startCountdowntimer = new Runnable() {
+        public void run() {
+            final RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
+
+            touchMap.addView(new ImageView(Test5Activity.this));
+            //rl1.addView(tempiv);
+            new CountDownTimer(5000, 100) {
+
+                @Override
+
+                public void onTick(long millisUntilFinished) {
+                    ImageView tempiv = new ImageView(Test5Activity.this);
+                    tempiv.setLayoutParams(rlp);
+
+                    //倒數秒數中要做的事
+
+                    touchMap.removeViewAt(touchMap.getChildCount()-1);
+                    tempiv.setImageResource(getResources().getIdentifier("t8_" + (int)(((millisUntilFinished)/1000)+1), "drawable", getPackageName()));
+                    tempiv.setAlpha((float) ((int)millisUntilFinished%1000/1000.0f));
+                    tempiv.setScaleType(ImageView.ScaleType.FIT_XY);
+
+                    touchMap.addView(tempiv);
+
+
+
+                    Log.e("alpha",millisUntilFinished%1000/1000.0f+"");
+                    Log.e("source",millisUntilFinished+"");
+
+
+
+                    //if(millisUntilFinished%1000<300)
+                    //rl1.removeView(tempiv);
+
+
+
+                }
+
+                @Override
+                public void onFinish() {
+                    touchMap.removeViewAt(touchMap.getChildCount()-1);
+                    touchMap.removeViewAt(touchMap.getChildCount()-1);
+                    // Initialization of Layout
+                    List<Integer> stationIds = Test5Activity.this.PickUpStationIds(QUESTION_NUM);
+                    remainNum = QUESTION_NUM;
+                    for (int id: stationIds) {
+                        Test5Activity.this.BindEvent(id, touchMap, stationBar);
+                    }
+
+                    mHandler.post(countdowntimer);
+
+                }
+            }.start();
+
+        }
+    };
 
     protected void GenStationList() {
         ArrayList<String> station_name = new ArrayList<>();
@@ -496,19 +558,11 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
                 result[1]++;
                 remainNum --;
                 if(remainNum==1){
-                    Log.d("end","");
-                    fileStorage fs = new fileStorage();
-                    String endDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-                    String content = "test5:\r\n"+startDateandTime+";"+endDateandTime+";true:"+result[1]+";false:"+result[0]+"\r\n";
-                    fs.writeFile(ID,content);
-
-
-
-                    Intent intent = new Intent();
-                    intent.putExtra("ID",ID);
-                    intent.setClass(Test5Activity.this, Test6Activity.class);
-                    startActivity(intent);
-                    Test5Activity.this.finish();
+                    List<Integer> stationIds = Test5Activity.this.PickUpStationIds(QUESTION_NUM);
+                    remainNum = QUESTION_NUM;
+                    for (int id: stationIds) {
+                        Test5Activity.this.BindEvent(id, touchMap, stationBar);
+                    }
                 }
 
             }
@@ -516,38 +570,5 @@ public class Test5Activity extends AppCompatActivity implements View.OnTouchList
         touchMap.addView(stationListener);
     }
 
-    @Override
-    public boolean onTouch(View v, MotionEvent event) {
-/*
-        int touchX = (int) event.getX();
-        int touchY = (int) event.getY();
-        int imageX = touchX ;
-        int imageY = touchY ;
-        stationListener.setMinimumWidth(40);
-        stationListener.setMinimumHeight(40);
-        stationListener.setImageResource(R.drawable.dot);
-        stationListener.setAlpha(0.0f);
 
-        stationListener.setX(touchX+20);
-        stationListener.setY(touchY+20);
-
-
-
-
-        Log.v("Image x >>>",imageX+"");
-        Log.v("Image y >>>",imageY+"\n");
-        if(event.getAction()==MotionEvent.ACTION_DOWN){
-            ((RelativeLayout)v).removeView(stationListener);
-
-
-            ((RelativeLayout)v).addView(stationListener);
-        }
-        if(event.getAction()==MotionEvent.ACTION_UP) {
-            s += (imageX+40) + "," + (imageY+40) + ";";
-            Log.e("x,y;", s + "");
-        }
-*/
-        return true;
-
-    }
 }

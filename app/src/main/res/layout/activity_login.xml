@@ -9,11 +9,12 @@
 
 
     <TextView
-        android:text="說明文字"
-        android:layout_width="match_parent"
         android:id="@+id/tvStart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="3"
-        android:layout_height="0dp" />
+        android:text="本測驗共有10個項目，分為下列幾項:\n集中性注意力：指受測者對特殊的視覺、聽覺或觸覺刺激產生反應的直接注意力。\n持續性注意力：指受測者在連續或者重複的測驗中，有能力可以維持一致的注意力反應。\n選擇性注意力：指受測者在面對干擾物或競爭刺激下，維持行為或認知設定的能力。\n交替性注意力：指受測者可以轉換其注意目標，並且擁有在不同認知需求之任務間移動的心智彈性能力。\n分配性注意力：指受測者可以同時針對多重任務產生適當反應的能力。\n測驗前皆有測驗說明\n按下開始即測驗開始"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:orientation="horizontal"

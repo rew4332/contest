@@ -16,6 +16,8 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -35,13 +37,13 @@ public class Test3Activity extends AppCompatActivity {
      */
     private Handler mHandler;
     //String sTemp="";
-    RelativeLayout r1;
+    RelativeLayout r1,rl1;
     ImageView iv[];
     String[] tag;
     int[] result;
     String answer[];
     TextView tvTimer,tvTitle;
-    final int GAMETIME=1000*10;//遊戲時間
+    final int GAMETIME=1000*5;//遊戲時間
      int QUESTIONNUM=10;
     int destroyRunnable=0;
     int restQuestionNum;
@@ -58,11 +60,13 @@ public class Test3Activity extends AppCompatActivity {
         setContentView(R.layout.activity_t3);
         getSupportActionBar().hide(); //隱藏標題
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         ID=getIntent().getStringExtra("ID");
 
         r1 = (RelativeLayout)findViewById(R.id.r1);
+        rl1 = (RelativeLayout)findViewById(R.id.rl1);
         tvTimer = (TextView)findViewById(R.id.tv1);
         tvTitle = (TextView)findViewById(R.id.tv3);
         iv =new ImageView[2];
@@ -100,26 +104,82 @@ public class Test3Activity extends AppCompatActivity {
 
 
         mHandler = new Handler();
-        mHandler.post(countdowntimer);
+        mHandler.post(startCountdowntimer);
+        RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
+        ImageView tempiv =  new ImageView(Test3Activity.this);
+        tempiv.setScaleType(ImageView.ScaleType.FIT_XY);
+        tempiv.setBackgroundColor(Color.WHITE);
+        tempiv.setLayoutParams(rlp);
+        rl1.addView(tempiv);
+
 
         tvTitle.setText("選取不同處(選左圖)");
         Log.d("drawableTag",tag[0]);
 
-        restQuestionNum=5;//剩下的答案數量
-        String temp;
-        Random random = new Random();
-        int selected= random.nextInt(QUESTIONNUM);
-        temp=question[selected];
 
-        question[selected]=question[QUESTIONNUM-1];
-
-        //binListener 每題有五個答案
-        for(int setId= 0;setId<5;setId++) {
-            //bind the first question
-            bindListener(Integer.parseInt(question[selected]),setId);
-        }
 
     }
+
+    private Runnable startCountdowntimer = new Runnable() {
+        public void run() {
+            final RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
+
+            rl1.addView(new ImageView(Test3Activity.this));
+            //rl1.addView(tempiv);
+            new CountDownTimer(5000, 100) {
+
+                @Override
+
+                public void onTick(long millisUntilFinished) {
+                    ImageView tempiv = new ImageView(Test3Activity.this);
+                    tempiv.setLayoutParams(rlp);
+
+                    //倒數秒數中要做的事
+
+                    rl1.removeViewAt(rl1.getChildCount()-1);
+                    tempiv.setImageResource(getResources().getIdentifier("t8_" + (int)(((millisUntilFinished)/1000)+1), "drawable", getPackageName()));
+                    tempiv.setAlpha((float) ((int)millisUntilFinished%1000/1000.0f));
+                    tempiv.setScaleType(ImageView.ScaleType.FIT_XY);
+
+                    rl1.addView(tempiv);
+
+
+
+                    Log.e("alpha",millisUntilFinished%1000/1000.0f+"");
+                    Log.e("source",millisUntilFinished+"");
+
+
+
+                    //if(millisUntilFinished%1000<300)
+                    //rl1.removeView(tempiv);
+
+
+
+                }
+
+                @Override
+                public void onFinish() {
+                    rl1.removeViewAt(rl1.getChildCount()-1);
+                    rl1.removeViewAt(rl1.getChildCount()-1);
+                    restQuestionNum=5;//剩下的答案數量
+                    Random random = new Random();
+                    int selected= random.nextInt(QUESTIONNUM);
+
+                    question[selected]=question[QUESTIONNUM-1];
+
+                    //binListener 每題有五個答案
+                    for(int setId= 0;setId<5;setId++) {
+                        //bind the first question
+                        bindListener(Integer.parseInt(question[selected]),setId);
+                    }
+                    mHandler.post(countdowntimer);
+
+                }
+            }.start();
+
+        }
+    };
+
     private Runnable countdowntimer = new Runnable() {
         public void run() {
             new CountDownTimer(GAMETIME, 1000) {

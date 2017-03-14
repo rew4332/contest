@@ -1,5 +1,6 @@
 package com.example.loveyoplus.myapplication;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -9,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -22,14 +24,14 @@ import java.util.Random;
  */
 
 public class Test9Activity extends AppCompatActivity implements View.OnClickListener {
-    RelativeLayout rl[];
+    RelativeLayout rl[],rl1;
     ImageView iv[],answerIv;
     int tag[],answerNum,soundAnswer=-1;
     TextView tv[],timer;
     int[] result,soundResult;
     private Handler mHandler;
     MediaPlayer mp[];
-    final int GAMETIME=1000*10;//遊戲時間
+    final int GAMETIME=1000*5;//遊戲時間
     String ID="";
     String startDateandTime;
 
@@ -39,6 +41,7 @@ public class Test9Activity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_t9);
         getSupportActionBar().hide(); //隱藏標題
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         ID=getIntent().getStringExtra("ID");
@@ -58,13 +61,10 @@ public class Test9Activity extends AppCompatActivity implements View.OnClickList
         tv[0].setText("選下列所顯示之圖案並\n" +  "音樂響起選取樂器");
 
         answerIv = (ImageView)findViewById(R.id.imageView);
+        rl1 = (RelativeLayout)findViewById(R.id.rl);
         rl = new RelativeLayout[23];
         iv = new ImageView[23];
-        for(int i=0;i<23;i++){
-            iv[i] =(ImageView) findViewById(getResources().getIdentifier("iv" + (i + 1), "id", getPackageName()));
-            rl[i] =(RelativeLayout) findViewById(getResources().getIdentifier("rl" + (i + 1), "id", getPackageName()));
-            rl[i].setOnClickListener(this);
-        }
+
 
         //抓取資源tag[x][0]=獲取圖片id
         tag = new int[5];
@@ -73,26 +73,78 @@ public class Test9Activity extends AppCompatActivity implements View.OnClickList
             tag[i] = getResources().getIdentifier("t7_"+(i+1),"drawable",getPackageName());
         }
         mHandler = new Handler();
-
-        mHandler.post(countdowntimer);
-        mHandler.post(soundtimer);
-
-
-        setQuestion();
-        answerNum=setImageView();
-        while(answerNum<4){
-            setQuestion();
-            answerNum=setImageView();
-        }
-
-
-
-
-
-
-
-
+        mHandler.post(startCountdowntimer);
+        RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
+        ImageView tempiv =  new ImageView(Test9Activity.this);
+        tempiv.setScaleType(ImageView.ScaleType.FIT_XY);
+        tempiv.setBackgroundColor(Color.WHITE);
+        tempiv.setLayoutParams(rlp);
+        rl1.addView(tempiv);
     }
+
+    private Runnable startCountdowntimer = new Runnable() {
+        public void run() {
+            final RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
+
+            rl1.addView(new ImageView(Test9Activity.this));
+            //rl1.addView(tempiv);
+            new CountDownTimer(5000, 100) {
+
+                @Override
+
+                public void onTick(long millisUntilFinished) {
+                    ImageView tempiv = new ImageView(Test9Activity.this);
+                    tempiv.setLayoutParams(rlp);
+
+                    //倒數秒數中要做的事
+
+                    rl1.removeViewAt(rl1.getChildCount()-1);
+                    tempiv.setImageResource(getResources().getIdentifier("t8_" + (int)(((millisUntilFinished)/1000)+1), "drawable", getPackageName()));
+                    tempiv.setAlpha((float) ((int)millisUntilFinished%1000/1000.0f));
+                    tempiv.setScaleType(ImageView.ScaleType.FIT_XY);
+
+                    rl1.addView(tempiv);
+
+
+
+                    Log.e("alpha",millisUntilFinished%1000/1000.0f+"");
+                    Log.e("source",millisUntilFinished+"");
+
+
+
+                    //if(millisUntilFinished%1000<300)
+                    //rl1.removeView(tempiv);
+
+
+
+                }
+
+                @Override
+                public void onFinish() {
+                    rl1.removeViewAt(rl1.getChildCount()-1);
+                    rl1.removeViewAt(rl1.getChildCount()-1);
+                    for(int i=0;i<23;i++){
+                        iv[i] =(ImageView) findViewById(getResources().getIdentifier("iv" + (i + 1), "id", getPackageName()));
+                        rl[i] =(RelativeLayout) findViewById(getResources().getIdentifier("rl" + (i + 1), "id", getPackageName()));
+                        rl[i].setOnClickListener(Test9Activity.this);
+                    }
+
+
+                    setQuestion();
+                    answerNum=setImageView();
+                    while(answerNum<4){
+                        setQuestion();
+                        answerNum=setImageView();
+                    }
+                    mHandler.post(countdowntimer);
+                    mHandler.post(soundtimer);
+
+
+                }
+            }.start();
+
+        }
+    };
     private Runnable soundtimer = new Runnable() {
         public void run() {
             new CountDownTimer(GAMETIME, 4000) {

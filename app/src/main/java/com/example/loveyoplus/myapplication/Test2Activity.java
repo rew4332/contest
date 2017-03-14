@@ -10,7 +10,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -29,7 +31,7 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
     int[] viewSize;//左半邊測驗區大小
     String[] answer;//題目
     int[] result;//紀錄目前對錯數量
-    final int GAMETIME=1000*10;//遊戲時間
+    final int GAMETIME=1000*5;//遊戲時間
     String randomNum[]={"一","二","三","四","五","六","七","八","九"};
     private Handler mHandler;
     String ID="";
@@ -38,6 +40,7 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_t1);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         getSupportActionBar().hide(); //隱藏標題
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
@@ -49,11 +52,7 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
         rl1 = (RelativeLayout) findViewById(R.id.rl1);
 
         btn = new Button[10];
-        for(int i=0;i<9;i++){
-            btn[i]=(Button)findViewById(getResources().getIdentifier("button" + (i + 1), "id", getPackageName()));
-            btn[i].setTextSize(50);
-            btn[i].setOnClickListener(this);
-        }
+
 
         tv =new TextView[3];
         for(int i=0;i<3;i++){
@@ -70,21 +69,73 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
                     set button position
                     set button num
                 */
-        setBtn();
-        setQuestion();//first Question
-        mHandler = new Handler();
-        mHandler.post(countdowntimer);
 
-        //rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
-        //llStart = (LinearLayout) findViewById(R.id.llStart);
-        //Log.e("llStart",llStart+"");
-        //llStart.setLayoutParams(rlp);
-        //llStart.setMinimumWidth(viewSize[0]);
-        //llStart.setMinimumHeight(viewSize[1]);
-        //llStart.setBackgroundColor(getResources().getColor(R.color.common_google_signin_btn_text_dark_focused));
-        //((ViewGroup)findViewById(R.id.rlParent)).addView(llStart);
+        mHandler = new Handler();
+        mHandler.post(startCountdowntimer);
+        RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
+        ImageView tempiv =  new ImageView(Test2Activity.this);
+        tempiv.setScaleType(ImageView.ScaleType.FIT_XY);
+        tempiv.setBackgroundColor(Color.WHITE);
+        tempiv.setLayoutParams(rlp);
+        rl1.addView(tempiv);
+
 
     }
+    private Runnable startCountdowntimer = new Runnable() {
+        public void run() {
+            final RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
+
+            rl1.addView(new ImageView(Test2Activity.this));
+            //rl1.addView(tempiv);
+            new CountDownTimer(5000, 100) {
+
+                @Override
+
+                public void onTick(long millisUntilFinished) {
+                    ImageView tempiv = new ImageView(Test2Activity.this);
+                    tempiv.setLayoutParams(rlp);
+
+                    //倒數秒數中要做的事
+
+                    rl1.removeViewAt(rl1.getChildCount()-1);
+                    tempiv.setImageResource(getResources().getIdentifier("t8_" + (int)(((millisUntilFinished)/1000)+1), "drawable", getPackageName()));
+                    tempiv.setAlpha((float) ((int)millisUntilFinished%1000/1000.0f));
+                    tempiv.setScaleType(ImageView.ScaleType.FIT_XY);
+
+                    rl1.addView(tempiv);
+
+
+
+                    Log.e("alpha",millisUntilFinished%1000/1000.0f+"");
+                    Log.e("source",millisUntilFinished+"");
+
+
+
+                    //if(millisUntilFinished%1000<300)
+                    //rl1.removeView(tempiv);
+
+
+
+                }
+
+                @Override
+                public void onFinish() {
+                    rl1.removeViewAt(rl1.getChildCount()-1);
+                    rl1.removeViewAt(rl1.getChildCount()-1);
+                    for(int i=0;i<9;i++){
+                        btn[i]=(Button)findViewById(getResources().getIdentifier("button" + (i + 1), "id", getPackageName()));
+                        btn[i].setTextSize(70);
+                        btn[i].setOnClickListener(Test2Activity.this);
+                    }
+                    setBtn();
+                    setQuestion();//first Question
+                    mHandler.post(countdowntimer);
+
+                }
+            }.start();
+
+        }
+    };
     //timer
     private Runnable countdowntimer = new Runnable() {
         public void run() {
@@ -152,7 +203,7 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
 
         //Set the button position
         GradientDrawable gdDefault = new GradientDrawable();
-        gdDefault.setColor(Color.parseColor("#0066FF"));
+        gdDefault.setColor(Color.parseColor("#2980b9"));
         gdDefault.setCornerRadius(btnSize/2);
 
         RelativeLayout.LayoutParams params;
@@ -161,6 +212,7 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
 
             //btn[i].setBackgroundDrawable(gdDefault);
             btn[i].setBackground(gdDefault);
+            btn[i].setTextColor(Color.WHITE);
 
             params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT,RelativeLayout.LayoutParams.WRAP_CONTENT);
             params.width=btnSize;

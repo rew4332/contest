@@ -24,6 +24,10 @@
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\5d7f1da6a7470b0c81445a3fe4d36193549d59e7\\output\\res\\layout\\select_dialog_item_material.xml"
     },
     {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_middle_page.xml",
+        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\layout\\activity_middle_page.xml"
+    },
+    {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\5d7f1da6a7470b0c81445a3fe4d36193549d59e7\\output\\res\\layout\\notification_template_part_time.xml"
     },

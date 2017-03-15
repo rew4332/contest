@@ -158,8 +158,11 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
                     String content = "test2:\r\n"+startDateandTime+";"+endDateandTime+";true:"+result[1]+";false:"+result[0]+"\r\n";
                     fs.writeFile(ID,content);
                     Intent intent = new Intent();
-                    intent.putExtra("ID",ID);
-                    intent.setClass(Test2Activity.this, Test3Activity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("ID",ID);
+                    bundle.putString("ActivityName",Test2Activity.this.getClass().getSimpleName().toString());
+                    intent.putExtras(bundle);
+                    intent.setClass(Test2Activity.this, RedirectActivity.class);
                     startActivity(intent);
                     Test2Activity.this.finish();
 

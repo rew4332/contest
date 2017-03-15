@@ -175,8 +175,11 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
 
 
                     Intent intent = new Intent();
-                    intent.putExtra("ID",ID);
-                    intent.setClass(Test1Activity.this, Test2Activity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("ID",ID);
+                    bundle.putString("ActivityName",Test1Activity.this.getClass().getSimpleName().toString());
+                    intent.putExtras(bundle);
+                    intent.setClass(Test1Activity.this, RedirectActivity.class);
                     startActivity(intent);
                     Test1Activity.this.finish();
 

@@ -68,8 +68,11 @@ public class Test5Activity extends AppCompatActivity {
                         fs.writeFile(ID,content);
 
                         Intent intent = new Intent();
-                        intent.putExtra("ID",ID);
-                        intent.setClass(Test5Activity.this, Test6Activity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("ID",ID);
+                        bundle.putString("ActivityName",Test5Activity.this.getClass().getSimpleName().toString());
+                        intent.putExtras(bundle);
+                        intent.setClass(Test5Activity.this, RedirectActivity.class);
                         startActivity(intent);
                         Test5Activity.this.finish();
                     }

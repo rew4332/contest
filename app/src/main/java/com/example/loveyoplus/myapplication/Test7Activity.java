@@ -166,8 +166,11 @@ public class Test7Activity extends AppCompatActivity implements View.OnClickList
                     String content = "test7:\r\n"+startDateandTime+";"+endDateandTime+";true:"+result[1]+";false:"+result[0]+"\r\n";
                     fs.writeFile(ID,content);
                     Intent intent = new Intent();
-                    intent.putExtra("ID",ID);
-                    intent.setClass(Test7Activity.this, Test8Activity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("ID",ID);
+                    bundle.putString("ActivityName",Test7Activity.this.getClass().getSimpleName().toString());
+                    intent.putExtras(bundle);
+                    intent.setClass(Test7Activity.this, RedirectActivity.class);
                     startActivity(intent);
                     Test7Activity.this.finish();
 

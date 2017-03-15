@@ -34,10 +34,8 @@ public class FinishActivity extends AppCompatActivity {
         fs.createFile(ID);
         fs.readFile(ID);
         String s[] =fs.readFile(ID).toString().split("\r\n");
-        Log.e("len",s.length+"");
-        for(int i=1;i<s.length;i+=2){
-            tv.setText(tv.getText()+s[i]+"\t\r\n"+s[i+1]+"\r\n");
-        }
+
+
 
 
         ((Button)findViewById(R.id.btnEnd)).setOnClickListener(new View.OnClickListener() {

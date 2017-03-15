@@ -113,7 +113,7 @@ public class Test3Activity extends AppCompatActivity {
         rl1.addView(tempiv);
 
 
-        tvTitle.setText("選取不同處(選左圖)");
+        tvTitle.setText("選取不同處(選圖)");
         Log.d("drawableTag",tag[0]);
 
 
@@ -205,8 +205,11 @@ public class Test3Activity extends AppCompatActivity {
                         String content = "test3:\r\n"+startDateandTime+";"+endDateandTime+";true:"+result[1]+";false:"+result[0]+"\r\n";
                         fs.writeFile(ID,content);
                         Intent intent = new Intent();
-                        intent.putExtra("ID",ID);
-                        intent.setClass(Test3Activity.this, Test4Activity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("ID",ID);
+                        bundle.putString("ActivityName",Test3Activity.this.getClass().getSimpleName().toString());
+                        intent.putExtras(bundle);
+                        intent.setClass(Test3Activity.this, RedirectActivity.class);
                         startActivity(intent);
                         Test3Activity.this.finish();
                     }
@@ -284,8 +287,11 @@ public class Test3Activity extends AppCompatActivity {
                         fs.writeFile(ID,content);
 
                         Intent intent = new Intent();
-                        intent.putExtra("ID",ID);
-                        intent.setClass(Test3Activity.this, Test4Activity.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putString("ID",ID);
+                        bundle.putString("ActivityName",Test3Activity.this.getClass().getSimpleName().toString());
+                        intent.putExtras(bundle);
+                        intent.setClass(Test3Activity.this, RedirectActivity.class);
                         startActivity(intent);
                         Test3Activity.this.finish();
                     }

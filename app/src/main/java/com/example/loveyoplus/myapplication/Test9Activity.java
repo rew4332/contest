@@ -202,8 +202,11 @@ public class Test9Activity extends AppCompatActivity implements View.OnClickList
                     fs.writeFile(ID,content);
 
                     Intent intent = new Intent();
-                    intent.putExtra("ID",ID);
-                    intent.setClass(Test9Activity.this, Test10Activity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("ID",ID);
+                    bundle.putString("ActivityName",Test9Activity.this.getClass().getSimpleName().toString());
+                    intent.putExtras(bundle);
+                    intent.setClass(Test9Activity.this, RedirectActivity.class);
                     startActivity(intent);
                     Test9Activity.this.finish();
 

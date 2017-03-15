@@ -3,6 +3,7 @@ package com.example.loveyoplus.myapplication;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -43,8 +44,11 @@ public class MainActivity extends AppCompatActivity  {
                     fs.createFile(etId.getText().toString()+currentDateandTime);
 
                     Intent intent = new Intent();
-                    intent.putExtra("ID",etId.getText().toString()+"_"+currentDateandTime);
-                    intent.setClass(MainActivity.this, Test1Activity.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("ID",etId.getText().toString()+"_"+currentDateandTime);
+                    bundle.putString("ActivityName",MainActivity.this.getClass().getSimpleName().toString());
+                    intent.putExtras(bundle);
+                    intent.setClass(MainActivity.this, RedirectActivity.class);
                     startActivity(intent);
                     MainActivity.this.finish();
                 }

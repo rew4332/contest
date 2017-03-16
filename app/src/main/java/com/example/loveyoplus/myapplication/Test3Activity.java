@@ -43,7 +43,7 @@ public class Test3Activity extends AppCompatActivity {
     int[] result;
     String answer[];
     TextView tvTimer,tvTitle;
-    final int GAMETIME=1000*5;//遊戲時間
+    int GAMETIME=1000*5;//遊戲時間
      int QUESTIONNUM=10;
     int destroyRunnable=0;
     int restQuestionNum;
@@ -102,7 +102,7 @@ public class Test3Activity extends AppCompatActivity {
         answer[9]="1641,1279,179,255;1783,583,1301,425;2981,1111,111,637;3318,2243,215,477;3583,1473,533,1653";
 
 
-
+        GAMETIME=loadSetting(3);
         mHandler = new Handler();
         mHandler.post(startCountdowntimer);
         RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
@@ -118,6 +118,15 @@ public class Test3Activity extends AppCompatActivity {
 
 
 
+
+    }
+    int loadSetting(int i){
+        fileStorage fs = new fileStorage();
+        fs.createFile("setting");
+        fs.setContinueWrite(false);
+        String s= fs.readFile("setting");
+        if(s==null)return 60*1000;
+        return Integer.parseInt(s.split("\r\n")[i])*1000;
     }
 
     private Runnable startCountdowntimer = new Runnable() {

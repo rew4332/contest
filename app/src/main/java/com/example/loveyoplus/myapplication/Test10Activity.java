@@ -33,7 +33,7 @@ public class Test10Activity extends AppCompatActivity implements View.OnClickLis
     int[] result,soundResult;
     private Handler mHandler;
     MediaPlayer mp[];
-    final int GAMETIME=1000*5;//遊戲時間
+    int GAMETIME=1000*5;//遊戲時間
     String ID="";
     String startDateandTime;
 
@@ -74,6 +74,8 @@ public class Test10Activity extends AppCompatActivity implements View.OnClickLis
         for(int i = 0;i<9;i++){
             tag[i] = getResources().getIdentifier("t8_"+(i+1),"drawable",getPackageName());
         }
+
+        GAMETIME = loadSetting(10);
         mHandler = new Handler();
 
         mHandler.post(startCountdowntimer);
@@ -85,6 +87,14 @@ public class Test10Activity extends AppCompatActivity implements View.OnClickLis
         rl1.addView(tempiv);
 
 
+    }
+    int loadSetting(int i){
+        fileStorage fs = new fileStorage();
+        fs.createFile("setting");
+        fs.setContinueWrite(false);
+        String s= fs.readFile("setting");
+        if(s==null)return 60*1000;
+        return Integer.parseInt(s.split("\r\n")[i])*1000;
     }
     private Runnable startCountdowntimer = new Runnable() {
         public void run() {

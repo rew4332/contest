@@ -22,6 +22,7 @@ public class fileStorage {
     String directoryName="/sdcard/brainWaveData";
     File newDirectory=null;
     String content = "";
+    Boolean continueWrite=true;
     File myFile;
     public void  createDirectory(String directoryName){
         this.directoryName= "/sdcard/"+directoryName;
@@ -40,13 +41,17 @@ public class fileStorage {
         myFile = new File(newDirectory,fileName+".txt");
 
     }
+    public void setContinueWrite(Boolean bool){
+        this.continueWrite=bool;
+
+    }
     public void writeFile(String ID,String content){
 
         this.content=content;
         try {
             Log.e("file","write");
             createFile(ID);
-            FileOutputStream fOut = new FileOutputStream(myFile,true);
+            FileOutputStream fOut = new FileOutputStream(myFile,continueWrite);
             OutputStreamWriter myOutWriter = new OutputStreamWriter(fOut);
             myOutWriter.append(content);
             myOutWriter.flush();

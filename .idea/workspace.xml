@@ -15,14 +15,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7949de2d-231c-40fa-a38d-1319b1d49e6d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$drawable.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/SettingActivity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_setting.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/android/support/v7/appcompat/R$layout.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/MainActivity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/MainActivity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/MainActivity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/MainActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$dimen.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$dimen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$drawable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$drawable.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$id.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$integer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$layout.class" />
@@ -31,11 +29,20 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$style.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/R$styleable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity$2$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity$2$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test10Activity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test2Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test2Activity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test2Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test2Activity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test2Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test2Activity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test3Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test3Activity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test3Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test3Activity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test3Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test3Activity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test4Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test4Activity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test4Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test4Activity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test4Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test4Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$1$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$10.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$10.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$11.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$11.class" />
@@ -78,36 +85,37 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$8.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$8.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$9.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test5Activity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test6Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test6Activity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test6Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test6Activity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test6Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test6Activity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test7Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test7Activity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test7Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test7Activity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test7Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test7Activity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test8Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test8Activity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test8Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test8Activity$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test8Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test8Activity.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity$1$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity$1$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity$2$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity$2$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity$2.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/example/loveyoplus/myapplication/Test9Activity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t9_drum2.png" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t9_drum2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t9_piano2.png" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t9_piano2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t9_trumpet2.png" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable/t9_trumpet2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t9_drum2.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t9_drum2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t9_piano2.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t9_piano2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/t9_trumpet2.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/t9_trumpet2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/android/support/v7/appcompat/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/loveyoplus/myapplication/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/example/loveyoplus/myapplication/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/color.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/color.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/FinishActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/FinishActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/RedirectActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/RedirectActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test10Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test10Activity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test1Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test1Activity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test2Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test2Activity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test3Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test3Activity.java" />
@@ -117,9 +125,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test7Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test7Activity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test8Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test8Activity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test9Activity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test9Activity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_finish.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_finish.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_middle_page.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_middle_page.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/fileStorage.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/fileStorage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="contest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -138,147 +145,144 @@
       <content type="file-editors">
         <state>
           <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="activity_finish.xml" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_finish.xml">
-                <provider editor-type-id="text-editor">
-                  <state relative-caret-position="646">
-                    <caret line="36" column="19" selection-start-line="13" selection-start-column="4" selection-end-line="36" selection-end-column="19" />
-                    <folding />
-                  </state>
-                </provider>
+            <file leaf-file-name="activity_setting.xml" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_setting.xml">
                 <provider selected="true" editor-type-id="android-designer2">
                   <state />
+                </provider>
+                <provider editor-type-id="text-editor">
+                  <state relative-caret-position="313">
+                    <caret line="219" column="59" selection-start-line="219" selection-start-column="59" selection-end-line="219" selection-end-column="59" />
+                    <folding>
+                      <element signature="e#655#685#0" expanded="true" />
+                      <element signature="e#1191#1221#0" expanded="true" />
+                      <element signature="e#1936#1966#0" expanded="true" />
+                      <element signature="e#2681#2711#0" expanded="true" />
+                      <element signature="e#3426#3456#0" expanded="true" />
+                      <element signature="e#4171#4201#0" expanded="true" />
+                      <element signature="e#4916#4946#0" expanded="true" />
+                      <element signature="e#5661#5691#0" expanded="true" />
+                      <element signature="e#6406#6436#0" expanded="true" />
+                      <element signature="e#7151#7181#0" expanded="true" />
+                    </folding>
+                  </state>
                 </provider>
               </entry>
             </file>
             <file leaf-file-name="activity_login.xml" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+                <provider selected="true" editor-type-id="android-designer2">
+                  <state />
+                </provider>
                 <provider editor-type-id="text-editor">
                   <state relative-caret-position="1311">
                     <caret line="69" column="0" selection-start-line="10" selection-start-column="4" selection-end-line="69" selection-end-column="0" />
                     <folding />
                   </state>
                 </provider>
-                <provider selected="true" editor-type-id="android-designer2">
-                  <state />
-                </provider>
               </entry>
             </file>
             <file leaf-file-name="activity_t1.xml" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t1.xml">
-                <provider editor-type-id="text-editor">
-                  <state relative-caret-position="636">
-                    <caret line="181" column="57" selection-start-line="181" selection-start-column="57" selection-end-line="181" selection-end-column="57" />
-                    <folding>
-                      <element signature="e#1471#1495#0" expanded="true" />
-                      <element signature="e#3381#3405#0" expanded="true" />
-                      <element signature="e#3928#3952#0" expanded="true" />
-                      <element signature="e#4472#4496#0" expanded="true" />
-                      <element signature="e#4921#4945#0" expanded="true" />
-                      <element signature="e#5474#5498#0" expanded="true" />
-                      <element signature="e#6031#6055#0" expanded="true" />
-                      <element signature="e#6425#6449#0" expanded="true" />
-                      <element signature="e#6965#6989#0" expanded="true" />
-                      <element signature="e#7503#7527#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
                 <provider selected="true" editor-type-id="android-designer2">
                   <state />
+                </provider>
+                <provider editor-type-id="text-editor">
+                  <state relative-caret-position="3439">
+                    <caret line="181" column="57" selection-start-line="181" selection-start-column="57" selection-end-line="181" selection-end-column="57" />
+                    <folding />
+                  </state>
                 </provider>
               </entry>
             </file>
             <file leaf-file-name="activity_middle_page.xml" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_middle_page.xml">
+                <provider selected="true" editor-type-id="android-designer2">
+                  <state />
+                </provider>
                 <provider editor-type-id="text-editor">
-                  <state relative-caret-position="541">
+                  <state relative-caret-position="931">
                     <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
                     <folding />
                   </state>
-                </provider>
-                <provider selected="true" editor-type-id="android-designer2">
-                  <state />
                 </provider>
               </entry>
             </file>
             <file leaf-file-name="activity_t3.xml" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t3.xml">
+                <provider selected="true" editor-type-id="android-designer2">
+                  <state />
+                </provider>
                 <provider editor-type-id="text-editor">
                   <state relative-caret-position="0">
                     <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                     <folding />
                   </state>
-                </provider>
-                <provider selected="true" editor-type-id="android-designer2">
-                  <state />
                 </provider>
               </entry>
             </file>
             <file leaf-file-name="activity_t4.xml" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t4.xml">
+                <provider selected="true" editor-type-id="android-designer2">
+                  <state />
+                </provider>
                 <provider editor-type-id="text-editor">
                   <state relative-caret-position="0">
                     <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                     <folding />
                   </state>
-                </provider>
-                <provider selected="true" editor-type-id="android-designer2">
-                  <state />
                 </provider>
               </entry>
             </file>
             <file leaf-file-name="activity_t5.xml" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t5.xml">
+                <provider selected="true" editor-type-id="android-designer2">
+                  <state />
+                </provider>
                 <provider editor-type-id="text-editor">
                   <state relative-caret-position="0">
                     <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                     <folding />
                   </state>
                 </provider>
-                <provider selected="true" editor-type-id="android-designer2">
-                  <state />
-                </provider>
               </entry>
             </file>
             <file leaf-file-name="activity_t6.xml" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t6.xml">
+                <provider editor-type-id="android-designer2">
+                  <state />
+                </provider>
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="378">
+                  <state relative-caret-position="4066">
                     <caret line="214" column="43" selection-start-line="214" selection-start-column="41" selection-end-line="214" selection-end-column="43" />
                     <folding />
                   </state>
-                </provider>
-                <provider editor-type-id="android-designer2">
-                  <state />
                 </provider>
               </entry>
             </file>
             <file leaf-file-name="activity_t7.xml" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t7.xml">
+                <provider selected="true" editor-type-id="android-designer2">
+                  <state />
+                </provider>
                 <provider editor-type-id="text-editor">
-                  <state relative-caret-position="1947">
+                  <state relative-caret-position="9063">
                     <caret line="477" column="25" selection-start-line="477" selection-start-column="25" selection-end-line="477" selection-end-column="25" />
                     <folding />
                   </state>
-                </provider>
-                <provider selected="true" editor-type-id="android-designer2">
-                  <state />
                 </provider>
               </entry>
             </file>
             <file leaf-file-name="activity_t9.xml" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t9.xml">
-                <provider editor-type-id="text-editor">
-                  <state relative-caret-position="247">
-                    <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
-                    <folding>
-                      <element signature="e#1397#1421#0" expanded="true" />
-                      <element signature="e#1861#1884#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
                 <provider selected="true" editor-type-id="android-designer2">
                   <state />
+                </provider>
+                <provider editor-type-id="text-editor">
+                  <state relative-caret-position="1273">
+                    <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+                    <folding />
+                  </state>
                 </provider>
               </entry>
             </file>
@@ -308,47 +312,45 @@
       <file leaf-file-name="Test6Activity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test6Activity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="164" column="57" selection-start-line="164" selection-start-column="57" selection-end-line="164" selection-end-column="57" />
-              <folding>
-                <element signature="e#2394#4669#0" expanded="true" />
-                <element signature="e#4668#4669#0" expanded="true" />
-                <element signature="e#4709#6219#0" expanded="true" />
-                <element signature="e#6218#6219#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test5Activity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test5Activity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="72" column="61" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
-              <folding>
-                <element signature="method#GenStationList#0;class#Test5Activity#0" expanded="false" />
-                <element signature="e#16755#17403#0" expanded="true" />
-                <element signature="e#17402#17403#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test7Activity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test7Activity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="170" column="57" selection-start-line="170" selection-start-column="57" selection-end-line="170" selection-end-column="57" />
+            <state relative-caret-position="268">
+              <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test8Activity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test8Activity.java">
+      <file leaf-file-name="SettingActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/SettingActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="259">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#920#1808#0" expanded="true" />
+                <element signature="e#1807#1808#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="165" column="41" selection-start-line="165" selection-start-column="41" selection-end-line="165" selection-end-column="41" />
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="40" column="70" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -357,8 +359,8 @@
       <file leaf-file-name="RedirectActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/RedirectActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="31">
-              <caret line="168" column="49" selection-start-line="168" selection-start-column="49" selection-end-line="168" selection-end-column="49" />
+            <state relative-caret-position="304">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#redirect#0;class#RedirectActivity#0" expanded="false" />
@@ -369,69 +371,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test1Activity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test1Activity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="178" column="46" selection-start-line="178" selection-start-column="46" selection-end-line="178" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test4Activity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test4Activity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="187" column="57" selection-start-line="187" selection-start-column="57" selection-end-line="187" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FinishActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/FinishActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test10Activity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test10Activity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="180" column="45" selection-start-line="180" selection-start-column="45" selection-end-line="180" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test9Activity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test9Activity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="206" column="57" selection-start-line="206" selection-start-column="57" selection-end-line="206" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile_vertical" />
         <option value="layoutResourceFile" />
+        <option value="layoutResourceFile_vertical" />
         <option value="Class" />
       </list>
     </option>
@@ -2119,7 +2065,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/src/test/java/method/fileStorage.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/fileStorage.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_t1.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_t3.xml" />
@@ -2128,11 +2073,12 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_t7.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_t9.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_t6.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test10Activity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_middle_page.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_finish.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/FinishActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/RedirectActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/fileStorage.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test1Activity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test2Activity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test3Activity.java" />
@@ -2142,9 +2088,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test7Activity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test8Activity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test9Activity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_finish.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/FinishActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/RedirectActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test10Activity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_setting.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/SettingActivity.java" />
       </list>
     </option>
   </component>
@@ -2179,10 +2127,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2236,6 +2183,28 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myapplication" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contest" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myapplication" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -2271,6 +2240,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2699,28 +2669,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test5Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="63" column="92" selection-start-line="63" selection-start-column="92" selection-end-line="63" selection-end-column="92" />
-          <folding>
-            <element signature="method#GenStationList#0;class#Test5Activity#0" expanded="false" />
-            <element signature="e#16755#17403#0" expanded="true" />
-            <element signature="e#17402#17403#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test4Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1748">
-          <caret line="111" column="88" selection-start-line="111" selection-start-column="88" selection-end-line="111" selection-end-column="88" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test7Activity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1710">
@@ -2743,6 +2691,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#3623:5233" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2779,20 +2728,18 @@
           <caret line="222" column="92" selection-start-line="222" selection-start-column="92" selection-end-line="222" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4292#6341#0" expanded="true" />
-            <element signature="e#6340#6341#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test5Activity.java">
@@ -2801,8 +2748,6 @@
           <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding>
             <element signature="method#GenStationList#0;class#Test5Activity#0" expanded="false" />
-            <element signature="e#16755#17403#0" expanded="true" />
-            <element signature="e#17402#17403#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2820,8 +2765,6 @@
           <caret line="167" column="21" selection-start-line="167" selection-start-column="21" selection-end-line="167" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4292#6341#0" expanded="true" />
-            <element signature="e#6340#6341#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2840,6 +2783,7 @@
           <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#3623:5233" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2866,13 +2810,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/t3_3.jpg">
@@ -2900,144 +2844,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t4.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t7.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="1947">
-          <caret line="477" column="25" selection-start-line="477" selection-start-column="25" selection-end-line="477" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t6.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="214" column="43" selection-start-line="214" selection-start-column="41" selection-end-line="214" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t5.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t9.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
-          <folding>
-            <element signature="e#1397#1421#0" expanded="true" />
-            <element signature="e#1861#1884#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-25/android/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
           <caret line="5485" column="16" selection-start-line="5485" selection-start-column="16" selection-end-line="5485" selection-end-column="16" />
-          <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="69" column="0" selection-start-line="10" selection-start-column="4" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/fileStorage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t1.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="181" column="57" selection-start-line="181" selection-start-column="57" selection-end-line="181" selection-end-column="57" />
-          <folding>
-            <element signature="e#1471#1495#0" expanded="true" />
-            <element signature="e#3381#3405#0" expanded="true" />
-            <element signature="e#3928#3952#0" expanded="true" />
-            <element signature="e#4472#4496#0" expanded="true" />
-            <element signature="e#4921#4945#0" expanded="true" />
-            <element signature="e#5474#5498#0" expanded="true" />
-            <element signature="e#6031#6055#0" expanded="true" />
-            <element signature="e#6425#6449#0" expanded="true" />
-            <element signature="e#6965#6989#0" expanded="true" />
-            <element signature="e#7503#7527#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t3.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_middle_page.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/dimens.xml">
@@ -3048,38 +2859,157 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/FinishActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="50" column="79" selection-start-line="46" selection-start-column="20" selection-end-line="50" selection-end-column="79" />
+        <state relative-caret-position="456">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_finish.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="36" column="19" selection-start-line="13" selection-start-column="4" selection-end-line="36" selection-end-column="19" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="1311">
+          <caret line="69" column="0" selection-start-line="10" selection-start-column="4" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t1.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="3439">
+          <caret line="181" column="57" selection-start-line="181" selection-start-column="57" selection-end-line="181" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_middle_page.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t3.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t4.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t5.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t6.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4066">
+          <caret line="214" column="43" selection-start-line="214" selection-start-column="41" selection-end-line="214" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t7.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="9063">
+          <caret line="477" column="25" selection-start-line="477" selection-start-column="25" selection-end-line="477" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_t9.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/fileStorage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test1Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="449">
+          <caret line="67" column="47" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#3623:5233" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test2Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="164" column="41" selection-start-line="164" selection-start-column="41" selection-end-line="164" selection-end-column="41" />
+        <state relative-caret-position="-45">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test3Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="291" column="61" selection-start-line="291" selection-start-column="61" selection-end-line="291" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4292#6341#0" expanded="true" />
-            <element signature="e#6340#6341#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test4Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="187" column="57" selection-start-line="187" selection-start-column="57" selection-end-line="187" selection-end-column="57" />
+        <state relative-caret-position="221">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -3088,88 +3018,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test5Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="72" column="61" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
+        <state relative-caret-position="266">
+          <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
           <folding>
             <element signature="method#GenStationList#0;class#Test5Activity#0" expanded="false" />
-            <element signature="e#16755#17403#0" expanded="true" />
-            <element signature="e#17402#17403#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test6Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="164" column="57" selection-start-line="164" selection-start-column="57" selection-end-line="164" selection-end-column="57" />
-          <folding>
-            <element signature="e#2394#4669#0" expanded="true" />
-            <element signature="e#4668#4669#0" expanded="true" />
-            <element signature="e#4709#6219#0" expanded="true" />
-            <element signature="e#6218#6219#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test7Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="170" column="57" selection-start-line="170" selection-start-column="57" selection-end-line="170" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test9Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="206" column="57" selection-start-line="206" selection-start-column="57" selection-end-line="206" selection-end-column="57" />
+        <state relative-caret-position="380">
+          <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test3Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test10Activity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="180" column="45" selection-start-line="180" selection-start-column="45" selection-end-line="180" selection-end-column="45" />
+        <state relative-caret-position="171">
+          <caret line="188" column="45" selection-start-line="187" selection-start-column="20" selection-end-line="188" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/FinishActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test1Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="178" column="46" selection-start-line="178" selection-start-column="46" selection-end-line="178" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_finish.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="36" column="19" selection-start-line="13" selection-start-column="4" selection-end-line="36" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_setting.xml">
       <provider selected="true" editor-type-id="android-designer2">
         <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="219" column="59" selection-start-line="219" selection-start-column="59" selection-end-line="219" selection-end-column="59" />
+          <folding>
+            <element signature="e#655#685#0" expanded="true" />
+            <element signature="e#1191#1221#0" expanded="true" />
+            <element signature="e#1936#1966#0" expanded="true" />
+            <element signature="e#2681#2711#0" expanded="true" />
+            <element signature="e#3426#3456#0" expanded="true" />
+            <element signature="e#4171#4201#0" expanded="true" />
+            <element signature="e#4916#4946#0" expanded="true" />
+            <element signature="e#5661#5691#0" expanded="true" />
+            <element signature="e#6406#6436#0" expanded="true" />
+            <element signature="e#7151#7181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test8Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="127" column="126" selection-start-line="127" selection-start-column="43" selection-end-line="127" selection-end-column="126" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test7Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test6Activity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/RedirectActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="168" column="49" selection-start-line="168" selection-start-column="49" selection-end-line="168" selection-end-column="49" />
+        <state relative-caret-position="304">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#redirect#0;class#RedirectActivity#0" expanded="false" />
@@ -3179,11 +3122,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/Test8Activity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="165" column="41" selection-start-line="165" selection-start-column="41" selection-end-line="165" selection-end-column="41" />
+        <state relative-caret-position="209">
+          <caret line="40" column="70" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/loveyoplus/myapplication/SettingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#920#1808#0" expanded="true" />
+            <element signature="e#1807#1808#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

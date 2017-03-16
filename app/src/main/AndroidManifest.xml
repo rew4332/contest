@@ -20,6 +20,9 @@
         <activity android:name=".RedirectActivity" android:screenOrientation="portrait">
 
         </activity>
+        <activity android:name=".SettingActivity" android:screenOrientation="portrait">
+
+        </activity>
         <activity android:name=".Test1Activity" android:screenOrientation="portrait" >
 
         </activity>

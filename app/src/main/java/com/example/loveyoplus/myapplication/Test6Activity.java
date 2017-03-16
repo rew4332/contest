@@ -31,7 +31,7 @@ public class Test6Activity extends AppCompatActivity implements View.OnClickList
     int[] result;
     private Handler mHandler;
     int randomNumLen=37;
-    final int GAMETIME=1000*5;//遊戲時間
+    int GAMETIME=1000*5;//遊戲時間
     String ID="";
     String startDateandTime;
     @Override
@@ -58,7 +58,7 @@ public class Test6Activity extends AppCompatActivity implements View.OnClickList
         answerIv= (ImageView) findViewById(R.id.imageView);
         rl1 = (RelativeLayout)findViewById(R.id.rl);
 
-
+        GAMETIME = loadSetting(6);
         mHandler = new Handler();
         mHandler.post(startCountdowntimer);
         RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
@@ -73,6 +73,14 @@ public class Test6Activity extends AppCompatActivity implements View.OnClickList
 
 
 
+    }
+    int loadSetting(int i){
+        fileStorage fs = new fileStorage();
+        fs.createFile("setting");
+        fs.setContinueWrite(false);
+        String s= fs.readFile("setting");
+        if(s==null)return 60*1000;
+        return Integer.parseInt(s.split("\r\n")[i])*1000;
     }
     private Runnable startCountdowntimer = new Runnable() {
         public void run() {

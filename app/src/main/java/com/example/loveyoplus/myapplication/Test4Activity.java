@@ -38,7 +38,7 @@ public class Test4Activity extends AppCompatActivity implements View.OnClickList
     private Handler mHandler;
     int[] result;
     int randomNumLen=56;//1~56的數字
-    final int GAMETIME=1000*5;//遊戲時間
+    int GAMETIME=1000*5;//遊戲時間
     String ID="";
     String startDateandTime;
 
@@ -66,7 +66,7 @@ public class Test4Activity extends AppCompatActivity implements View.OnClickList
         //排版區
         tv1.setText("限時時間內找出數字:");
 
-
+        GAMETIME=loadSetting(4);
         //程式區
 
 
@@ -81,6 +81,14 @@ public class Test4Activity extends AppCompatActivity implements View.OnClickList
 
 
 
+    }
+    int loadSetting(int i){
+        fileStorage fs = new fileStorage();
+        fs.createFile("setting");
+        fs.setContinueWrite(false);
+        String s= fs.readFile("setting");
+        if(s==null)return 60*1000;
+        return Integer.parseInt(s.split("\r\n")[i])*1000;
     }
     private Runnable startCountdowntimer = new Runnable() {
         public void run() {

@@ -30,7 +30,7 @@ public class Test8Activity extends AppCompatActivity implements View.OnClickList
     TextView tv[],timer;
     int[] result;
     private Handler mHandler;
-    final int GAMETIME=1000*5;//遊戲時間
+    int GAMETIME=1000*5;//遊戲時間
     String ID="";
     String startDateandTime;
 
@@ -65,6 +65,7 @@ public class Test8Activity extends AppCompatActivity implements View.OnClickList
         for(int i = 0;i<9;i++){
             tag[i] = getResources().getIdentifier("t8_"+(i+1),"drawable",getPackageName());
         }
+        GAMETIME =loadSetting(8);
         mHandler = new Handler();
         mHandler.post(startCountdowntimer);
         RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
@@ -73,6 +74,14 @@ public class Test8Activity extends AppCompatActivity implements View.OnClickList
         tempiv.setBackgroundColor(Color.WHITE);
         tempiv.setLayoutParams(rlp);
         rl1.addView(tempiv);
+    }
+    int loadSetting(int i){
+        fileStorage fs = new fileStorage();
+        fs.createFile("setting");
+        fs.setContinueWrite(false);
+        String s= fs.readFile("setting");
+        if(s==null)return 60*1000;
+        return Integer.parseInt(s.split("\r\n")[i])*1000;
     }
     private Runnable startCountdowntimer = new Runnable() {
         public void run() {

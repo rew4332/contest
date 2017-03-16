@@ -31,6 +31,10 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:name="com.example.loveyoplus.myapplication.SettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
             android:name="com.example.loveyoplus.myapplication.Test1Activity"
             android:screenOrientation="portrait" >
         </activity>

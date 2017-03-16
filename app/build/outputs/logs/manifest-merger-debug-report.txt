@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:2:1-60:12
+ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:2:1-63:12
 	package
 		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:3:5-51
 		INJECTED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\Androi
 	android:name
 		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:5:22-77
 application
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:6:5-58:19
+ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:6:5-61:19
 MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\loveyoplus\.android\build-cache\5d7f1da6a7470b0c81445a3fe4d36193549d59e7\output\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.1.1] C:\Users\loveyoplus\.android\build-cache\7dd6bae42eb3ac337c5d8a56efd83230a0f8b5e7\output\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:25.1.1] C:\Users\loveyoplus\.android\build-cache\0ae53ae9f2efa82b847cc47954f33e04eaad520c\output\AndroidManifest.xml:23:5-20
@@ -67,79 +67,85 @@ ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\Androi
 		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:20:52-88
 	android:name
 		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:20:19-51
-activity#com.example.loveyoplus.myapplication.Test1Activity
+activity#com.example.loveyoplus.myapplication.SettingActivity
 ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:23:9-25:20
 	android:screenOrientation
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:23:49-85
+		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:23:51-87
 	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:23:19-48
-activity#com.example.loveyoplus.myapplication.Test2Activity
+		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:23:19-50
+activity#com.example.loveyoplus.myapplication.Test1Activity
 ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:26:9-28:20
 	android:screenOrientation
 		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:26:49-85
 	android:name
 		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:26:19-48
-activity#com.example.loveyoplus.myapplication.Test3Activity
+activity#com.example.loveyoplus.myapplication.Test2Activity
 ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:29:9-31:20
 	android:screenOrientation
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:29:50-86
+		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:29:49-85
 	android:name
 		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:29:19-48
-activity#com.example.loveyoplus.myapplication.Test4Activity
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:32:9-33:20
+activity#com.example.loveyoplus.myapplication.Test3Activity
+ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:32:9-34:20
 	android:screenOrientation
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:32:49-85
+		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:32:50-86
 	android:name
 		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:32:19-48
-activity#com.example.loveyoplus.myapplication.Test5Activity
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:34:9-36:20
+activity#com.example.loveyoplus.myapplication.Test4Activity
+ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:35:9-36:20
 	android:screenOrientation
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:34:49-85
+		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:35:49-85
 	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:34:19-48
-activity#com.example.loveyoplus.myapplication.Test6Activity
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:37:9-38:20
+		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:35:19-48
+activity#com.example.loveyoplus.myapplication.Test5Activity
+ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:37:9-39:20
 	android:screenOrientation
 		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:37:49-85
 	android:name
 		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:37:19-48
+activity#com.example.loveyoplus.myapplication.Test6Activity
+ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:40:9-41:20
+	android:screenOrientation
+		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:40:49-85
+	android:name
+		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:40:19-48
 activity#com.example.loveyoplus.myapplication.Test7Activity
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:39:9-42:20
+ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:42:9-45:20
 	android:screenOrientation
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:39:49-85
+		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:42:49-85
 	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:39:19-48
+		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:42:19-48
 activity#com.example.loveyoplus.myapplication.Test8Activity
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:43:9-45:20
-	android:screenOrientation
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:43:49-85
-	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:43:19-48
-activity#com.example.loveyoplus.myapplication.Test9Activity
 ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:46:9-48:20
 	android:screenOrientation
 		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:46:49-85
 	android:name
 		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:46:19-48
-activity#com.example.loveyoplus.myapplication.Test10Activity
+activity#com.example.loveyoplus.myapplication.Test9Activity
 ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:49:9-51:20
 	android:screenOrientation
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:49:50-86
+		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:49:49-85
 	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:49:19-49
-activity#com.example.loveyoplus.myapplication.FinishActivity
+		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:49:19-48
+activity#com.example.loveyoplus.myapplication.Test10Activity
 ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:52:9-54:20
 	android:screenOrientation
 		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:52:50-86
 	android:name
 		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:52:19-49
+activity#com.example.loveyoplus.myapplication.FinishActivity
+ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:55:9-57:20
+	android:screenOrientation
+		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:55:50-86
+	android:name
+		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:55:19-49
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:55:9-57:69
+ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:58:9-60:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\loveyoplus\.android\build-cache\b5d685a4fd7dbb9d9ec2816aa0eff347b922420e\output\AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:57:13-66
+		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:60:13-66
 	android:name
-		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:56:13-58
+		ADDED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml:59:13-58
 uses-sdk
 INJECTED from C:\Users\loveyoplus\AndroidStudioProjects\contest\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.1.1] C:\Users\loveyoplus\.android\build-cache\5d7f1da6a7470b0c81445a3fe4d36193549d59e7\output\AndroidManifest.xml:21:5-23:78

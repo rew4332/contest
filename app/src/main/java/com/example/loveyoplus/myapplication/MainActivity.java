@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity  {
 
         getSupportActionBar().hide(); //隱藏標題
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
-
+        loadSetting();
 
 
 
@@ -32,10 +32,17 @@ public class MainActivity extends AppCompatActivity  {
         etId = (EditText) findViewById(R.id.etId);
         btnLogin = (Button)findViewById(R.id.btnEnd);
 
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!etId.getText().toString().equals("")){
+                if(etId.getText().toString().equals("setting")){
+                    Intent intent = new Intent();
+                    intent.setClass(MainActivity.this, SettingActivity.class);
+                    startActivity(intent);
+
+                }
+                else if(!etId.getText().toString().equals("")){
                     fileStorage fs = new fileStorage();
                     fs.createDirectory();
 
@@ -58,6 +65,13 @@ public class MainActivity extends AppCompatActivity  {
 
 
 
+    }
+    void loadSetting(){
+        fileStorage fs = new fileStorage();
+        fs.createFile("setting");
+        fs.setContinueWrite(false);
+        String content = "60\r\n60\r\n60\r\n60\r\n60\r\n60\r\n60\r\n60\r\n60\r\n60\r\n";
+        fs.writeFile("setting",content);
     }
 
 

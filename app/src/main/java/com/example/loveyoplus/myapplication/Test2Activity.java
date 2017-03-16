@@ -31,7 +31,7 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
     int[] viewSize;//左半邊測驗區大小
     String[] answer;//題目
     int[] result;//紀錄目前對錯數量
-    final int GAMETIME=1000*5;//遊戲時間
+    int GAMETIME=1000*5;//遊戲時間
     String randomNum[]={"一","二","三","四","五","六","七","八","九"};
     private Handler mHandler;
     String ID="";
@@ -41,10 +41,33 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_t1);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-
         getSupportActionBar().hide(); //隱藏標題
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
 
+
+        initView();
+        GAMETIME= loadSetting(2);
+
+        mHandler = new Handler();
+        mHandler.post(startCountdowntimer);
+        RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
+        ImageView tempiv =  new ImageView(Test2Activity.this);
+        tempiv.setScaleType(ImageView.ScaleType.FIT_XY);
+        tempiv.setBackgroundColor(Color.WHITE);
+        tempiv.setLayoutParams(rlp);
+        rl1.addView(tempiv);
+
+
+    }
+    int loadSetting(int i){
+        fileStorage fs = new fileStorage();
+        fs.createFile("setting");
+        fs.setContinueWrite(false);
+        String s= fs.readFile("setting");
+        if(s==null)return 60*1000;
+        return Integer.parseInt(s.split("\r\n")[i])*1000;
+    }
+    void initView(){
         startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         ID=getIntent().getStringExtra("ID");
         //initialize
@@ -64,22 +87,6 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
         viewSize = new int[2];
         viewSize[0]=getViewSize()[0];
         viewSize[1]=getViewSize()[1];
-
-        /*
-                    set button position
-                    set button num
-                */
-
-        mHandler = new Handler();
-        mHandler.post(startCountdowntimer);
-        RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
-        ImageView tempiv =  new ImageView(Test2Activity.this);
-        tempiv.setScaleType(ImageView.ScaleType.FIT_XY);
-        tempiv.setBackgroundColor(Color.WHITE);
-        tempiv.setLayoutParams(rlp);
-        rl1.addView(tempiv);
-
-
     }
     private Runnable startCountdowntimer = new Runnable() {
         public void run() {

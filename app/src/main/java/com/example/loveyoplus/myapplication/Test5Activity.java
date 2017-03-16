@@ -45,7 +45,7 @@ public class Test5Activity extends AppCompatActivity {
     TextView tvTitle; // 題目描述區塊
     int[] result;
     private Handler mHandler; // 計時物件之執行序
-    final int GAMETIME=1000*5;
+    int GAMETIME=1000*5;
     String ID="";
     String startDateandTime;
 
@@ -112,7 +112,7 @@ public class Test5Activity extends AppCompatActivity {
 
 
 
-
+        GAMETIME =loadSetting(5);
         // Timing
         mHandler = new Handler();
         mHandler.post(startCountdowntimer);
@@ -123,6 +123,14 @@ public class Test5Activity extends AppCompatActivity {
         tempiv.setLayoutParams(rlp);
         touchMap.addView(tempiv);
 
+    }
+    int loadSetting(int i){
+        fileStorage fs = new fileStorage();
+        fs.createFile("setting");
+        fs.setContinueWrite(false);
+        String s= fs.readFile("setting");
+        if(s==null)return 60*1000;
+        return Integer.parseInt(s.split("\r\n")[i])*1000;
     }
 
     private Runnable startCountdowntimer = new Runnable() {

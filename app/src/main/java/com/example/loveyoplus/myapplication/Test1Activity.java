@@ -38,7 +38,7 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
     int[] viewSize;//左半邊測驗區大小
     String[] answer;//題目
     int[] result;//紀錄目前對錯數量
-    final int GAMETIME=1000*5;//遊戲時間
+     int GAMETIME=1000*5;//遊戲時間
     String randomNum[]={"1","2","3","4","5","6","7","8","9"};
     private Handler mHandler;
     String ID="";
@@ -50,38 +50,14 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_t1);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-
         getSupportActionBar().hide(); //隱藏標題
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
 
-        startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-
-        ID=getIntent().getStringExtra("ID");
-
-        //initialize
-        result = new int[2];
-        rl1 = (RelativeLayout) findViewById(R.id.rl1);
-
-        
-
-        btn = new Button[10];
 
 
-        tv =new TextView[3];
-        for(int i=0;i<3;i++){
-            tv[i] =  (TextView)findViewById(getResources().getIdentifier("tv" + (i + 1), "id", getPackageName()));
-        }
-        tv[0].setText("限時時間內找出數字:");
+        initView();
+        GAMETIME=loadSetting(1);
 
-        //get layout size
-        viewSize = new int[2];
-        viewSize[0]=getViewSize()[0];
-        viewSize[1]=getViewSize()[1];
-
-        /*
-                    set button position
-                    set button num
-                */
 
         mHandler = new Handler();
         //mHandler.post(countdowntimer);
@@ -92,6 +68,35 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
         tempiv.setBackgroundColor(Color.WHITE);
         tempiv.setLayoutParams(rlp);
         rl1.addView(tempiv);
+
+    }
+    int loadSetting(int i){
+        fileStorage fs = new fileStorage();
+        fs.createFile("setting");
+        fs.setContinueWrite(false);
+        String s= fs.readFile("setting");
+        if(s==null)return 60*1000;
+        return Integer.parseInt(s.split("\r\n")[i])*1000;
+    }
+    void initView(){
+        startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+
+        ID=getIntent().getStringExtra("ID");
+
+        //initialize
+        result = new int[2];
+        rl1 = (RelativeLayout) findViewById(R.id.rl1);
+        btn = new Button[10];
+        tv =new TextView[3];
+        for(int i=0;i<3;i++){
+            tv[i] =  (TextView)findViewById(getResources().getIdentifier("tv" + (i + 1), "id", getPackageName()));
+        }
+        tv[0].setText("限時時間內找出數字:");
+
+        //get layout size
+        viewSize = new int[2];
+        viewSize[0]=getViewSize()[0];
+        viewSize[1]=getViewSize()[1];
 
     }
     private Runnable startCountdowntimer = new Runnable() {

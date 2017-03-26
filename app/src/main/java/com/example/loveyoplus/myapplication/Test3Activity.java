@@ -10,6 +10,7 @@ import android.media.Image;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -25,6 +26,8 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
+import com.neurosky.thinkgear.*;
+import android.bluetooth.BluetoothAdapter;
 
 /**
  * Created by loveyoplus on 2017/2/16.
@@ -47,9 +50,13 @@ public class Test3Activity extends AppCompatActivity {
      int QUESTIONNUM=10;
     int destroyRunnable=0;
     int restQuestionNum;
+
+    TGDevice tgDevice;
+    BluetoothAdapter btAdapter;
     String ID="";
     String startDateandTime;
     String question[]={"0","1","2","3","4","5","6","7","8","9"};
+    listProcess dataList;
 
 
 
@@ -61,7 +68,7 @@ public class Test3Activity extends AppCompatActivity {
         getSupportActionBar().hide(); //隱藏標題
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-
+        dataList = new listProcess();
         startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         ID=getIntent().getStringExtra("ID");
 
@@ -90,19 +97,20 @@ public class Test3Activity extends AppCompatActivity {
 
 
         answer = new String[QUESTIONNUM];
-        answer[0]="3451,0,776,356;2693,1840,200,200;1996,1836,676,672;3981,2028,364,840;0,1772,400,600";
-        answer[1]="422,1058,181,262;2552,877,181,277;3350,901,173,439;0,0,1197,601;1870,1699,397,765";
-        answer[2]="651,1814,167,267;2115,1667,225,199;1171,1741,143,97;2977,1843,625,763;0,2655,361,457";
-        answer[3]="1035,1881,431,609;2415,1993,129,243;415,1201,1525,437;2103,973,621,757;4189,0,865,297";
-        answer[4]="1077,1137,269,311;733,1231,133,121;3094,1843,297,303;3420,1585,307,291;0,2457,1285,837";
-        answer[5]="431,317,599,307;2406,1749,305,531;2838,1585,123,769;4289,1427,115,711;4633,1107,239,265";
-        answer[6]="2313,287,341,189;0,0,1549,765;0,2591,833,321;2903,2149,161,265;2775,2905,713,565";
-        answer[7]="1221,1797,755,353;125,2897,525,223;4197,2893,177,417;3225,665,1593,393;3773,2231,163,257";
-        answer[8]="1933,431,249,717;3052,1853,205,319;3020,2705,675,311;3776,323,249,267;4303,387,141,769";
-        answer[9]="1641,1279,179,255;1783,583,1301,425;2981,1111,111,637;3318,2243,215,477;3583,1473,533,1653";
+        answer[0]="0,1809,233,409;1993,1933,673,525;3553,0,625,293;2677,1853,189,177;3817,1985,505,809";
+        answer[1]="0,213,1165,653;357,1033,273,313;2533,853,221,321;3325,877,229,489;1845,1657,465,837";
+        answer[2]="2093,1641,273,257;0,2609,393,533;625,1777,213,325;1153,1721,181,133;2953,1813,681,809";
+        answer[3]="4153,0,989,329;393,1177,1569,493;2081,945,669,825;1013,1857,473,661;2235,1878,553,553";
+        answer[4]="0,2429,1325,969;713,1209,177,157;1057,1113,321,361;3073,1817,325,349;3405,1565,341,325";
+        answer[5]="2813,1549,177,817;4605,1077,297,317;413,293,657,353;2385,1721,353,577;4261,1401,177,765";
+        answer[6]="0,117,1593,813;2293,265,381,229;2885,2125,201,305;2745,2869,765,417;0,2565,857,369";
+        answer[7]="1197,1773,817,393;3205,645,1633,437;105,2873,577,273;3749,2205,213,301;4173,2865,229,405";
+        answer[8]="3033,1829,245,365;2997,2681,729,357;4281,361,189,813;1913,409,301,753;3753,305,293,301";
+        answer[9]="1765,561,1349,461;2957,1085,173,685;1621,1257,217,305;3561,1453,581,1689;3297,2221,249,517";
 
 
         GAMETIME=loadSetting(3);
+        blutoothSetting();
         mHandler = new Handler();
         mHandler.post(startCountdowntimer);
         RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
@@ -120,11 +128,90 @@ public class Test3Activity extends AppCompatActivity {
 
 
     }
+    void blutoothSetting(){
+        btAdapter = BluetoothAdapter.getDefaultAdapter();
+
+        if(btAdapter != null) {
+
+            tgDevice = new TGDevice(btAdapter, handler);
+
+            Log.v("HelloEEG", "CREATED TGDevice");
+        }
+        tgDevice.connect(true);
+
+        tgDevice.start();
+    }
+    private Handler handler = new Handler() {
+
+
+        @Override
+        public void handleMessage(Message msg) {
+
+            Log.v("HelloEEG", "Handler started");
+            switch (msg.what) {
+                case TGDevice.MSG_STATE_CHANGE:
+                    switch (msg.arg1) {
+                        case TGDevice.STATE_IDLE:
+                            Log.v("HelloEEG", "IDLE STATE");
+
+                            break;
+                        case TGDevice.STATE_CONNECTING:
+                            Log.v("HelloEEG", "CONNECTING...");
+
+                            break;
+                        case TGDevice.STATE_CONNECTED:
+                            Log.v("HelloEEG", "CONNECTED");
+                            tgDevice.start();
+                            break;
+                        case TGDevice.STATE_DISCONNECTED:
+                            Log.v("HelloEEG", "DISCONNECTED");
+
+                            break;
+                        case TGDevice.STATE_NOT_FOUND:
+                            Log.v("HelloEEG", "STATE NOT FOUND");
+                            break;
+                        case TGDevice.STATE_NOT_PAIRED:
+                            Log.v("HelloEEG", "STATE NOT PAIRED");
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case TGDevice.MSG_POOR_SIGNAL:
+
+                    //data.setText("Signal: " + String.valueOf(msg.arg1));
+                    break;
+                /*case TGDevice.MSG_ATTENTION:
+                    Log.v("HelloEEG", "Attention: " + msg.arg1);
+                    dataAttention.setText("Attention: " + String.valueOf(msg.arg1));
+                    break;
+                case TGDevice.MSG_MEDITATION:
+                    Log.v("HelloEEG", "Meditation: " + msg.arg1);
+                    dataMeditation.setText("Meditation: " + String.valueOf(msg.arg1));
+                case TGDevice.MSG_RAW_DATA:
+                    //int rawValue = msg.arg1;
+
+
+                    break;*/
+
+                case TGDevice.MSG_EEG_POWER:
+                    TGEegPower ep = (TGEegPower)msg.obj;
+                    Log.d("HelloEEG", "Delta: " + ep.delta);
+                    dataList.addArray(ep.delta+"",ep.theta+"",ep.lowAlpha+"",ep.highAlpha+"",ep.lowBeta+"",ep.highBeta+"",ep.lowGamma+"",ep.midGamma+"");
+                    Log.v("HelloEEG", "PoorSignal: " + msg.arg1);
+
+                    //data.setText("Signal: " + ep.delta);
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
     int loadSetting(int i){
         fileStorage fs = new fileStorage();
         fs.createFile("setting");
         fs.setContinueWrite(false);
-        String s= fs.readFile("setting");
+        String s= fs.readFile();
         if(s==null)return 60*1000;
         return Integer.parseInt(s.split("\r\n")[i])*1000;
     }
@@ -174,13 +261,15 @@ public class Test3Activity extends AppCompatActivity {
                     Random random = new Random();
                     int selected= random.nextInt(QUESTIONNUM);
 
-                    question[selected]=question[QUESTIONNUM-1];
-
-                    //binListener 每題有五個答案
                     for(int setId= 0;setId<5;setId++) {
                         //bind the first question
                         bindListener(Integer.parseInt(question[selected]),setId);
                     }
+                    String temp = question[selected];
+                    question[selected]=question[QUESTIONNUM-1];
+                    question[QUESTIONNUM-1]=temp;
+                    //binListener 每題有五個答案
+                    QUESTIONNUM--;
                     mHandler.post(countdowntimer);
 
                 }
@@ -210,9 +299,15 @@ public class Test3Activity extends AppCompatActivity {
                     //Log.e("answerXD:",sTemp);
                     if(destroyRunnable==0) {
                         fileStorage fs = new fileStorage();
-                        String endDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-                        String content = "test3:\r\n"+startDateandTime+";"+endDateandTime+";true:"+result[1]+";false:"+result[0]+"\r\n";
+
+                        //String endDateandTime = new SimpleDateFormat("yyyy-MM-dd,HH:mm:ss").format(new Date());
+                        dataList.setInitial(ID.split("_")[0],startDateandTime,"3",(GAMETIME/1000)+"",result[1]+"",result[0]+"","0","0");
+                        String content = dataList.printAll();
+                        Log.e("printAll",content);
                         fs.writeFile(ID,content);
+
+
+                        tgDevice.close();
                         Intent intent = new Intent();
                         Bundle bundle = new Bundle();
                         bundle.putString("ID",ID);
@@ -286,15 +381,17 @@ public class Test3Activity extends AppCompatActivity {
                 if(restQuestionNum==0){
 
 
-                    QUESTIONNUM--;
+
                     //若是最後一題
                     if(0==QUESTIONNUM){
                         //跳下個測驗
                         fileStorage fs = new fileStorage();
-                        String endDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-                        String content = "test3:\r\n"+startDateandTime+";"+endDateandTime+";true:"+result[1]+";false:"+result[0]+"\r\n";
+                        dataList.setInitial(ID.split("_")[0],startDateandTime,"3",(GAMETIME/1000)+"",result[1]+"",result[0]+"","0","0");
+                        String content = dataList.printAll();
+                        Log.e("printAll",content);
                         fs.writeFile(ID,content);
-
+                        tgDevice.close();
+                        destroyRunnable=1;
                         Intent intent = new Intent();
                         Bundle bundle = new Bundle();
                         bundle.putString("ID",ID);
@@ -311,15 +408,19 @@ public class Test3Activity extends AppCompatActivity {
                         String temp;
                         Random random = new Random();
                         int selected= random.nextInt(QUESTIONNUM);
-                        temp=question[selected];
-
-                        question[selected]=question[QUESTIONNUM-1];
-
+                        restQuestionNum=5;
                         //binListener 每題有五個答案
                         for(int setId= 0;setId<5;setId++) {
                             //bind the first question
                             bindListener(Integer.parseInt(question[selected]),setId);
                         }
+                        temp=question[selected];
+
+                        question[selected]=question[QUESTIONNUM-1];
+                        question[QUESTIONNUM-1]=temp;
+
+                        QUESTIONNUM--;
+
                     }
 
 

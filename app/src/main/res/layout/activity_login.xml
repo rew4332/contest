@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/llStart"
     android:layout_width="match_parent"
@@ -8,63 +9,95 @@
     tools:context="com.example.loveyoplus.myapplication.MainActivity">
 
 
-    <TextView
-        android:id="@+id/tvStart"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
-        android:text="本測驗共有10個項目，分為下列幾項:\n集中性注意力：指受測者對特殊的視覺、聽覺或觸覺刺激產生反應的直接注意力。\n持續性注意力：指受測者在連續或者重複的測驗中，有能力可以維持一致的注意力反應。\n選擇性注意力：指受測者在面對干擾物或競爭刺激下，維持行為或認知設定的能力。\n交替性注意力：指受測者可以轉換其注意目標，並且擁有在不同認知需求之任務間移動的心智彈性能力。\n分配性注意力：指受測者可以同時針對多重任務產生適當反應的能力。\n測驗前皆有測驗說明\n按下開始即測驗開始"
-        android:textSize="30sp" />
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="0sp"
         android:layout_weight="1">
 
-        <TextView
-            android:text="學號"
-            android:layout_width="0sp"
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/textView3"
-            android:layout_weight="1"
-            android:gravity="center_vertical|center_horizontal"
-            android:textSize="30sp" />
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/titleicon" />
 
-        <EditText
-            android:layout_width="0sp"
-            android:layout_height="match_parent"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/etId"
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="50sp"
+            android:layout_marginRight="50sp"
+            android:layout_weight="2"
+            android:gravity="bottom"
+            android:text="\n請輸入學號以便儲存個人資料"
+            android:textSize="@dimen/description2_font_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="3"
-            android:textSize="30sp"
-            android:contentDescription="請輸入學號" />
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etId"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp"
+                android:layout_weight="3"
+                android:contentDescription="請輸入學號"
+                android:ems="10"
+                android:imeActionLabel="Done"
+                android:hint="Student ID"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/title_font_size" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="0sp"
-        android:layout_weight="4">
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-        <Button
-            android:text="登\t\t\t入"
+        <TextView
+            android:id="@+id/textView5"
             android:layout_width="match_parent"
-            android:layout_height="0sp"
-            android:layout_marginTop="50sp"
-            android:layout_weight="1"
-            android:id="@+id/btnEnd"
-            android:textSize="30sp"
-            android:textAlignment="center"
-            android:background="@android:color/holo_orange_light" />
+            android:layout_height="0dp"
+            android:layout_weight="1" />
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_weight="3"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="0sp"></LinearLayout>
+            android:layout_height="0px"
+            android:layout_marginBottom="100sp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnEnd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp"
+                android:background="@drawable/button"
+                android:text="Login"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/title_font_size" />
+        </RelativeLayout>
 
     </LinearLayout>
 

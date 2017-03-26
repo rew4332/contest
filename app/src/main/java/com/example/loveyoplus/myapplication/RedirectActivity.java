@@ -1,25 +1,47 @@
 package com.example.loveyoplus.myapplication;
 
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.PagerTabStrip;
+import android.support.v4.view.PagerTitleStrip;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 /**
  * Created by loveyoplus on 2017/3/14.
  */
 
-public class RedirectActivity extends AppCompatActivity {
+public class RedirectActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener {
     String ID;
     String description[][];
     String ActivityName;
     TextView tvDes1,tvDes2;
     Button btn;
+    PagerTabStrip pagerTabStrip;
+    int[] mResources ;
+    private int[] tab={
+            R.drawable.focus_tab,
+            R.drawable.unfocus_tab
+    };
+    private ImageView[] tips;
+    private ImageView[] mImageViews;
+    PagerAdapter mCustomPagerAdapter;
+    ViewPager mViewPager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,9 +56,9 @@ public class RedirectActivity extends AppCompatActivity {
         Log.e("ActivityName",ActivityName);
 
         initView();
-        initDescription();
-        showDescription(ActivityName);
-
+        //initDescription();
+        //showDescription(ActivityName);
+        initImageView(ActivityName);
 
 
 
@@ -47,6 +69,164 @@ public class RedirectActivity extends AppCompatActivity {
 
 
     }
+    void initImageView(String Name) {
+        switch (Name) {
+            case "MainActivity":
+                for (int i = 0; i > -1; i++) {
+                    if (getResources().getIdentifier("t1_" + (i + 1) + "d", "drawable", getPackageName()) == 0) {
+                        mResources = new int[i];
+                        for (int j = 0; j < i ; j++)
+                            mResources[j] = getResources().getIdentifier("t1_" + (j + 1) + "d", "drawable", getPackageName());
+                        break;
+                    }
+                }
+                break;
+            case "Test1Activity":
+                for (int i = 0; i > -1; i++) {
+                    if (getResources().getIdentifier("t2_" + (i + 1) + "d", "drawable", getPackageName()) == 0) {
+                        mResources = new int[i ];
+                        for (int j = 0; j < i ; j++)
+                            mResources[j] = getResources().getIdentifier("t2_" + (j + 1) + "d", "drawable", getPackageName());
+                        break;
+                    }
+                }
+
+                break;
+            case "Test2Activity":
+                for (int i = 0; i > -1; i++) {
+                    if (getResources().getIdentifier("t3_" + (i + 1) + "d", "drawable", getPackageName()) == 0) {
+                        mResources = new int[i ];
+                        for (int j = 0; j < i ; j++)
+                            mResources[j] = getResources().getIdentifier("t3_" + (j + 1) + "d", "drawable", getPackageName());
+                        break;
+                    }
+                }
+
+                break;
+            case "Test3Activity":
+                for (int i = 0; i > -1; i++) {
+                    if (getResources().getIdentifier("t4_" + (i + 1) + "d", "drawable", getPackageName()) == 0) {
+                        mResources = new int[i ];
+                        for (int j = 0; j < i ; j++)
+                            mResources[j] = getResources().getIdentifier("t4_" + (j + 1) + "d", "drawable", getPackageName());
+                        break;
+                    }
+                }
+
+                break;
+            case "Test4Activity":
+                for (int i = 0; i > -1; i++) {
+                    if (getResources().getIdentifier("t5_" + (i + 1) + "d", "drawable", getPackageName()) == 0) {
+                        mResources = new int[i ];
+                        for (int j = 0; j < i ; j++)
+                            mResources[j] = getResources().getIdentifier("t5_" + (j + 1) + "d", "drawable", getPackageName());
+                        break;
+                    }
+                }
+
+                break;
+            case "Test5Activity":
+                for (int i = 0; i > -1; i++) {
+                    if (getResources().getIdentifier("t6_" + (i + 1) + "d", "drawable", getPackageName()) == 0) {
+                        mResources = new int[i ];
+                        for (int j = 0; j < i ; j++)
+                            mResources[j] = getResources().getIdentifier("t6_" + (j + 1) + "d", "drawable", getPackageName());
+                        break;
+                    }
+                }
+
+                break;
+            case "Test6Activity":
+                for (int i = 0; i > -1; i++) {
+                    if (getResources().getIdentifier("t7_" + (i + 1) + "d", "drawable", getPackageName()) == 0) {
+                        mResources = new int[i ];
+                        for (int j = 0; j < i ; j++)
+                            mResources[j] = getResources().getIdentifier("t7_" + (j + 1) + "d", "drawable", getPackageName());
+                        break;
+                    }
+                }
+
+                break;
+            case "Test7Activity":
+                for (int i = 0; i > -1; i++) {
+                    if (getResources().getIdentifier("t8_" + (i + 1) + "d", "drawable", getPackageName()) == 0) {
+                        mResources = new int[i ];
+                        for (int j = 0; j < i ; j++)
+                            mResources[j] = getResources().getIdentifier("t8_" + (j + 1) + "d", "drawable", getPackageName());
+                        break;
+                    }
+                }
+
+                break;
+            case "Test8Activity":
+                for (int i = 0; i > -1; i++) {
+                    if (getResources().getIdentifier("t9_" + (i + 1) + "d", "drawable", getPackageName()) == 0) {
+                        mResources = new int[i ];
+                        for (int j = 0; j < i ; j++)
+                            mResources[j] = getResources().getIdentifier("t9_" + (j + 1) + "d", "drawable", getPackageName());
+                        break;
+                    }
+                }
+
+                break;
+            case "Test9Activity":
+                for (int i = 0; i > -1; i++) {
+                    if (getResources().getIdentifier("t10_" + (i + 1) + "d", "drawable", getPackageName()) == 0) {
+                        mResources = new int[i ];
+                        for (int j = 0; j < i ; j++)
+                            mResources[j] = getResources().getIdentifier("t10_" + (j + 1) + "d", "drawable", getPackageName());
+                        break;
+                    }
+                }
+
+                break;
+        }
+        LinearLayout group = (LinearLayout) findViewById(R.id.viewGroup);
+
+        tips = new ImageView[mResources.length];
+
+        for (int i = 0; i < tips.length; i++) {
+
+            ImageView imageView = new ImageView(this);
+
+            LinearLayout.LayoutParams llp= new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT);
+
+            llp.width=15;
+            llp.setMargins(20,0,20,0);
+
+
+            imageView.setLayoutParams(llp);
+            imageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+
+
+            tips[i] = imageView;
+
+            if (i == 0) {
+
+                tips[i].setBackgroundResource(R.drawable.focus_tab);
+
+            } else {
+
+                tips[i].setBackgroundResource(R.drawable.unfocus_tab);
+
+            }
+
+            group.addView(tips[i]);
+        }
+
+        mCustomPagerAdapter = new CustomPagerAdapter(this);
+
+        mViewPager = (ViewPager) findViewById(R.id.pager);
+        mViewPager.setAdapter(mCustomPagerAdapter);
+        mViewPager.setOnPageChangeListener(RedirectActivity.this);
+        //设置Adapter
+
+
+
+
+    }
+
+
     void redirect(String Name){
         Intent intent = new Intent();
         intent.putExtra("ID",ID);
@@ -153,8 +333,8 @@ public class RedirectActivity extends AppCompatActivity {
 
     }
     void initView(){
-        tvDes1 = (TextView)findViewById(R.id.tvDes1);
-        tvDes2 = (TextView)findViewById(R.id.tvDes2);
+        //tvDes1 = (TextView)findViewById(R.id.tvDes1);
+        //tvDes2 = (TextView)findViewById(R.id.tvDes2);
         btn = (Button)findViewById(R.id.btnNext);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -162,6 +342,77 @@ public class RedirectActivity extends AppCompatActivity {
                 redirect(ActivityName);
             }
         });
+
+
+
+
+        //pagerTabStrip.setTextColor(Color.parseColor("#3D3D3D"));
+
+
+    }
+
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+    }
+
+    @Override
+    public void onPageSelected(int position) {
+
+        for(int i=0;i< tips.length;i++){
+            tips[i].setBackgroundResource(R.drawable.unfocus_tab);
+        }
+        tips[position].setBackgroundResource(R.drawable.focus_tab);
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
+
+    }
+
+    class CustomPagerAdapter extends PagerAdapter {
+
+        Context mContext;
+        LayoutInflater mLayoutInflater;
+
+        public CustomPagerAdapter(Context context) {
+            mContext = context;
+            mLayoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+        }
+
+        @Override
+        public int getCount() {
+            return mResources.length;
+        }
+
+        @Override
+        public boolean isViewFromObject(View view, Object object) {
+            return view == ((LinearLayout) object);
+        }
+
+        @Override
+        public Object instantiateItem(ViewGroup container, int position) {
+            View itemView = mLayoutInflater.inflate(R.layout.pager_item, container, false);
+
+            ImageView imageView = (ImageView) itemView.findViewById(R.id.imageView);
+            imageView.setImageResource(mResources[position]);
+            container.addView(itemView);
+
+            return itemView;
+        }
+
+        @Override
+        public void destroyItem(ViewGroup container, int position, Object object) {
+            container.removeView((LinearLayout) object);
+        }
+    /*
+        @Override
+        public CharSequence getPageTitle(int position) {
+
+
+            return ""+mTextResources[position];
+        }*/
     }
     void initDescription(){
         description = new String[10][2];

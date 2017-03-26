@@ -2,13 +2,31 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\Users\loveyoplus\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.1\support-annotations-25.1.1.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\loveyoplus\.android\build-cache\b3a30bafdbc0154d07fec28e5e05d1b42001f21a\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.1_b3dbd2869bccc2a31fc12d4c8032424ecabbc9d9\classes.dex" />
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\classes_30f7bfb50483990c4bf3db35527698f5c415628e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\libs\ThinkGear.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b4f0f0a355dcc5315e5bef25b775beaa52b2d208">
+        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\ThinkGear_26a4a1a5ceca646449dc4ce0ef36e9d4972da770.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\loveyoplus\.android\build-cache\7717cbab234d311d74c6ebdd9acbaeb45c0a07d0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\classes_3bd4ec8fdcbe9bf61072b1fb2310b8394c5b42d0.jar" />
     </item>
     <item
         is-multidex="false"
@@ -20,15 +38,6 @@
         <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.0-beta5_3475c33b50fcef8fb34f6e9a3e8524e900c4c0ec.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\loveyoplus\.android\build-cache\3729943e808601db11a18f312c202c2e3dec7d1c\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3c682dd126be263a0af3d98caab6de496d3d72a1\classes.dex" />
-    </item>
-    <item
         is-multidex="false"
         jar="C:\Users\loveyoplus\.android\build-cache\b5d685a4fd7dbb9d9ec2816aa0eff347b922420e\output\jars\classes.jar"
         jumboMode="false"
@@ -38,67 +47,49 @@
         <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\classes_cf72666148a66070240fdce0e42e7110a46188ce.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\loveyoplus\.android\build-cache\e53a31759b56e2868a080c381af1af7a597838dd\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_efb9dc9b36b6109ba1c3e75d9241fcfadf761fac\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\loveyoplus\.android\build-cache\b5d685a4fd7dbb9d9ec2816aa0eff347b922420e\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cf72666148a66070240fdce0e42e7110a46188ce\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\loveyoplus\.android\build-cache\7c4a412db7ccbe0c1d7021ac7cda6ae2ba02d575\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a75f3527e567b01a2c6bc27d87284babf7e26900\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\loveyoplus\.android\build-cache\b89ca0f9ab575b155fa150e8be1972801487adfe\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_642b69b9a64a002815a4c19642f0f10bac174dfc\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\loveyoplus\.android\build-cache\5d7f1da6a7470b0c81445a3fe4d36193549d59e7\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f472516810d096e2335bdf89c2d51243711253ec\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_d718929270f01706bca359ef46b547ad8a10d979\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\loveyoplus\.android\build-cache\7dd6bae42eb3ac337c5d8a56efd83230a0f8b5e7\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\loveyoplus\.android\build-cache\a4067a420cf2c3f157128a0f8fec1c8ed6f697b4\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a5356dedb40c5189955d70f5ae1baafb6d9cf1ff\classes.dex" />
+        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\classes_528473873760efebe6ce38de40e346280398dd43.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\loveyoplus\.android\build-cache\1cb79d3308814e9da6c92e53351988156fa1c5dc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\classes_a76da33b3f33f4dbcfcdf64cb74f9cf87c3e7647.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\loveyoplus\.android\build-cache\1e1abf7387f850b8b05ac05d0b374340ebd7c116\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
+        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\classes_e79b27c6026c321217325fa04c417d29be9cd45f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\loveyoplus\.android\build-cache\6ad506aff5935009e987f2e56e0b80674fc933b5\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\classes_371773ecf064c6c0d6e458f9ddcba3c36dd63997.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\loveyoplus\.android\build-cache\db2bf6512e07a012bdbd03d1d25c2347f4271c65\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\classes_43f07e3525fe6f381b52339075f44e4efadfb3d8.jar" />
     </item>
     <item
         is-multidex="false"
@@ -119,40 +110,13 @@
         <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\classes_bb4a13a62e02e460f9c1d8e4a64d2c859e8e7700.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\loveyoplus\.android\build-cache\0ae53ae9f2efa82b847cc47954f33e04eaad520c\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_94fff236899cedd2382e4ac7828472374392e358\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\loveyoplus\.android\build-cache\c9e8718123ba3b476d7d05cc64d7ac2525cc9dd0\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\loveyoplus\.android\build-cache\71bec2a85f906f77d22df8bdf8d68618bbb7285e\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_19a841c7cbb82ba3b3cf322d0fb67e8bf48e30b6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\loveyoplus\.android\build-cache\88b99b803435e3425476545b2bd9ceb9ac3acff7\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bb4a13a62e02e460f9c1d8e4a64d2c859e8e7700\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\loveyoplus\.android\build-cache\ef225f5a002253356267893b57d838bd904676fd\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5298461f6e3724c774e907face4080c7b8f85c9d\classes.dex" />
+        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\classes_f2858af323b4018ac61dbbeaa2baae902b78052f.jar" />
     </item>
     <item
         is-multidex="false"
@@ -164,40 +128,13 @@
         <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\classes_d4c96fd2648078acfbf94dc6b415fa02d842ccad.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\loveyoplus\.android\build-cache\ea3b40a66586f1fc1bc78544ea801d57286e5316\output\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\loveyoplus\.android\build-cache\495425295eadda42ce602e13b60d3897b762f3c9\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="dce0f3de11781e1ee758cba483871b598c9d4931">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d4c96fd2648078acfbf94dc6b415fa02d842ccad\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\loveyoplus\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-beta5\constraint-layout-solver-1.0.0-beta5.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ff0dad5e4fc720f478ce8b5f6edf76a932d9b886">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.0-beta5_3475c33b50fcef8fb34f6e9a3e8524e900c4c0ec\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2bb13407d1ef8bebca60c8013927a8d9c4f99fca">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_a7b397bc22755abc088fa873966a933854d7bad8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\loveyoplus\.android\build-cache\1a8a3eeabc22eaf0fe2cfa91dc423c3a4768653d\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e3ac3f10370d4f1a72b48c4fcf623c41c8ae5749\classes.dex" />
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\classes_a2da49c58b5dcf0d817dcb69d7637cc30dee230b.jar" />
     </item>
 
 </items>

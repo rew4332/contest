@@ -1,11 +1,13 @@
 package com.example.loveyoplus.myapplication;
 
+import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.os.CountDownTimer;
+import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
@@ -22,9 +24,11 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Random;
 import android.os.Handler;
+import com.neurosky.thinkgear.*;
 
 import static android.R.attr.strokeColor;
 import static android.R.attr.strokeWidth;
@@ -43,6 +47,10 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
     private Handler mHandler;
     String ID="";
     String startDateandTime;
+    TGDevice tgDevice;
+    BluetoothAdapter btAdapter;
+    Boolean brainWave = false;
+    listProcess dataList;
 
 
     @Override
@@ -58,9 +66,10 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
         initView();
         GAMETIME=loadSetting(1);
 
-
+        blutoothSetting();
         mHandler = new Handler();
         //mHandler.post(countdowntimer);
+
         mHandler.post(startCountdowntimer);
         RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
         ImageView tempiv =  new ImageView(Test1Activity.this);
@@ -70,18 +79,104 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
         rl1.addView(tempiv);
 
     }
+    void blutoothSetting(){
+        btAdapter = BluetoothAdapter.getDefaultAdapter();
+
+        if(btAdapter != null) {
+
+            tgDevice = new TGDevice(btAdapter, handler);
+
+            Log.v("HelloEEG", "CREATED TGDevice");
+        }
+        tgDevice.connect(true);
+        tgDevice.start();
+    }
+    private Handler handler = new Handler() {
+
+
+        @Override
+        public void handleMessage(Message msg) {
+
+            Log.v("HelloEEG", "Handler started");
+            switch (msg.what) {
+                case TGDevice.MSG_STATE_CHANGE:
+                    switch (msg.arg1) {
+                        case TGDevice.STATE_IDLE:
+                            Log.v("HelloEEG", "IDLE STATE");
+
+                            break;
+                        case TGDevice.STATE_CONNECTING:
+                            Log.v("HelloEEG", "CONNECTING...");
+
+                            break;
+                        case TGDevice.STATE_CONNECTED:
+                            Log.v("HelloEEG", "CONNECTED");
+                            brainWave = true;
+                            tgDevice.start();
+                            break;
+                        case TGDevice.STATE_DISCONNECTED:
+                            Log.v("HelloEEG", "DISCONNECTED");
+
+                            break;
+                        case TGDevice.STATE_NOT_FOUND:
+                            Log.v("HelloEEG", "STATE NOT FOUND");
+                            break;
+                        case TGDevice.STATE_NOT_PAIRED:
+                            Log.v("HelloEEG", "STATE NOT PAIRED");
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case TGDevice.MSG_POOR_SIGNAL:
+
+                    //data.setText("Signal: " + String.valueOf(msg.arg1));
+                    break;
+                /*case TGDevice.MSG_ATTENTION:
+                    Log.v("HelloEEG", "Attention: " + msg.arg1);
+                    dataAttention.setText("Attention: " + String.valueOf(msg.arg1));
+                    break;
+                case TGDevice.MSG_MEDITATION:
+                    Log.v("HelloEEG", "Meditation: " + msg.arg1);
+                    dataMeditation.setText("Meditation: " + String.valueOf(msg.arg1));
+                case TGDevice.MSG_RAW_DATA:
+                    //int rawValue = msg.arg1;
+
+
+                    break;*/
+
+                case TGDevice.MSG_EEG_POWER:
+                    TGEegPower ep = (TGEegPower)msg.obj;
+                    Log.d("HelloEEG", "Delta: " + ep.delta);
+                    //fileStorage fs = new fileStorage();
+                    dataList.addArray(ep.delta+"",ep.theta+"",ep.lowAlpha+"",ep.highAlpha+"",ep.lowBeta+"",ep.highBeta+"",ep.lowGamma+"",ep.midGamma+"");
+
+                    //fs.writeFile(ID,content);
+                    Log.v("HelloEEG", "PoorSignal: " + msg.arg1);
+
+                    //data.setText("Signal: " + ep.delta);
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
+
+
+
     int loadSetting(int i){
         fileStorage fs = new fileStorage();
         fs.createFile("setting");
         fs.setContinueWrite(false);
-        String s= fs.readFile("setting");
+        String s= fs.readFile();
         if(s==null)return 60*1000;
         return Integer.parseInt(s.split("\r\n")[i])*1000;
     }
     void initView(){
-        startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-
+        dataList = new listProcess();
+        startDateandTime = new SimpleDateFormat("yyyy-MM-dd,HH:mm:ss").format(new Date());
         ID=getIntent().getStringExtra("ID");
+
 
         //initialize
         result = new int[2];
@@ -97,6 +192,8 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
         viewSize = new int[2];
         viewSize[0]=getViewSize()[0];
         viewSize[1]=getViewSize()[1];
+
+
 
     }
     private Runnable startCountdowntimer = new Runnable() {
@@ -171,13 +268,19 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
                 public void onFinish() {
                     tv[2].setText("倒數時間:結束");
                     disableBtn();
+
+
                     fileStorage fs = new fileStorage();
 
-                    String endDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-                    String content = "test1:\r\n"+startDateandTime+";"+endDateandTime+";true:"+result[1]+";false:"+result[0]+"\r\n";
+                    //String endDateandTime = new SimpleDateFormat("yyyy-MM-dd,HH:mm:ss").format(new Date());
+                    //String content = "{\"timestamp\":"+startDateandTime+",\"ques_id\":"+1+",\"ques_time:\""+GAMETIME+",\"do_right\":"+result[1]+",\"do_wrong\":"+result[0]+"}\r\n";
+                    dataList.setInitial(ID.split("_")[0],startDateandTime,"1",(GAMETIME/1000)+"",result[1]+"",result[0]+"","0","0");
+                    String content = dataList.printAll();
+                    Log.e("printAll",content);
                     fs.writeFile(ID,content);
 
-
+                    //fs.readFile2Map();
+                    tgDevice.close();
 
                     Intent intent = new Intent();
                     Bundle bundle = new Bundle();
@@ -280,7 +383,8 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
         DisplayMetrics displayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
 
-
+        Log.e("screenWidth",displayMetrics.widthPixels+"");
+        Log.e("screenHeight",displayMetrics.heightPixels+"");
         int width =(displayMetrics.widthPixels);// rl1.getMeasuredWidth();
         int height = 2*displayMetrics.heightPixels/3;//rl1.getMeasuredHeight();
         int[] viewSize={width,height};

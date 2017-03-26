@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <LinearLayout
@@ -10,18 +11,31 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0sp"
-            android:layout_weight="1"
-            android:orientation="vertical">
+            android:layout_marginLeft="50sp"
+            android:layout_marginRight="50sp"
+            android:layout_marginTop="50sp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:weightSum="1">
 
             <TextView
                 android:id="@+id/tvTitle"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
                 android:gravity="center_horizontal"
                 android:text="測驗說明"
                 android:textSize="@dimen/title_font_size" />
 
-            <TextView
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="0.9">
+
+            </android.support.v4.view.ViewPager>
+
+            <!--      <TextView
                 android:id="@+id/tvDes1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -32,36 +46,66 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:textSize="@dimen/description2_font_size" />
+-->
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="0sp"
+            android:layout_weight="0.5"
             android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="15sp"
+
+                android:layout_marginTop="20sp"
+                android:layout_weight="0"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+
+                    android:id="@+id/viewGroup"
+
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+
+                    android:layout_alignParentBottom="true"
+
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="0sp"
-                android:layout_weight="4">
+                android:layout_weight="4"
+                android:orientation="vertical">
 
                 <Button
                     android:id="@+id/btnNext"
                     android:layout_width="match_parent"
                     android:layout_height="0sp"
+                    android:layout_marginBottom="50sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginRight="50sp"
                     android:layout_marginTop="50sp"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_orange_light"
+
+                    android:background="@drawable/button"
                     android:text="開\t\t\t\t始\t\t\t\t測\t\t\t\t驗"
                     android:textAlignment="center"
-                    android:textSize="30sp" />
+                    android:textColor="#FFFFFF"
 
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:layout_weight="3"
-                    android:layout_width="match_parent"
-                    android:layout_height="0sp"></LinearLayout>
+                    android:textSize="30sp" />
 
             </LinearLayout>
 

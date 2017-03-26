@@ -27,7 +27,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
-import android.os.Handler;
+import android.os.Handler;import com.neurosky.thinkgear.*;
+import android.bluetooth.BluetoothAdapter;
+import android.os.Message;
 
 /**
  * Created by loveyoplus on 2017/2/24.
@@ -48,6 +50,9 @@ public class Test5Activity extends AppCompatActivity {
     int GAMETIME=1000*5;
     String ID="";
     String startDateandTime;
+    TGDevice tgDevice;
+    BluetoothAdapter btAdapter;
+    listProcess dataList;
 
     // 計時物件
     private Runnable countdowntimer = new Runnable() {
@@ -63,9 +68,12 @@ public class Test5Activity extends AppCompatActivity {
                     tvTimer.setText("倒數時間:結束");
                     if(remainNum!=1) {
                         fileStorage fs = new fileStorage();
-                        String endDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-                        String content = "test5:\r\n"+startDateandTime+";"+endDateandTime+";true:"+result[1]+";false:"+result[0]+"\r\n";
+                        dataList.setInitial(ID.split("_")[0],startDateandTime,"5",(GAMETIME/1000)+"",result[1]+"",result[0]+"","0","0");
+                        String content = dataList.printAll();
+                        Log.e("printAll",content);
                         fs.writeFile(ID,content);
+
+                        tgDevice.close();
 
                         Intent intent = new Intent();
                         Bundle bundle = new Bundle();
@@ -81,6 +89,85 @@ public class Test5Activity extends AppCompatActivity {
         }
     };
 
+    void blutoothSetting(){
+        btAdapter = BluetoothAdapter.getDefaultAdapter();
+
+        if(btAdapter != null) {
+
+            tgDevice = new TGDevice(btAdapter, handler);
+
+            Log.v("HelloEEG", "CREATED TGDevice");
+        }
+        tgDevice.connect(true);
+
+        tgDevice.start();
+    }
+    private Handler handler = new Handler() {
+
+
+        @Override
+        public void handleMessage(Message msg) {
+
+            Log.v("HelloEEG", "Handler started");
+            switch (msg.what) {
+                case TGDevice.MSG_STATE_CHANGE:
+                    switch (msg.arg1) {
+                        case TGDevice.STATE_IDLE:
+                            Log.v("HelloEEG", "IDLE STATE");
+
+                            break;
+                        case TGDevice.STATE_CONNECTING:
+                            Log.v("HelloEEG", "CONNECTING...");
+
+                            break;
+                        case TGDevice.STATE_CONNECTED:
+                            Log.v("HelloEEG", "CONNECTED");
+                            tgDevice.start();
+                            break;
+                        case TGDevice.STATE_DISCONNECTED:
+                            Log.v("HelloEEG", "DISCONNECTED");
+
+                            break;
+                        case TGDevice.STATE_NOT_FOUND:
+                            Log.v("HelloEEG", "STATE NOT FOUND");
+                            break;
+                        case TGDevice.STATE_NOT_PAIRED:
+                            Log.v("HelloEEG", "STATE NOT PAIRED");
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case TGDevice.MSG_POOR_SIGNAL:
+
+                    //data.setText("Signal: " + String.valueOf(msg.arg1));
+                    break;
+                /*case TGDevice.MSG_ATTENTION:
+                    Log.v("HelloEEG", "Attention: " + msg.arg1);
+                    dataAttention.setText("Attention: " + String.valueOf(msg.arg1));
+                    break;
+                case TGDevice.MSG_MEDITATION:
+                    Log.v("HelloEEG", "Meditation: " + msg.arg1);
+                    dataMeditation.setText("Meditation: " + String.valueOf(msg.arg1));
+                case TGDevice.MSG_RAW_DATA:
+                    //int rawValue = msg.arg1;
+
+
+                    break;*/
+
+                case TGDevice.MSG_EEG_POWER:
+                    TGEegPower ep = (TGEegPower)msg.obj;
+                    Log.d("HelloEEG", "Delta: " + ep.delta);
+                    dataList.addArray(ep.delta+"",ep.theta+"",ep.lowAlpha+"",ep.highAlpha+"",ep.lowBeta+"",ep.highBeta+"",ep.lowGamma+"",ep.midGamma+"");
+                    Log.v("HelloEEG", "PoorSignal: " + msg.arg1);
+
+                    //data.setText("Signal: " + ep.delta);
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
 
     private final int QUESTION_NUM = 15; // 題目要求之站數
     String s="";
@@ -97,6 +184,7 @@ public class Test5Activity extends AppCompatActivity {
         startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         ID=getIntent().getStringExtra("ID");
 
+        dataList = new listProcess();
 
         stationListener    = new ImageView(this);
 
@@ -113,6 +201,7 @@ public class Test5Activity extends AppCompatActivity {
 
 
         GAMETIME =loadSetting(5);
+        blutoothSetting();
         // Timing
         mHandler = new Handler();
         mHandler.post(startCountdowntimer);
@@ -128,7 +217,7 @@ public class Test5Activity extends AppCompatActivity {
         fileStorage fs = new fileStorage();
         fs.createFile("setting");
         fs.setContinueWrite(false);
-        String s= fs.readFile("setting");
+        String s= fs.readFile();
         if(s==null)return 60*1000;
         return Integer.parseInt(s.split("\r\n")[i])*1000;
     }
@@ -527,7 +616,7 @@ public class Test5Activity extends AppCompatActivity {
 
         TextView stationNameText = new TextView(this);
         stationNameText.setText(stationName);
-        stationNameText.setTextSize(getResources().getDimension(R.dimen.q_font_size)-20);
+        stationNameText.setTextSize(getResources().getDimension(R.dimen.description2_font_size));
         stationNameText.setGravity(Gravity.CENTER | Gravity.BOTTOM);
         stationNameText.setMinimumWidth(displayMetrics.widthPixels/3);
         stationNameText.setId(100 + id);
@@ -554,7 +643,7 @@ public class Test5Activity extends AppCompatActivity {
         stationListener.setMinimumWidth(40);
         stationListener.setMinimumHeight(40);
         stationListener.setImageResource(R.drawable.dot);
-        stationListener.setAlpha(0.2f);
+        stationListener.setAlpha(0.0f);
         stationListener.setId(200 + id);
         stationListener.setX(stationPostionX*ratio - 20);
         stationListener.setY(shiftY+stationPostionY*ratio - 20);

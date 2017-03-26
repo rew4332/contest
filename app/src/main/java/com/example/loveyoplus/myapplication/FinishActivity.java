@@ -27,13 +27,13 @@ public class FinishActivity extends AppCompatActivity {
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
 
         ID=getIntent().getStringExtra("ID");
-        tv =(TextView) findViewById(R.id.tvStart);
+        //tv =(TextView) findViewById(R.id.tvStart);
 
         fileStorage fs = new fileStorage();
         fs.createDirectory();
         fs.createFile(ID);
-        fs.readFile(ID);
-        String s[] =fs.readFile(ID).toString().split("\r\n");
+        fs.readFile();
+        String s[] =fs.readFile().toString().split("\r\n");
 
 
 

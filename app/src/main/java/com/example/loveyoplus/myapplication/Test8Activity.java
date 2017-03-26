@@ -17,7 +17,9 @@ import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Random;
+import java.util.Random;import com.neurosky.thinkgear.*;
+import android.bluetooth.BluetoothAdapter;
+import android.os.Message;
 
 /**
  * Created by loveyoplus on 2017/2/20.
@@ -33,6 +35,10 @@ public class Test8Activity extends AppCompatActivity implements View.OnClickList
     int GAMETIME=1000*5;//遊戲時間
     String ID="";
     String startDateandTime;
+    TGDevice tgDevice;
+    BluetoothAdapter btAdapter;
+    listProcess dataList;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -44,6 +50,7 @@ public class Test8Activity extends AppCompatActivity implements View.OnClickList
 
         startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         ID=getIntent().getStringExtra("ID");
+        dataList = new listProcess();
 
         result = new int[2];
         tv = new TextView[3];
@@ -66,6 +73,7 @@ public class Test8Activity extends AppCompatActivity implements View.OnClickList
             tag[i] = getResources().getIdentifier("t8_"+(i+1),"drawable",getPackageName());
         }
         GAMETIME =loadSetting(8);
+        blutoothSetting();
         mHandler = new Handler();
         mHandler.post(startCountdowntimer);
         RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
@@ -75,11 +83,90 @@ public class Test8Activity extends AppCompatActivity implements View.OnClickList
         tempiv.setLayoutParams(rlp);
         rl1.addView(tempiv);
     }
+    void blutoothSetting(){
+        btAdapter = BluetoothAdapter.getDefaultAdapter();
+
+        if(btAdapter != null) {
+
+            tgDevice = new TGDevice(btAdapter, handler);
+
+            Log.v("HelloEEG", "CREATED TGDevice");
+        }
+        tgDevice.connect(true);
+
+        tgDevice.start();
+    }
+    private Handler handler = new Handler() {
+
+
+        @Override
+        public void handleMessage(Message msg) {
+
+            Log.v("HelloEEG", "Handler started");
+            switch (msg.what) {
+                case TGDevice.MSG_STATE_CHANGE:
+                    switch (msg.arg1) {
+                        case TGDevice.STATE_IDLE:
+                            Log.v("HelloEEG", "IDLE STATE");
+
+                            break;
+                        case TGDevice.STATE_CONNECTING:
+                            Log.v("HelloEEG", "CONNECTING...");
+
+                            break;
+                        case TGDevice.STATE_CONNECTED:
+                            Log.v("HelloEEG", "CONNECTED");
+                            tgDevice.start();
+                            break;
+                        case TGDevice.STATE_DISCONNECTED:
+                            Log.v("HelloEEG", "DISCONNECTED");
+
+                            break;
+                        case TGDevice.STATE_NOT_FOUND:
+                            Log.v("HelloEEG", "STATE NOT FOUND");
+                            break;
+                        case TGDevice.STATE_NOT_PAIRED:
+                            Log.v("HelloEEG", "STATE NOT PAIRED");
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case TGDevice.MSG_POOR_SIGNAL:
+
+                    //data.setText("Signal: " + String.valueOf(msg.arg1));
+                    break;
+                /*case TGDevice.MSG_ATTENTION:
+                    Log.v("HelloEEG", "Attention: " + msg.arg1);
+                    dataAttention.setText("Attention: " + String.valueOf(msg.arg1));
+                    break;
+                case TGDevice.MSG_MEDITATION:
+                    Log.v("HelloEEG", "Meditation: " + msg.arg1);
+                    dataMeditation.setText("Meditation: " + String.valueOf(msg.arg1));
+                case TGDevice.MSG_RAW_DATA:
+                    //int rawValue = msg.arg1;
+
+
+                    break;*/
+
+                case TGDevice.MSG_EEG_POWER:
+                    TGEegPower ep = (TGEegPower)msg.obj;
+                    Log.d("HelloEEG", "Delta: " + ep.delta);
+                    dataList.addArray(ep.delta+"",ep.theta+"",ep.lowAlpha+"",ep.highAlpha+"",ep.lowBeta+"",ep.highBeta+"",ep.lowGamma+"",ep.midGamma+"");
+                    Log.v("HelloEEG", "PoorSignal: " + msg.arg1);
+
+                    //data.setText("Signal: " + ep.delta);
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
     int loadSetting(int i){
         fileStorage fs = new fileStorage();
         fs.createFile("setting");
         fs.setContinueWrite(false);
-        String s= fs.readFile("setting");
+        String s= fs.readFile();
         if(s==null)return 60*1000;
         return Integer.parseInt(s.split("\r\n")[i])*1000;
     }
@@ -164,9 +251,13 @@ public class Test8Activity extends AppCompatActivity implements View.OnClickList
                     }
 
                     fileStorage fs = new fileStorage();
-                    String endDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-                    String content = "test8:\r\n"+startDateandTime+";"+endDateandTime+";true:"+result[1]+";false:"+result[0]+"\r\n";
+                    dataList.setInitial(ID.split("_")[0],startDateandTime,"8",(GAMETIME/1000)+"",result[1]+"",result[0]+"","0","0");
+                    String content = dataList.printAll();
+                    Log.e("printAll",content);
                     fs.writeFile(ID,content);
+
+
+                    tgDevice.close();
                     Intent intent = new Intent();
                     Bundle bundle = new Bundle();
                     bundle.putString("ID",ID);

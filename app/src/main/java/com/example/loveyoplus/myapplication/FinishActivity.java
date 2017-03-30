@@ -8,8 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Map;
+
 import com.example.loveyoplus.myapplication.fileStorage;
 /**
  * Created by loveyoplus on 2017/3/11.
@@ -29,11 +32,8 @@ public class FinishActivity extends AppCompatActivity {
         ID=getIntent().getStringExtra("ID");
         //tv =(TextView) findViewById(R.id.tvStart);
 
-        fileStorage fs = new fileStorage();
-        fs.createDirectory();
-        fs.createFile(ID);
-        fs.readFile();
-        String s[] =fs.readFile().toString().split("\r\n");
+
+
 
 
 

@@ -28,6 +28,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Random;
 import android.os.Handler;
+import android.widget.Toast;
+
 import com.neurosky.thinkgear.*;
 
 import static android.R.attr.strokeColor;
@@ -36,7 +38,7 @@ import static android.R.attr.strokeWidth;
 
 public class Test1Activity extends AppCompatActivity implements View.OnClickListener {
     Button[] btn;
-    TextView tv[];
+    TextView tv[],tvbluetooth;
     RelativeLayout rl1;
     LinearLayout llStart;
     int[] viewSize;//左半邊測驗區大小
@@ -51,6 +53,7 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
     BluetoothAdapter btAdapter;
     Boolean brainWave = false;
     listProcess dataList;
+    ImageView ivbrain;
 
 
     @Override
@@ -83,10 +86,15 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
         btAdapter = BluetoothAdapter.getDefaultAdapter();
 
         if(btAdapter != null) {
-
+            ivbrain.setImageResource(R.drawable.brainwave_bluetooth_on);
             tgDevice = new TGDevice(btAdapter, handler);
-
+            tvbluetooth.setText("裝置搜尋中");
             Log.v("HelloEEG", "CREATED TGDevice");
+        }
+        else{
+            ivbrain.setImageResource(R.drawable.brainwave_bluetooth_off);
+            Log.v("HelloEEG", "bluetooth off");
+            tvbluetooth.setText("未開啟藍芽");
         }
         tgDevice.connect(true);
         tgDevice.start();
@@ -107,7 +115,7 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
                             break;
                         case TGDevice.STATE_CONNECTING:
                             Log.v("HelloEEG", "CONNECTING...");
-
+                            tvbluetooth.setText("連線中");
                             break;
                         case TGDevice.STATE_CONNECTED:
                             Log.v("HelloEEG", "CONNECTED");
@@ -116,6 +124,8 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
                             break;
                         case TGDevice.STATE_DISCONNECTED:
                             Log.v("HelloEEG", "DISCONNECTED");
+                            ivbrain.setImageResource(R.drawable.brainwave_bluetooth_dis);
+                            tvbluetooth.setText("已斷線");
 
                             break;
                         case TGDevice.STATE_NOT_FOUND:
@@ -132,11 +142,11 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
 
                     //data.setText("Signal: " + String.valueOf(msg.arg1));
                     break;
-                /*case TGDevice.MSG_ATTENTION:
+                case TGDevice.MSG_ATTENTION:
                     Log.v("HelloEEG", "Attention: " + msg.arg1);
-                    dataAttention.setText("Attention: " + String.valueOf(msg.arg1));
+                    dataList.addAttention(String.valueOf(msg.arg1));
                     break;
-                case TGDevice.MSG_MEDITATION:
+                /*case TGDevice.MSG_MEDITATION:
                     Log.v("HelloEEG", "Meditation: " + msg.arg1);
                     dataMeditation.setText("Meditation: " + String.valueOf(msg.arg1));
                 case TGDevice.MSG_RAW_DATA:
@@ -148,6 +158,10 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
                 case TGDevice.MSG_EEG_POWER:
                     TGEegPower ep = (TGEegPower)msg.obj;
                     Log.d("HelloEEG", "Delta: " + ep.delta);
+                    ivbrain.setImageResource(R.drawable.bluetooth_good);
+
+
+
                     //fileStorage fs = new fileStorage();
                     dataList.addArray(ep.delta+"",ep.theta+"",ep.lowAlpha+"",ep.highAlpha+"",ep.lowBeta+"",ep.highBeta+"",ep.lowGamma+"",ep.midGamma+"");
 
@@ -176,7 +190,8 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
         dataList = new listProcess();
         startDateandTime = new SimpleDateFormat("yyyy-MM-dd,HH:mm:ss").format(new Date());
         ID=getIntent().getStringExtra("ID");
-
+        ivbrain = (ImageView)findViewById(R.id.ivblutooth);
+        tvbluetooth= (TextView)findViewById(R.id.tvbluetooth);
 
         //initialize
         result = new int[2];

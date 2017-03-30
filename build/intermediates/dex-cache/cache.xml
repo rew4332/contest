@@ -57,6 +57,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\loveyoplus\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.4.0\5b72bf48563ea8410e650de14aa33ff69a3e8c35\okio-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5b72bf48563ea8410e650de14aa33ff69a3e8c35">
+        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\okio-1.4.0_e712b74887b951019e5bc60a10ea42f47b4f0b56.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\loveyoplus\.android\build-cache\1cb79d3308814e9da6c92e53351988156fa1c5dc\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -126,6 +135,15 @@
         revision="25.0.2"
         sha1="dce0f3de11781e1ee758cba483871b598c9d4931">
         <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\classes_d4c96fd2648078acfbf94dc6b415fa02d842ccad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\loveyoplus\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp\okhttp\2.4.0\40340c0748190fe897baf7bffbc1b282734294e5\okhttp-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
+        <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\okhttp-2.4.0_3a7a9b590af93fc91ca86d31ecc8f94deef3718f.jar" />
     </item>
     <item
         is-multidex="false"

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.annotation.Nullable;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.PagerTabStrip;
@@ -21,6 +22,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by loveyoplus on 2017/3/14.
@@ -42,6 +47,7 @@ public class RedirectActivity extends AppCompatActivity implements ViewPager.OnP
     private ImageView[] mImageViews;
     PagerAdapter mCustomPagerAdapter;
     ViewPager mViewPager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,8 +86,10 @@ public class RedirectActivity extends AppCompatActivity implements ViewPager.OnP
                         break;
                     }
                 }
+
                 break;
             case "Test1Activity":
+
                 for (int i = 0; i > -1; i++) {
                     if (getResources().getIdentifier("t2_" + (i + 1) + "d", "drawable", getPackageName()) == 0) {
                         mResources = new int[i ];

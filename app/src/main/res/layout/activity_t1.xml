@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rlParent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
     tools:context="com.example.loveyoplus.myapplication.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp">
+
+        <TextView
+            android:id="@+id/tvbluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="連線狀態"
+            android:textSize="40sp" />
+
+        <ImageView
+            android:id="@+id/ivblutooth"
+            android:layout_width="100dp"
+            android:layout_height="50sp"
+            android:layout_alignParentRight="false"
+            android:layout_toLeftOf="@+id/tvbluetooth"
+            app:srcCompat="@drawable/brainwave_bluetooth_on" />
+    </RelativeLayout>
 
     <LinearLayout
         android:orientation="vertical"

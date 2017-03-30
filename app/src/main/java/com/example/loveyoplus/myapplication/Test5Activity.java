@@ -142,10 +142,11 @@ public class Test5Activity extends AppCompatActivity {
 
                     //data.setText("Signal: " + String.valueOf(msg.arg1));
                     break;
-                /*case TGDevice.MSG_ATTENTION:
+                case TGDevice.MSG_ATTENTION:
                     Log.v("HelloEEG", "Attention: " + msg.arg1);
-                    dataAttention.setText("Attention: " + String.valueOf(msg.arg1));
+                    dataList.addAttention(String.valueOf(msg.arg1));
                     break;
+                /*
                 case TGDevice.MSG_MEDITATION:
                     Log.v("HelloEEG", "Meditation: " + msg.arg1);
                     dataMeditation.setText("Meditation: " + String.valueOf(msg.arg1));

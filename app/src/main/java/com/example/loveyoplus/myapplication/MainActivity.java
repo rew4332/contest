@@ -128,6 +128,16 @@ public class MainActivity extends AppCompatActivity  {
         }
 
     }
+    void upDateList(){
+        fileStorage fs = new fileStorage();
+        if(!fs.checkfile("updateList.txt")) {
+            fs.createFile("setting");
+            fs.setContinueWrite(false);
+            String content = "60\r\n60\r\n60\r\n60\r\n60\r\n60\r\n60\r\n60\r\n60\r\n60\r\n";
+            fs.writeFile("setting", content);
+            Log.e("file","loading default setting");
+        }
+    }
 
 
 

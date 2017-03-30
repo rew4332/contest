@@ -17,6 +17,7 @@ public class listProcess {
     ArrayList<String>hbeta;
     ArrayList<String>lgam;
     ArrayList<String>mgam;
+    ArrayList<String>attention;
     String  student_id,timestamp,ques_id,ques_time,do_right,do_wrong,sound_wrong,sound_right;
 
 
@@ -29,6 +30,10 @@ public class listProcess {
         hbeta = new ArrayList<>();
         lgam = new ArrayList<>();
         mgam = new ArrayList<>();
+        attention = new ArrayList<>();
+    }
+    public void addAttention(String attention){
+        this.attention.add(attention);
     }
     public void addArray(String delta,String theta,String lalp,String halp,String lbeta,String hbeta,String lgam,String mgam){
         this.delta.add(delta);
@@ -53,13 +58,14 @@ public class listProcess {
     public String printAll(){
         Map<String, String> data = new HashMap<>();
         data.put("student_id",student_id);
-        data.put("timestamp",timestamp);
+        //data.put("timestamp",timestamp);
         data.put("ques_id",ques_id);
         data.put("ques_time",ques_time);
         data.put("do_right",do_right);
         data.put("do_wrong",do_wrong);
         data.put("sound_right",sound_right);
         data.put("sound_wrong",sound_wrong);
+
         String s="";
         for(String temp:this.delta){
             s+=temp+",";
@@ -100,6 +106,11 @@ public class listProcess {
             s+=temp+",";
         }
         data.put("mgam",s);
+        s="";
+        for(String temp:this.attention){
+            s+=temp+",";
+        }
+        data.put("attention",s);
 
         return data.toString()+"\r\n";
     }

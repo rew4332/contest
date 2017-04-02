@@ -2,37 +2,54 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvbluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:text="連線狀態"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/ivblutooth"
+        android:layout_width="100dp"
+        android:layout_height="50sp"
+        android:layout_alignParentRight="false"
+        android:layout_toLeftOf="@+id/tvbluetooth"
+        app:srcCompat="@drawable/brainwave_bluetooth_on" />
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_weight="1">
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="50sp"
+            android:layout_weight="0.5">
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <TextView
-                    android:text="標題"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
                     android:id="@+id/tv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="標題"
                     android:textSize="@dimen/title_font_size" />
 
                 <TextView
-                    android:text="計時器"
+                    android:id="@+id/tv1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tv1"
-                    android:textSize="@dimen/time_font_size"/>
+                    android:text="計時器"
+                    android:textSize="@dimen/time_font_size" />
             </TableRow>
 
         </TableLayout>
@@ -50,6 +67,7 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
+                    android:id="@+id/r2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1">

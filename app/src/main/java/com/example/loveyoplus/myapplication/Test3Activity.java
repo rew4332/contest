@@ -40,7 +40,7 @@ public class Test3Activity extends AppCompatActivity {
      */
     private Handler mHandler;
     //String sTemp="";
-    RelativeLayout r1,rl1;
+    RelativeLayout r1,rl1,r2;
     ImageView iv[];
     String[] tag;
     int[] result;
@@ -72,6 +72,7 @@ public class Test3Activity extends AppCompatActivity {
         startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         ID=getIntent().getStringExtra("ID");
 
+        r2 = (RelativeLayout)findViewById(R.id.r2);
         r1 = (RelativeLayout)findViewById(R.id.r1);
         rl1 = (RelativeLayout)findViewById(R.id.rl1);
         tvTimer = (TextView)findViewById(R.id.tv1);
@@ -114,10 +115,12 @@ public class Test3Activity extends AppCompatActivity {
         mHandler = new Handler();
         mHandler.post(startCountdowntimer);
         RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
+        
         ImageView tempiv =  new ImageView(Test3Activity.this);
         tempiv.setScaleType(ImageView.ScaleType.FIT_XY);
         tempiv.setBackgroundColor(Color.WHITE);
         tempiv.setLayoutParams(rlp);
+
         rl1.addView(tempiv);
 
 
@@ -332,7 +335,7 @@ public class Test3Activity extends AppCompatActivity {
         iv[1].setImageResource(getResources().getIdentifier(tag[index]+"a","drawable",getPackageName()));
 
         int width =(displayMetrics.widthPixels);// rl1.getMeasuredWidth();
-        int height = 3*displayMetrics.heightPixels/8;//rl1.getMeasuredHeight();
+        int height = (int) (3*(displayMetrics.heightPixels-50*displayMetrics.scaledDensity)/7);//rl1.getMeasuredHeight();
         int location[] = new int[2];
         //Log.d("location",getRelativeLeft(iv[0])+"");
         iv[0].measure(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -345,92 +348,40 @@ public class Test3Activity extends AppCompatActivity {
         String a[]=answer[index].split(";");
         final float ratio = height/3264.0f;
         final String a2[] = a[id].split(",");
-        ImageView iv =  new ImageView(this);
-
+        final ImageView iv =  new ImageView(this);
+        final ImageView iv2= new ImageView(this);
         iv.setImageResource(R.drawable.dot);
+        iv2.setImageResource(R.drawable.dot);
         iv.setScaleType(ImageView.ScaleType.FIT_XY);
+        iv2.setScaleType(ImageView.ScaleType.FIT_XY);
         iv.setX(shiftX+Float.parseFloat(a2[0])*ratio);
+        iv2.setX(shiftX+Float.parseFloat(a2[0])*ratio);
         iv.setY(Float.parseFloat(a2[1])*ratio);
+        iv2.setY(Float.parseFloat(a2[1])*ratio);
 
         iv.setMinimumWidth((int)(Integer.parseInt(a2[2])*ratio));
+        iv2.setMinimumWidth((int)(Integer.parseInt(a2[2])*ratio));
         iv.setMinimumHeight((int)(Integer.parseInt(a2[3])*ratio));
+        iv2.setMinimumHeight((int)(Integer.parseInt(a2[3])*ratio));
 
-        iv.setAlpha(0.0f);
+        iv.setAlpha(0.5f);
         iv.setId(100+id);
+        iv2.setAlpha(0.5f);
+        iv2.setId(200+id);
 
-        r1.addView(iv);
+        r1.addView(iv2);
+        r2.addView(iv);
+
         iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                //r1.removeView(v);
-                int w=(int)(Integer.parseInt(a2[2])*ratio);
-                int h=(int)(Integer.parseInt(a2[3])*ratio);
-                ((ImageView) v).setImageResource(R.drawable.circle2);
-                v.setAlpha(1.0f);
-                v.getLayoutParams().width=w;
-                v.getLayoutParams().height=h;
-                Log.d("work","work");
-                v.setOnClickListener(null);
-
-                //剩餘答案-1
-                restQuestionNum--;
-                //記錄對的數量
-                result[1]++;
-                Log.d("restQuestionNum",restQuestionNum+"");
-
-                if(restQuestionNum==0){
-
-
-
-                    //若是最後一題
-                    if(0==QUESTIONNUM){
-                        //跳下個測驗
-                        fileStorage fs = new fileStorage();
-                        dataList.setInitial(ID.split("_")[0],startDateandTime,"3",(GAMETIME/1000)+"",result[1]+"",result[0]+"","0","0");
-                        String content = dataList.printAll();
-                        Log.e("printAll",content);
-                        fs.writeFile(ID,content);
-                        tgDevice.close();
-                        destroyRunnable=1;
-                        Intent intent = new Intent();
-                        Bundle bundle = new Bundle();
-                        bundle.putString("ID",ID);
-                        bundle.putString("ActivityName",Test3Activity.this.getClass().getSimpleName().toString());
-                        intent.putExtras(bundle);
-                        intent.setClass(Test3Activity.this, RedirectActivity.class);
-                        startActivity(intent);
-                        Test3Activity.this.finish();
-                    }
-                    else{
-
-                        r1.removeViewAt(1);r1.removeViewAt(1);r1.removeViewAt(1);r1.removeViewAt(1);r1.removeViewAt(1);
-                        //跳下一題
-                        String temp;
-                        Random random = new Random();
-                        int selected= random.nextInt(QUESTIONNUM);
-                        restQuestionNum=5;
-                        //binListener 每題有五個答案
-                        for(int setId= 0;setId<5;setId++) {
-                            //bind the first question
-                            bindListener(Integer.parseInt(question[selected]),setId);
-                        }
-                        temp=question[selected];
-
-                        question[selected]=question[QUESTIONNUM-1];
-                        question[QUESTIONNUM-1]=temp;
-
-                        QUESTIONNUM--;
-
-                    }
-
-
-
-
-                }
-
-
-
+                ivOnclick(v,a2,ratio,iv,iv2);
+            }
+        });
+        iv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ivOnclick(v,a2,ratio,iv,iv2);
             }
         });
 
@@ -438,7 +389,92 @@ public class Test3Activity extends AppCompatActivity {
 
     }
 
+    public void ivOnclick(View v,String[] a2,float ratio,ImageView iv1,ImageView iv2){
+        //r1.removeView(v);
 
+        int w=(int)(Integer.parseInt(a2[2])*ratio);
+        int h=(int)(Integer.parseInt(a2[3])*ratio);
+
+        ((ImageView) v).setImageResource(R.drawable.circle2);
+        v.setAlpha(1.0f);
+        v.getLayoutParams().width=w;
+        v.getLayoutParams().height=h;
+        Log.d("work","work");
+
+        v.setOnClickListener(null);
+        if(v.getId()==iv1.getId()){
+            iv2.setImageResource(R.drawable.circle2);
+            iv2.setAlpha(1.0f);
+            iv2.getLayoutParams().width=w;
+            iv2.getLayoutParams().height=h;
+            iv2.setOnClickListener(null);
+        }
+        else{
+            iv1.setImageResource(R.drawable.circle2);
+            iv1.setAlpha(1.0f);
+            iv1.getLayoutParams().width=w;
+            iv1.getLayoutParams().height=h;
+            iv1.setOnClickListener(null);
+        }
+
+        //剩餘答案-1
+        restQuestionNum--;
+        //記錄對的數量
+        result[1]++;
+        Log.d("restQuestionNum",restQuestionNum+"");
+
+        if(restQuestionNum==0){
+
+
+
+            //若是最後一題
+            if(0==QUESTIONNUM){
+                //跳下個測驗
+                fileStorage fs = new fileStorage();
+                dataList.setInitial(ID.split("_")[0],startDateandTime,"3",(GAMETIME/1000)+"",result[1]+"",result[0]+"","0","0");
+                String content = dataList.printAll();
+                Log.e("printAll",content);
+                fs.writeFile(ID,content);
+                tgDevice.close();
+                destroyRunnable=1;
+                Intent intent = new Intent();
+                Bundle bundle = new Bundle();
+                bundle.putString("ID",ID);
+                bundle.putString("ActivityName",Test3Activity.this.getClass().getSimpleName().toString());
+                intent.putExtras(bundle);
+                intent.setClass(Test3Activity.this, RedirectActivity.class);
+                startActivity(intent);
+                Test3Activity.this.finish();
+            }
+            else{
+
+
+                r1.removeViewAt(1);r1.removeViewAt(1);r1.removeViewAt(1);r1.removeViewAt(1);r1.removeViewAt(1);
+                r2.removeViewAt(1);r2.removeViewAt(1);r2.removeViewAt(1);r2.removeViewAt(1);r2.removeViewAt(1);
+                //跳下一題
+                String temp;
+                Random random = new Random();
+                int selected= random.nextInt(QUESTIONNUM);
+                restQuestionNum=5;
+                //binListener 每題有五個答案
+                for(int setId= 0;setId<5;setId++) {
+                    //bind the first question
+                    bindListener(Integer.parseInt(question[selected]),setId);
+                }
+                temp=question[selected];
+
+                question[selected]=question[QUESTIONNUM-1];
+                question[QUESTIONNUM-1]=temp;
+
+                QUESTIONNUM--;
+
+            }
+
+
+
+
+        }
+    }
 
 
 

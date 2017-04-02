@@ -27,6 +27,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Random;
+import java.util.concurrent.ThreadFactory;
+
 import android.os.Handler;
 import android.widget.Toast;
 
@@ -85,21 +87,24 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
     void blutoothSetting(){
         btAdapter = BluetoothAdapter.getDefaultAdapter();
 
-        if(btAdapter != null) {
+        if(btAdapter != null &&btAdapter.isEnabled()) {
             ivbrain.setImageResource(R.drawable.brainwave_bluetooth_on);
-            tgDevice = new TGDevice(btAdapter, handler);
             tvbluetooth.setText("裝置搜尋中");
+
+            tgDevice = new TGDevice(btAdapter, brainHandler);
+            tgDevice.connect(true);
+            tgDevice.start();
             Log.v("HelloEEG", "CREATED TGDevice");
         }
         else{
+
             ivbrain.setImageResource(R.drawable.brainwave_bluetooth_off);
             Log.v("HelloEEG", "bluetooth off");
             tvbluetooth.setText("未開啟藍芽");
         }
-        tgDevice.connect(true);
-        tgDevice.start();
+
     }
-    private Handler handler = new Handler() {
+    private Handler brainHandler = new Handler() {
 
 
         @Override
@@ -116,10 +121,13 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
                         case TGDevice.STATE_CONNECTING:
                             Log.v("HelloEEG", "CONNECTING...");
                             tvbluetooth.setText("連線中");
+
                             break;
                         case TGDevice.STATE_CONNECTED:
                             Log.v("HelloEEG", "CONNECTED");
                             brainWave = true;
+                            tvbluetooth.setText("已連線");
+                            ivbrain.setImageResource(R.drawable.brainwave_bluetooth);
                             tgDevice.start();
                             break;
                         case TGDevice.STATE_DISCONNECTED:
@@ -130,6 +138,8 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
                             break;
                         case TGDevice.STATE_NOT_FOUND:
                             Log.v("HelloEEG", "STATE NOT FOUND");
+                            ivbrain.setImageResource(R.drawable.brainwave_bluetooth_dis);
+                            tvbluetooth.setText("裝置未開啟");
                             break;
                         case TGDevice.STATE_NOT_PAIRED:
                             Log.v("HelloEEG", "STATE NOT PAIRED");
@@ -158,7 +168,7 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
                 case TGDevice.MSG_EEG_POWER:
                     TGEegPower ep = (TGEegPower)msg.obj;
                     Log.d("HelloEEG", "Delta: " + ep.delta);
-                    ivbrain.setImageResource(R.drawable.bluetooth_good);
+
 
 
 
@@ -213,6 +223,7 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
     }
     private Runnable startCountdowntimer = new Runnable() {
         public void run() {
+
             final RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
 
             rl1.addView(new ImageView(Test1Activity.this));
@@ -276,12 +287,12 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
                 public void onTick(long millisUntilFinished) {
                     //倒數秒數中要做的事
 
-                    tv[2].setText("倒數時間:"+new SimpleDateFormat("m").format(millisUntilFinished)+":"+ new SimpleDateFormat("s").format(millisUntilFinished));
+                    tv[2].setText(""+new SimpleDateFormat("m").format(millisUntilFinished)+":"+ new SimpleDateFormat("s").format(millisUntilFinished));
                 }
 
                 @Override
                 public void onFinish() {
-                    tv[2].setText("倒數時間:結束");
+                    tv[2].setText("結束");
                     disableBtn();
 
 

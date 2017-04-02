@@ -44,21 +44,62 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="3"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <EditText
                 android:id="@+id/etId"
-                android:layout_width="0sp"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="50sp"
                 android:layout_marginRight="50sp"
                 android:layout_weight="3"
                 android:contentDescription="請輸入學號"
                 android:ems="10"
-                android:imeActionLabel="Done"
                 android:hint="Student ID"
+                android:imeActionLabel="Done"
                 android:inputType="textPersonName"
                 android:textSize="@dimen/title_font_size" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50sp"
+                android:layout_weight="3">
+
+                <TextView
+                    android:id="@+id/tvbluetooth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/ivblutooth"
+                    android:text="連線狀態"
+                    android:textSize="40sp" />
+
+                <ImageView
+                    android:id="@+id/ivblutooth"
+                    android:layout_width="100dp"
+                    android:layout_height="50sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="false"
+                    android:baselineAlignBottom="false"
+                    app:srcCompat="@drawable/brainwave_bluetooth_on" />
+
+
+                <ImageButton
+                    android:id="@+id/btnRefresh"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="50sp"
+                    android:background="@drawable/button"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/refresh" />
+
+            </RelativeLayout>
 
         </LinearLayout>
 
@@ -70,11 +111,12 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView5"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:layout_weight="1">
+
+        </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"

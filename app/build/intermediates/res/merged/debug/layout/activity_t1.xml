@@ -17,16 +17,21 @@
             android:id="@+id/tvbluetooth"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentRight="false"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivblutooth"
+            android:gravity="center"
             android:text="連線狀態"
-            android:textSize="40sp" />
+            android:textSize="@dimen/bluetooth_font_size" />
 
         <ImageView
             android:id="@+id/ivblutooth"
-            android:layout_width="100dp"
+            android:layout_width="50sp"
             android:layout_height="50sp"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentRight="false"
-            android:layout_toLeftOf="@+id/tvbluetooth"
+            android:layout_marginLeft="@dimen/bluetooth_margin_left"
             app:srcCompat="@drawable/brainwave_bluetooth_on" />
     </RelativeLayout>
 
@@ -47,7 +52,6 @@
                 android:layout_height="0sp"
                 android:layout_marginLeft="50sp"
                 android:layout_marginTop="50sp"
-                android:layout_weight="1"
                 android:orientation="horizontal"
                 android:weightSum="1">
 
@@ -74,10 +78,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignBottom="@+id/tv1"
-                        android:layout_alignParentEnd="true"
-                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="false"
+                        android:layout_alignParentRight="false"
                         android:layout_alignParentTop="true"
-                        android:layout_marginRight="50sp"
+                        android:layout_toRightOf="@+id/imageView4"
                         android:gravity="center_vertical"
                         android:text="計時器"
                         android:textSize="@dimen/time_font_size" />
@@ -87,9 +91,10 @@
                         android:layout_width="50sp"
                         android:layout_height="50sp"
                         android:layout_alignBottom="@+id/tv1"
-                        android:layout_alignParentRight="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="false"
                         android:layout_alignTop="@+id/tv1"
-                        android:layout_marginRight="150sp"
+                        android:layout_marginLeft="@dimen/timer_margin_left"
                         app:srcCompat="@drawable/time_icon" />
 
                 </RelativeLayout>

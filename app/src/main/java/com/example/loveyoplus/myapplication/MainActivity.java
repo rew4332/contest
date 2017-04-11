@@ -46,9 +46,7 @@ public class MainActivity extends AppCompatActivity  {
 
         loadSetting();
         initView();
-        Message m=new Message();
-        m.what=1;
-        handler.sendMessage(m);
+        blutoothSetting();
 
 
 
@@ -64,6 +62,7 @@ public class MainActivity extends AppCompatActivity  {
             switch(m.what){
                 case 1:
                     blutoothSetting();
+                    //removeMessages(m.what);
                     break;
 
             }
@@ -190,9 +189,7 @@ public class MainActivity extends AppCompatActivity  {
         btnRefresh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                brainHandler.removeCallbacksAndMessages(null);
                 blutoothSetting();
-                brainHandler.sendEmptyMessage(1);
             }
         });
 
@@ -210,6 +207,7 @@ public class MainActivity extends AppCompatActivity  {
 
                     }
                     else if(!etId.getText().toString().equals("")){
+                        tgDevice.close();
                         fileStorage fs = new fileStorage();
                         fs.createDirectory();
 
@@ -241,6 +239,8 @@ public class MainActivity extends AppCompatActivity  {
 
                 }
                 else if(!etId.getText().toString().equals("")){
+                    tgDevice.close();
+                    Log.d("close","true");
                     fileStorage fs = new fileStorage();
                     fs.createDirectory();
 

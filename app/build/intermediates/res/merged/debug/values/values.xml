@@ -402,6 +402,8 @@
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bluetooth_font_size">30sp</dimen>
+    <dimen name="bluetooth_margin_left">600sp</dimen>
     <dimen name="description2_font_size">30sp</dimen>
     <dimen name="description_font_size">40sp</dimen>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
@@ -430,6 +432,7 @@
     <dimen name="notification_top_pad_large_text">5dp</dimen>
     <dimen name="q_font_size">70sp</dimen>
     <dimen name="time_font_size">30sp</dimen>
+    <dimen name="timer_margin_left">550sp</dimen>
     <dimen name="title_font_size">50sp</dimen>
     <drawable name="notification_template_icon_bg">#3333B5E5</drawable>
     <drawable name="notification_template_icon_low_bg">#0cffffff</drawable>

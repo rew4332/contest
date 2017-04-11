@@ -53,6 +53,8 @@ public class Test5Activity extends AppCompatActivity {
     TGDevice tgDevice;
     BluetoothAdapter btAdapter;
     listProcess dataList;
+    ImageView ivbrain;
+    TextView tvbluetooth;
 
     // 計時物件
     private Runnable countdowntimer = new Runnable() {
@@ -60,12 +62,12 @@ public class Test5Activity extends AppCompatActivity {
             new CountDownTimer(GAMETIME, 1000) {
                 @Override
                 public void onTick(long millisUntilFinished) {
-                    tvTimer.setText("倒數時間:"+new SimpleDateFormat("m").format(millisUntilFinished)+":"+ new SimpleDateFormat("s").format(millisUntilFinished));
+                    tvTimer.setText(""+new SimpleDateFormat("m").format(millisUntilFinished)+":"+ new SimpleDateFormat("s").format(millisUntilFinished));
                 }
 
                 @Override
                 public void onFinish() {
-                    tvTimer.setText("倒數時間:結束");
+                    tvTimer.setText("結束");
                     if(remainNum!=1) {
                         fileStorage fs = new fileStorage();
                         dataList.setInitial(ID.split("_")[0],startDateandTime,"5",(GAMETIME/1000)+"",result[1]+"",result[0]+"","0","0");
@@ -92,17 +94,23 @@ public class Test5Activity extends AppCompatActivity {
     void blutoothSetting(){
         btAdapter = BluetoothAdapter.getDefaultAdapter();
 
-        if(btAdapter != null) {
+        if(btAdapter != null &&btAdapter.isEnabled()) {
+            ivbrain.setImageResource(R.drawable.brainwave_bluetooth_on);
+            tvbluetooth.setText("裝置搜尋中");
 
-            tgDevice = new TGDevice(btAdapter, handler);
-
+            tgDevice = new TGDevice(btAdapter, brainHandler);
+            tgDevice.connect(true);
+            tgDevice.start();
             Log.v("HelloEEG", "CREATED TGDevice");
         }
-        tgDevice.connect(true);
+        else{
 
-        tgDevice.start();
+            ivbrain.setImageResource(R.drawable.brainwave_bluetooth_off);
+            Log.v("HelloEEG", "bluetooth off");
+            tvbluetooth.setText("未開啟藍芽");
+        }
     }
-    private Handler handler = new Handler() {
+    private Handler brainHandler = new Handler() {
 
 
         @Override
@@ -118,18 +126,26 @@ public class Test5Activity extends AppCompatActivity {
                             break;
                         case TGDevice.STATE_CONNECTING:
                             Log.v("HelloEEG", "CONNECTING...");
+                            tvbluetooth.setText("連線中");
 
                             break;
                         case TGDevice.STATE_CONNECTED:
                             Log.v("HelloEEG", "CONNECTED");
+
+                            tvbluetooth.setText("已連線");
+                            ivbrain.setImageResource(R.drawable.brainwave_bluetooth);
                             tgDevice.start();
                             break;
                         case TGDevice.STATE_DISCONNECTED:
                             Log.v("HelloEEG", "DISCONNECTED");
+                            ivbrain.setImageResource(R.drawable.brainwave_bluetooth_dis);
+                            tvbluetooth.setText("已斷線");
 
                             break;
                         case TGDevice.STATE_NOT_FOUND:
                             Log.v("HelloEEG", "STATE NOT FOUND");
+                            ivbrain.setImageResource(R.drawable.brainwave_bluetooth_dis);
+                            tvbluetooth.setText("裝置未開啟");
                             break;
                         case TGDevice.STATE_NOT_PAIRED:
                             Log.v("HelloEEG", "STATE NOT PAIRED");
@@ -146,8 +162,7 @@ public class Test5Activity extends AppCompatActivity {
                     Log.v("HelloEEG", "Attention: " + msg.arg1);
                     dataList.addAttention(String.valueOf(msg.arg1));
                     break;
-                /*
-                case TGDevice.MSG_MEDITATION:
+                /*case TGDevice.MSG_MEDITATION:
                     Log.v("HelloEEG", "Meditation: " + msg.arg1);
                     dataMeditation.setText("Meditation: " + String.valueOf(msg.arg1));
                 case TGDevice.MSG_RAW_DATA:
@@ -159,7 +174,14 @@ public class Test5Activity extends AppCompatActivity {
                 case TGDevice.MSG_EEG_POWER:
                     TGEegPower ep = (TGEegPower)msg.obj;
                     Log.d("HelloEEG", "Delta: " + ep.delta);
+
+
+
+
+                    //fileStorage fs = new fileStorage();
                     dataList.addArray(ep.delta+"",ep.theta+"",ep.lowAlpha+"",ep.highAlpha+"",ep.lowBeta+"",ep.highBeta+"",ep.lowGamma+"",ep.midGamma+"");
+
+                    //fs.writeFile(ID,content);
                     Log.v("HelloEEG", "PoorSignal: " + msg.arg1);
 
                     //data.setText("Signal: " + ep.delta);
@@ -196,6 +218,8 @@ public class Test5Activity extends AppCompatActivity {
         touchMap = (RelativeLayout) findViewById(R.id.rl1);
         tvTimer = (TextView) findViewById(R.id.tvTimer);
         tvTitle = (TextView) findViewById(R.id.tvTitle);
+        ivbrain = (ImageView)findViewById(R.id.ivblutooth);
+        tvbluetooth= (TextView)findViewById(R.id.tvbluetooth);
         tvTitle.setText("找出如下所示之捷運站");
 
 

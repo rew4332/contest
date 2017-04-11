@@ -43,6 +43,8 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
     TGDevice tgDevice;
     BluetoothAdapter btAdapter;
     String startDateandTime;
+    ImageView ivbrain;
+    TextView tvbluetooth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,17 +72,23 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
     void blutoothSetting(){
         btAdapter = BluetoothAdapter.getDefaultAdapter();
 
-        if(btAdapter != null) {
+        if(btAdapter != null &&btAdapter.isEnabled()) {
+            ivbrain.setImageResource(R.drawable.brainwave_bluetooth_on);
+            tvbluetooth.setText("裝置搜尋中");
 
-            tgDevice = new TGDevice(btAdapter, handler);
-
+            tgDevice = new TGDevice(btAdapter, brainHandler);
+            tgDevice.connect(true);
+            tgDevice.start();
             Log.v("HelloEEG", "CREATED TGDevice");
         }
-        tgDevice.connect(true);
+        else{
 
-        tgDevice.start();
+            ivbrain.setImageResource(R.drawable.brainwave_bluetooth_off);
+            Log.v("HelloEEG", "bluetooth off");
+            tvbluetooth.setText("未開啟藍芽");
+        }
     }
-    private  Handler handler = new Handler() {
+    private Handler brainHandler = new Handler() {
 
 
         @Override
@@ -96,19 +104,26 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
                             break;
                         case TGDevice.STATE_CONNECTING:
                             Log.v("HelloEEG", "CONNECTING...");
+                            tvbluetooth.setText("連線中");
 
                             break;
                         case TGDevice.STATE_CONNECTED:
                             Log.v("HelloEEG", "CONNECTED");
 
+                            tvbluetooth.setText("已連線");
+                            ivbrain.setImageResource(R.drawable.brainwave_bluetooth);
                             tgDevice.start();
                             break;
                         case TGDevice.STATE_DISCONNECTED:
                             Log.v("HelloEEG", "DISCONNECTED");
+                            ivbrain.setImageResource(R.drawable.brainwave_bluetooth_dis);
+                            tvbluetooth.setText("已斷線");
 
                             break;
                         case TGDevice.STATE_NOT_FOUND:
                             Log.v("HelloEEG", "STATE NOT FOUND");
+                            ivbrain.setImageResource(R.drawable.brainwave_bluetooth_dis);
+                            tvbluetooth.setText("裝置未開啟");
                             break;
                         case TGDevice.STATE_NOT_PAIRED:
                             Log.v("HelloEEG", "STATE NOT PAIRED");
@@ -125,8 +140,7 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
                     Log.v("HelloEEG", "Attention: " + msg.arg1);
                     dataList.addAttention(String.valueOf(msg.arg1));
                     break;
-                /*
-                case TGDevice.MSG_MEDITATION:
+                /*case TGDevice.MSG_MEDITATION:
                     Log.v("HelloEEG", "Meditation: " + msg.arg1);
                     dataMeditation.setText("Meditation: " + String.valueOf(msg.arg1));
                 case TGDevice.MSG_RAW_DATA:
@@ -138,7 +152,14 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
                 case TGDevice.MSG_EEG_POWER:
                     TGEegPower ep = (TGEegPower)msg.obj;
                     Log.d("HelloEEG", "Delta: " + ep.delta);
+
+
+
+
+                    //fileStorage fs = new fileStorage();
                     dataList.addArray(ep.delta+"",ep.theta+"",ep.lowAlpha+"",ep.highAlpha+"",ep.lowBeta+"",ep.highBeta+"",ep.lowGamma+"",ep.midGamma+"");
+
+                    //fs.writeFile(ID,content);
                     Log.v("HelloEEG", "PoorSignal: " + msg.arg1);
 
                     //data.setText("Signal: " + ep.delta);
@@ -165,6 +186,8 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
         rl1 = (RelativeLayout) findViewById(R.id.rl1);
 
         btn = new Button[10];
+        ivbrain = (ImageView)findViewById(R.id.ivblutooth);
+        tvbluetooth= (TextView)findViewById(R.id.tvbluetooth);
 
 
         tv =new TextView[3];
@@ -243,12 +266,12 @@ public class Test2Activity extends AppCompatActivity implements View.OnClickList
                 public void onTick(long millisUntilFinished) {
                     //倒數秒數中要做的事
 
-                    tv[2].setText("倒數時間:"+new SimpleDateFormat("m").format(millisUntilFinished)+":"+ new SimpleDateFormat("s").format(millisUntilFinished));
+                    tv[2].setText(""+new SimpleDateFormat("m").format(millisUntilFinished)+":"+ new SimpleDateFormat("s").format(millisUntilFinished));
                 }
 
                 @Override
                 public void onFinish() {
-                    tv[2].setText("倒數時間:結束");
+                    tv[2].setText("結束");
                     disableBtn();
                     fileStorage fs = new fileStorage();
 

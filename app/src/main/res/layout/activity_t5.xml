@@ -3,6 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp">
+
+        <TextView
+            android:id="@+id/tvbluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="false"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ivblutooth"
+            android:gravity="center"
+            android:text="連線狀態"
+            android:textSize="@dimen/bluetooth_font_size" />
+
+        <ImageView
+            android:id="@+id/ivblutooth"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="false"
+            android:layout_marginLeft="@dimen/bluetooth_margin_left"
+            app:srcCompat="@drawable/brainwave_bluetooth_on" />
+    </RelativeLayout>
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -13,33 +39,54 @@
             android:layout_weight="2"
             android:layout_height="0sp"
             android:weightSum="2">
+
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="50sp"
+                android:layout_marginTop="50sp"
                 android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
 
                 <TextView
-                    android:text="標題"
+                    android:id="@+id/tvTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/tvTitle"
-                    android:layout_alignParentRight="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
                     android:layout_alignParentStart="true"
                     android:layout_weight="3"
-                    android:textSize="@dimen/title_font_size"
-                    />
+                    android:text="標題"
+                    android:textSize="@dimen/title_font_size" />
 
-                <TextView
-                    android:text="計時器"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tvTimer"
-                    android:textSize="@dimen/time_font_size"
-                    android:layout_below="@+id/tv2"
-                    android:layout_alignLeft="@+id/btnEnd"
-                    android:layout_alignStart="@+id/btnEnd" />
+                    <TextView
+                        android:id="@+id/tvTimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv1"
+                        android:layout_alignParentEnd="false"
+                        android:layout_alignParentRight="false"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/imageView4"
+                        android:gravity="center_vertical"
+                        android:text="計時器"
+                        android:textSize="@dimen/time_font_size" />
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_alignBottom="@+id/tv1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="false"
+                    android:layout_alignTop="@+id/tv1"
+                    android:layout_marginLeft="@dimen/timer_margin_left"
+                    app:srcCompat="@drawable/time_icon" />
+                </RelativeLayout>
 
             </TableRow>
             <TableRow

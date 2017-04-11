@@ -30,6 +30,10 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.example.loveyoplus.myapplication.MeasureActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
             android:name="com.example.loveyoplus.myapplication.RedirectActivity"
             android:screenOrientation="portrait" >
         </activity>

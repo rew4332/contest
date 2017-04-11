@@ -11,6 +11,7 @@ import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.PagerTitleStrip;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -200,6 +201,8 @@ public class RedirectActivity extends AppCompatActivity implements ViewPager.OnP
             LinearLayout.LayoutParams llp= new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT,LinearLayout.LayoutParams.WRAP_CONTENT);
 
             llp.width=15;
+            DisplayMetrics dm = new DisplayMetrics();
+
             llp.setMargins(20,0,20,0);
 
 
@@ -208,18 +211,22 @@ public class RedirectActivity extends AppCompatActivity implements ViewPager.OnP
 
 
             tips[i] = imageView;
+            //tips[i].setAdjustViewBounds(true);
 
             if (i == 0) {
 
-                tips[i].setBackgroundResource(R.drawable.focus_tab);
+                //tips[i].setBackgroundResource();
+                tips[i].setImageResource(R.drawable.focus_tab);
+
 
             } else {
 
-                tips[i].setBackgroundResource(R.drawable.unfocus_tab);
+                tips[i].setImageResource(R.drawable.unfocus_tab);
 
             }
 
             group.addView(tips[i]);
+
         }
 
         mCustomPagerAdapter = new CustomPagerAdapter(this);
@@ -368,9 +375,11 @@ public class RedirectActivity extends AppCompatActivity implements ViewPager.OnP
     public void onPageSelected(int position) {
 
         for(int i=0;i< tips.length;i++){
-            tips[i].setBackgroundResource(R.drawable.unfocus_tab);
+            tips[i].setImageResource(R.drawable.unfocus_tab);
+
         }
-        tips[position].setBackgroundResource(R.drawable.focus_tab);
+        tips[position].setImageResource(R.drawable.focus_tab);
+
     }
 
     @Override

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llStart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.loveyoplus.myapplication.MainActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/titleicon" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50sp"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:id="@+id/tvbluetooth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50sp"
+
+                        android:layout_alignTop="@+id/ivblutooth"
+                        android:layout_toEndOf="@+id/ivblutooth"
+                        android:layout_toRightOf="@+id/ivblutooth"
+                        android:text="連線狀態"
+                        android:textSize="40sp" />
+
+                    <ImageView
+                        android:id="@+id/ivblutooth"
+                        android:layout_width="100dp"
+                        android:layout_height="50sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="51dp"
+                        android:baselineAlignBottom="false"
+                        app:srcCompat="@drawable/brainwave_bluetooth_on" />
+
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tvbluetooth"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="100sp"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/tvbluetooth"
+                        android:layout_toRightOf="@+id/textView2" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView2"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/textView4" />
+
+                    <ImageButton
+                        android:id="@+id/btnRefresh"
+                        android:layout_width="50sp"
+                        android:layout_height="50sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/tvbluetooth"
+                        android:layout_marginRight="50sp"
+                        android:background="@drawable/button"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/refresh" />
+
+                    <ImageView
+                        android:id="@+id/ivanimate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvbluetooth"
+                        android:layout_marginLeft="200sp"
+                        android:layout_marginRight="250sp"
+                        app:srcCompat="@drawable/brainwave1" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnrecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="20sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginRight="50sp"
+                    android:background="@drawable/button"
+                    android:text="RECORD"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/title_font_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_marginBottom="100sp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btnStop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginRight="50sp"
+                    android:layout_marginTop="20sp"
+                    android:background="@drawable/button"
+                    android:text="CLOSE"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/title_font_size" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

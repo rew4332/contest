@@ -57,6 +57,8 @@ public class Test3Activity extends AppCompatActivity {
     String startDateandTime;
     String question[]={"0","1","2","3","4","5","6","7","8","9"};
     listProcess dataList;
+    ImageView ivbrain;
+    TextView tvbluetooth;
 
 
 
@@ -68,6 +70,31 @@ public class Test3Activity extends AppCompatActivity {
         getSupportActionBar().hide(); //隱藏標題
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN); //隱藏狀態
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
+
+        initView();
+        GAMETIME=loadSetting(3);
+        blutoothSetting();
+        mHandler = new Handler();
+        mHandler.post(startCountdowntimer);
+        RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
+
+        ImageView tempiv =  new ImageView(Test3Activity.this);
+        tempiv.setScaleType(ImageView.ScaleType.FIT_XY);
+        tempiv.setBackgroundColor(Color.WHITE);
+        tempiv.setLayoutParams(rlp);
+
+        rl1.addView(tempiv);
+
+
+
+
+
+
+
+
+    }
+    public void initView(){
         dataList = new listProcess();
         startDateandTime = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         ID=getIntent().getStringExtra("ID");
@@ -75,17 +102,15 @@ public class Test3Activity extends AppCompatActivity {
         r2 = (RelativeLayout)findViewById(R.id.r2);
         r1 = (RelativeLayout)findViewById(R.id.r1);
         rl1 = (RelativeLayout)findViewById(R.id.rl1);
-        tvTimer = (TextView)findViewById(R.id.tv1);
-        tvTitle = (TextView)findViewById(R.id.tv3);
+        tvTimer = (TextView)findViewById(R.id.tv3);
+        tvTitle = (TextView)findViewById(R.id.tv1);
         iv =new ImageView[2];
         iv[0] = (ImageView) findViewById(R.id.iv1) ;
         iv[1]  = (ImageView)findViewById(R.id.iv2) ;
+        ivbrain = (ImageView)findViewById(R.id.ivblutooth);
+        tvbluetooth= (TextView)findViewById(R.id.tvbluetooth);
 
-
-
-
-
-
+        tvTitle.setText("選取不同處");
 
         //抓取資源tag[x]=獲取圖片id
         tag = new String[QUESTIONNUM];
@@ -108,43 +133,27 @@ public class Test3Activity extends AppCompatActivity {
         answer[7]="1197,1773,817,393;3205,645,1633,437;105,2873,577,273;3749,2205,213,301;4173,2865,229,405";
         answer[8]="3033,1829,245,365;2997,2681,729,357;4281,361,189,813;1913,409,301,753;3753,305,293,301";
         answer[9]="1765,561,1349,461;2957,1085,173,685;1621,1257,217,305;3561,1453,581,1689;3297,2221,249,517";
-
-
-        GAMETIME=loadSetting(3);
-        blutoothSetting();
-        mHandler = new Handler();
-        mHandler.post(startCountdowntimer);
-        RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
-        
-        ImageView tempiv =  new ImageView(Test3Activity.this);
-        tempiv.setScaleType(ImageView.ScaleType.FIT_XY);
-        tempiv.setBackgroundColor(Color.WHITE);
-        tempiv.setLayoutParams(rlp);
-
-        rl1.addView(tempiv);
-
-
-        tvTitle.setText("選取不同處(選圖)");
-        Log.d("drawableTag",tag[0]);
-
-
-
-
     }
     void blutoothSetting(){
         btAdapter = BluetoothAdapter.getDefaultAdapter();
 
-        if(btAdapter != null) {
+        if(btAdapter != null &&btAdapter.isEnabled()) {
+            ivbrain.setImageResource(R.drawable.brainwave_bluetooth_on);
+            tvbluetooth.setText("裝置搜尋中");
 
-            tgDevice = new TGDevice(btAdapter, handler);
-
+            tgDevice = new TGDevice(btAdapter, brainHandler);
+            tgDevice.connect(true);
+            tgDevice.start();
             Log.v("HelloEEG", "CREATED TGDevice");
         }
-        tgDevice.connect(true);
+        else{
 
-        tgDevice.start();
+            ivbrain.setImageResource(R.drawable.brainwave_bluetooth_off);
+            Log.v("HelloEEG", "bluetooth off");
+            tvbluetooth.setText("未開啟藍芽");
+        }
     }
-    private Handler handler = new Handler() {
+    private Handler brainHandler = new Handler() {
 
 
         @Override
@@ -160,18 +169,26 @@ public class Test3Activity extends AppCompatActivity {
                             break;
                         case TGDevice.STATE_CONNECTING:
                             Log.v("HelloEEG", "CONNECTING...");
+                            tvbluetooth.setText("連線中");
 
                             break;
                         case TGDevice.STATE_CONNECTED:
                             Log.v("HelloEEG", "CONNECTED");
+
+                            tvbluetooth.setText("已連線");
+                            ivbrain.setImageResource(R.drawable.brainwave_bluetooth);
                             tgDevice.start();
                             break;
                         case TGDevice.STATE_DISCONNECTED:
                             Log.v("HelloEEG", "DISCONNECTED");
+                            ivbrain.setImageResource(R.drawable.brainwave_bluetooth_dis);
+                            tvbluetooth.setText("已斷線");
 
                             break;
                         case TGDevice.STATE_NOT_FOUND:
                             Log.v("HelloEEG", "STATE NOT FOUND");
+                            ivbrain.setImageResource(R.drawable.brainwave_bluetooth_dis);
+                            tvbluetooth.setText("裝置未開啟");
                             break;
                         case TGDevice.STATE_NOT_PAIRED:
                             Log.v("HelloEEG", "STATE NOT PAIRED");
@@ -188,8 +205,7 @@ public class Test3Activity extends AppCompatActivity {
                     Log.v("HelloEEG", "Attention: " + msg.arg1);
                     dataList.addAttention(String.valueOf(msg.arg1));
                     break;
-                /*
-                case TGDevice.MSG_MEDITATION:
+                /*case TGDevice.MSG_MEDITATION:
                     Log.v("HelloEEG", "Meditation: " + msg.arg1);
                     dataMeditation.setText("Meditation: " + String.valueOf(msg.arg1));
                 case TGDevice.MSG_RAW_DATA:
@@ -201,7 +217,14 @@ public class Test3Activity extends AppCompatActivity {
                 case TGDevice.MSG_EEG_POWER:
                     TGEegPower ep = (TGEegPower)msg.obj;
                     Log.d("HelloEEG", "Delta: " + ep.delta);
+
+
+
+
+                    //fileStorage fs = new fileStorage();
                     dataList.addArray(ep.delta+"",ep.theta+"",ep.lowAlpha+"",ep.highAlpha+"",ep.lowBeta+"",ep.highBeta+"",ep.lowGamma+"",ep.midGamma+"");
+
+                    //fs.writeFile(ID,content);
                     Log.v("HelloEEG", "PoorSignal: " + msg.arg1);
 
                     //data.setText("Signal: " + ep.delta);
@@ -291,14 +314,14 @@ public class Test3Activity extends AppCompatActivity {
                 public void onTick(long millisUntilFinished) {
                     //倒數秒數中要做的事
 
-                    tvTimer.setText("倒數時間:"+new SimpleDateFormat("m").format(millisUntilFinished)+":"+ new SimpleDateFormat("s").format(millisUntilFinished));
+                    tvTimer.setText(""+new SimpleDateFormat("m").format(millisUntilFinished)+":"+ new SimpleDateFormat("s").format(millisUntilFinished));
                     Log.e("還在倒數",mHandler.obtainMessage()+"qaq");
 
                 }
 
                 @Override
                 public void onFinish() {
-                    tvTimer.setText("倒數時間:結束");
+                    tvTimer.setText("結束");
                     //iv[0].setVisibility(View.INVISIBLE);
                     //Log.e("answerXD:",sTemp);
                     if(destroyRunnable==0) {
@@ -335,7 +358,7 @@ public class Test3Activity extends AppCompatActivity {
         iv[1].setImageResource(getResources().getIdentifier(tag[index]+"a","drawable",getPackageName()));
 
         int width =(displayMetrics.widthPixels);// rl1.getMeasuredWidth();
-        int height = (int) (3*(displayMetrics.heightPixels-50*displayMetrics.scaledDensity)/7);//rl1.getMeasuredHeight();
+        int height = (int) (3*(displayMetrics.heightPixels-70*displayMetrics.scaledDensity)/7);//rl1.getMeasuredHeight();50margin and 20 seperate
         int location[] = new int[2];
         //Log.d("location",getRelativeLeft(iv[0])+"");
         iv[0].measure(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -364,9 +387,9 @@ public class Test3Activity extends AppCompatActivity {
         iv.setMinimumHeight((int)(Integer.parseInt(a2[3])*ratio));
         iv2.setMinimumHeight((int)(Integer.parseInt(a2[3])*ratio));
 
-        iv.setAlpha(0.5f);
+        iv.setAlpha(0.0f);
         iv.setId(100+id);
-        iv2.setAlpha(0.5f);
+        iv2.setAlpha(0.0f);
         iv2.setId(200+id);
 
         r1.addView(iv2);

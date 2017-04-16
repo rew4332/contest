@@ -142,6 +142,7 @@
                     android:layout_marginLeft="50sp"
                     android:layout_marginRight="50sp"
                     android:background="@drawable/button"
+                    android:enabled="false"
                     android:text="RECORD"
                     android:textAlignment="center"
                     android:textColor="@android:color/white"

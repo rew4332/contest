@@ -3,10 +3,15 @@ package com.example.loveyoplus.myapplication;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
+import android.content.DialogInterface;
+import android.media.audiofx.Visualizer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Message;
+import android.os.StrictMode;
 import android.support.annotation.Nullable;
+import android.support.v4.app.NotificationCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -15,6 +20,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.neurosky.thinkgear.TGDevice;
 import com.neurosky.thinkgear.TGEegPower;
@@ -22,6 +28,8 @@ import com.neurosky.thinkgear.TGEegPower;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
 import java.util.logging.Handler;
@@ -47,9 +55,12 @@ public class MeasureActivity extends AppCompatActivity {
     listProcess dataList;
     ImageButton btnRefresh;
     Boolean brainWaveConnected=false;
-    Boolean stopWorker;
+    Boolean stopWorker,allDeviceConnected[];
     Thread workerThread;
     BluetoothSocket gsr,emg,pluse;
+    String msg;
+    String ID;
+    Thread updateThread;
 
 
 
@@ -68,8 +79,14 @@ public class MeasureActivity extends AppCompatActivity {
         blutoothSetting();
 
 
+
     }
     void blutoothSetting(){
+        allDeviceConnected = new Boolean[3];
+        allDeviceConnected[0]=false;
+        allDeviceConnected[1]=false;
+        allDeviceConnected[2]=false;
+
         btAdapter = BluetoothAdapter.getDefaultAdapter();
         btnRefresh.setEnabled(false);
         if (btAdapter != null && btAdapter.isEnabled()) {
@@ -79,6 +96,7 @@ public class MeasureActivity extends AppCompatActivity {
             workerThread = new Thread(new Runnable() {
                 @Override
                 public void run() {
+
                     try {
 
                             bluetoothtest("pulse");
@@ -158,9 +176,114 @@ public class MeasureActivity extends AppCompatActivity {
 
             e.printStackTrace();
         }
-        if(mmInputStream!=null)
+        if(mmInputStream!=null) {
+            switch (nameOfBluetooth){
+                case "gsr":
+                    allDeviceConnected[0]=true;
+                    break;
+                case "emg":
+                    allDeviceConnected[1]=true;
+                    break;
+                case "pulse":
+                    allDeviceConnected[2]=true;
+                    break;
+            }
             beginListenForData(mmInputStream, nameOfBluetooth);
+        }
 
+
+    }
+    void updateData(){
+
+        updateThread=new Thread(new Runnable() {
+            @Override
+            public void run() {
+                dataList.removeAllData();
+                try {
+                    Thread.sleep(20000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                while (!updateThread.isInterrupted()&&showAnimate==true) {
+
+                    try {
+                        Map<String, String> data;
+                        // Create the data structure to transfer.
+
+                        NetCon conn = new NetCon();
+                        data = new HashMap<String, String>(dataList.returnMapWithAllData());
+                        Log.e("map", data + "");
+                        // Send Request
+
+                        msg = conn.SetJson(data).SetUrl("http://140.116.179.52/dbinsert2.php").Execute();
+                        Log.e("msg ", msg);
+                        if (msg.equals("OK")) {
+                            dataList.removeAllData();
+                            Message m = new Message();
+                            m.what = 2;
+                            listenhandler.sendMessage(m);
+                            Thread.sleep(20000);
+
+                        }
+                        else{
+                            Thread.sleep(700);
+                        }
+
+                    } catch (IOException e) {
+                        msg = e.getMessage();
+
+                        Log.e("exception", msg);
+                    }
+                    catch(NullPointerException e){
+                        Log.e("exception", msg);
+
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                        Log.e("exception", msg);
+                    }
+                }
+            }
+        });
+        updateThread.start();
+    }
+    void updateLastData(){
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+
+                try {
+                    Map<String, String> data;
+                    // Create the data structure to transfer.
+
+                    NetCon conn = new NetCon();
+                    data = new HashMap<String, String>(dataList.returnMapWithAllData());
+                    Log.e("map", data + "");
+                    // Send Request
+
+                    msg = conn.SetJson(data).SetUrl("http://140.116.179.52/dbinsert2.php").Execute();
+                    Log.e("msg ", msg);
+                    if (msg.equals("OK")) {
+                        dataList.removeAllData();
+                        Message m = new Message();
+                        m.what = 2;
+                        listenhandler.sendMessage(m);
+
+                    }
+
+                } catch (IOException e) {
+                    msg = e.getMessage();
+
+                    Log.e("exception", msg);
+                }
+                catch(NullPointerException e){
+                    Log.e("exception", msg);
+
+                }
+            }
+
+        }).start();
 
     }
 
@@ -177,61 +300,51 @@ public class MeasureActivity extends AppCompatActivity {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    int readBufferPosition=0;
-                    stopWorker=false;
-                    while(!Thread.currentThread().isInterrupted() && !stopWorker)
-                    {
-                        try
-                        {
-                            int bytesAvailable = input.available();
-                            if(bytesAvailable > 0)
-                            {
-                                byte[] packetBytes = new byte[bytesAvailable];
-                                input.read(packetBytes);
-                                for(int i=0;i<bytesAvailable;i++)
-                                {
-                                    byte b = packetBytes[i];
-                                    if(b == delimiter)
-                                    {
-                                        byte[] encodedBytes = new byte[readBufferPosition];
-                                        System.arraycopy(readBuffer, 0, encodedBytes, 0, encodedBytes.length);
-                                        final String data = new String(encodedBytes, "US-ASCII");
-                                        readBufferPosition = 0;
-                                        int count=0;
-                                        listenhandler.post(new Runnable()
-                                        {
-                                            public void run()
-                                            {
-                                                if(nameOfBluetooth.equals("pulse")) {
-                                                    ((TextView) findViewById(R.id.textView6)).setText(" pulse data: " + data);
-                                                    dataList.addPULSE(data+"");
+
+                        int readBufferPosition = 0;
+                        stopWorker = false;
+                        while (!Thread.currentThread().isInterrupted() && !stopWorker) {
+                            try {
+                                int bytesAvailable = input.available();
+                                if (bytesAvailable > 0) {
+                                    byte[] packetBytes = new byte[bytesAvailable];
+                                    input.read(packetBytes);
+                                    for (int i = 0; i < bytesAvailable; i++) {
+                                        byte b = packetBytes[i];
+                                        if (b == delimiter) {
+                                            byte[] encodedBytes = new byte[readBufferPosition];
+                                            System.arraycopy(readBuffer, 0, encodedBytes, 0, encodedBytes.length);
+                                            final String data = new String(encodedBytes, "US-ASCII");
+                                            readBufferPosition = 0;
+                                            int count = 0;
+                                            listenhandler.post(new Runnable() {
+                                                public void run() {
+                                                    if (nameOfBluetooth.equals("pulse")) {
+                                                        ((TextView) findViewById(R.id.textView6)).setText(" pulse data: " + data);
+                                                        dataList.addPULSE(data + "");
+
+                                                    } else if (nameOfBluetooth.equals("gsr")) {
+                                                        ((TextView) findViewById(R.id.textView2)).setText("gsr data:" + data);
+                                                        dataList.addGSR(data + "");
+                                                    } else if (nameOfBluetooth.equals("emg")) {
+                                                        ((TextView) findViewById(R.id.textView4)).setText("emg data:" + data);
+                                                        dataList.addEMG(data + "");
+                                                    }
+                                                    //myLabel.setText(data);
                                                 }
-                                                else if(nameOfBluetooth.equals("gsr")) {
-                                                    ((TextView) findViewById(R.id.textView2)).setText("gsr data:" + data);
-                                                    dataList.addGSR(data+"");
-                                                }
-                                                else if(nameOfBluetooth.equals("emg")) {
-                                                    ((TextView) findViewById(R.id.textView4)).setText("emg data:" + data);
-                                                    dataList.addEMG(data+"");
-                                                }
-                                                //myLabel.setText(data);
-                                            }
-                                        });
-                                    }
-                                    else
-                                    {
-                                        readBuffer[readBufferPosition++] = b;
+                                            });
+                                        } else {
+                                            readBuffer[readBufferPosition++] = b;
+                                        }
                                     }
                                 }
+                            } catch (IOException ex) {
+
                             }
-                        }
-                        catch (IOException ex)
-                        {
 
                         }
-
                     }
-                }
+
             }).start();
 
 
@@ -240,12 +353,15 @@ public class MeasureActivity extends AppCompatActivity {
 
 
     public void initView(){
+        ID=getIntent().getStringExtra("ID").split("_")[0];
         btnrecord = (Button) findViewById(R.id.btnrecord);
         btnStop =(Button) findViewById(R.id.btnStop);
         ivanimate = (ImageView) findViewById(R.id.ivanimate);
         ivbrain = (ImageView)findViewById(R.id.ivblutooth);
         tvbluetooth= (TextView)findViewById(R.id.tvbluetooth);
         dataList = new listProcess();
+        //ID="fakeyoga";
+        dataList.setInitial(ID);
 
         btnRefresh = (ImageButton)findViewById(R.id.btnRefresh);
         btnRefresh.setOnClickListener(new View.OnClickListener() {
@@ -261,8 +377,10 @@ public class MeasureActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(!showAnimate) {
+
+                    updateData();
                     showAnimate=true;
-                    btnrecord.setText("STOP");
+                    btnrecord.setText("PAUSE");
                     brainWaveConnected=true;
                     new Thread(new Runnable() {
                         public void run() {
@@ -283,6 +401,8 @@ public class MeasureActivity extends AppCompatActivity {
 
                 }
                 else{
+                    updateLastData();
+                    updateThread.interrupt();
                     brainWaveConnected=false;
                     showAnimate=false;
                     btnrecord.setText("RECORD");
@@ -302,10 +422,44 @@ public class MeasureActivity extends AppCompatActivity {
 
                         startAnimate.run();
                         break;
+                    case 2:
+                        Toast.makeText(MeasureActivity.this,"上傳成功",Toast.LENGTH_LONG).show();
                 }
 
             }
         };
+        btnStop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Leave();
+
+
+            }
+        });
+
+    }
+    private void Leave() {
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        builder.setMessage("是否離開?")
+                .setPositiveButton("否", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // 左方按鈕方法
+
+                    }
+                })
+                .setNegativeButton("是", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        // 右方按鈕方法
+                        MeasureActivity.this.finish();
+                        tgDevice.close();
+                        System.exit(0);
+
+                    }
+                });
+        AlertDialog about_dialog = builder.create();
+        about_dialog.show();
     }
     private android.os.Handler brainHandler = new android.os.Handler() {
 
@@ -313,7 +467,7 @@ public class MeasureActivity extends AppCompatActivity {
         @Override
         public void handleMessage(Message msg) {
 
-            Log.v("HelloEEG", "Handler started");
+            //Log.v("HelloEEG", "Handler started");
             switch (msg.what) {
                 case TGDevice.MSG_STATE_CHANGE:
                     switch (msg.arg1) {
@@ -328,9 +482,10 @@ public class MeasureActivity extends AppCompatActivity {
                             break;
                         case TGDevice.STATE_CONNECTED:
                             Log.v("HelloEEG", "CONNECTED");
-
+                            brainWaveConnected=true;
                             tvbluetooth.setText("已連線");
                             ivbrain.setImageResource(R.drawable.brainwave_bluetooth);
+
 
                             tgDevice.start();
                             break;
@@ -362,6 +517,7 @@ public class MeasureActivity extends AppCompatActivity {
                         Log.e("signal",(100-Integer.parseInt(String.valueOf(msg.arg1))/2)+"");
                         tvbluetooth.setText("已連線\t訊號強度:"+(100-Integer.parseInt(String.valueOf(msg.arg1))/2)+"%");
                         Log.e("HelloEEG", "PoorSignal: " + msg.arg1);
+
                     break;
                 case TGDevice.MSG_ATTENTION:
                     Log.v("HelloEEG", "Attention: " + msg.arg1);
@@ -373,6 +529,10 @@ public class MeasureActivity extends AppCompatActivity {
                 case TGDevice.MSG_EEG_POWER:
                     TGEegPower ep = (TGEegPower)msg.obj;
                     Log.d("HelloEEG", "Delta: " + ep.delta);
+                    for(int i=0;i<3;i++){
+                        if(!allDeviceConnected[i])break;
+                        if(i==2)btnrecord.setEnabled(true);
+                    }
 
 
 

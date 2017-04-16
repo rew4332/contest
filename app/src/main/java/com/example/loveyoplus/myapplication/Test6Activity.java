@@ -1,6 +1,7 @@
 package com.example.loveyoplus.myapplication;
 
 import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -21,7 +22,10 @@ import com.neurosky.thinkgear.TGEegPower;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.Random;import com.neurosky.thinkgear.*;
+import java.util.Random;
+import java.util.Set;
+
+import com.neurosky.thinkgear.*;
 import android.bluetooth.BluetoothAdapter;
 import android.os.Message;
 
@@ -98,10 +102,23 @@ public class Test6Activity extends AppCompatActivity implements View.OnClickList
             ivbrain.setImageResource(R.drawable.brainwave_bluetooth_on);
             tvbluetooth.setText("裝置搜尋中");
 
+            BluetoothDevice mmDevice=null;
+            Set<BluetoothDevice> pairedDevices = btAdapter.getBondedDevices();
+            if(pairedDevices.size() > 0)
+            {
+                for(BluetoothDevice device : pairedDevices)
+                {
+                    if(device.getName().equals("MindWave Mobile"))
+                    {
+                        mmDevice = device;
+                        break;
+                    }
+                }
+            }
             tgDevice = new TGDevice(btAdapter, brainHandler);
-            tgDevice.connect(true);
+            tgDevice.connect(mmDevice,true);
+
             tgDevice.start();
-            Log.v("HelloEEG", "CREATED TGDevice");
         }
         else{
 
@@ -270,7 +287,7 @@ public class Test6Activity extends AppCompatActivity implements View.OnClickList
                 public void onTick(long millisUntilFinished) {
                     //倒數秒數中要做的事
 
-                    timer.setText(""+new SimpleDateFormat("m").format(millisUntilFinished)+":"+ new SimpleDateFormat("s").format(millisUntilFinished));
+                    timer.setText(""+new SimpleDateFormat("mm").format(millisUntilFinished)+":"+ new SimpleDateFormat("ss").format(millisUntilFinished));
 
                 }
 

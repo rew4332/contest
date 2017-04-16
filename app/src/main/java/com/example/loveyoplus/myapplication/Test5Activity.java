@@ -1,5 +1,6 @@
 package com.example.loveyoplus.myapplication;
 
+import android.bluetooth.BluetoothDevice;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -27,6 +28,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
+
 import android.os.Handler;import com.neurosky.thinkgear.*;
 import android.bluetooth.BluetoothAdapter;
 import android.os.Message;
@@ -62,7 +65,7 @@ public class Test5Activity extends AppCompatActivity {
             new CountDownTimer(GAMETIME, 1000) {
                 @Override
                 public void onTick(long millisUntilFinished) {
-                    tvTimer.setText(""+new SimpleDateFormat("m").format(millisUntilFinished)+":"+ new SimpleDateFormat("s").format(millisUntilFinished));
+                    tvTimer.setText(""+new SimpleDateFormat("mm").format(millisUntilFinished)+":"+ new SimpleDateFormat("ss").format(millisUntilFinished));
                 }
 
                 @Override
@@ -98,10 +101,23 @@ public class Test5Activity extends AppCompatActivity {
             ivbrain.setImageResource(R.drawable.brainwave_bluetooth_on);
             tvbluetooth.setText("裝置搜尋中");
 
+            BluetoothDevice mmDevice=null;
+            Set<BluetoothDevice> pairedDevices = btAdapter.getBondedDevices();
+            if(pairedDevices.size() > 0)
+            {
+                for(BluetoothDevice device : pairedDevices)
+                {
+                    if(device.getName().equals("MindWave Mobile"))
+                    {
+                        mmDevice = device;
+                        break;
+                    }
+                }
+            }
             tgDevice = new TGDevice(btAdapter, brainHandler);
-            tgDevice.connect(true);
+            tgDevice.connect(mmDevice,true);
+
             tgDevice.start();
-            Log.v("HelloEEG", "CREATED TGDevice");
         }
         else{
 

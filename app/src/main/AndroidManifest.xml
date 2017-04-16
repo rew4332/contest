@@ -15,13 +15,13 @@
         >
 
         <activity android:name=".MainActivity" android:windowSoftInputMode="stateVisible|adjustResize|adjustPan" android:screenOrientation="portrait"  >
-
-        </activity>
-        <activity android:name=".MeasureActivity"  android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".MeasureActivity"  android:screenOrientation="portrait">
+
         </activity>
         <activity android:name=".RedirectActivity" android:screenOrientation="portrait">
 

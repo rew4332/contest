@@ -114,18 +114,34 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginTop="40sp"
             android:layout_weight="1">
 
+            <Button
+                android:id="@+id/btnTest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp"
+                android:background="@drawable/button"
+                android:text="基準值量測"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/title_font_size" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_marginBottom="100sp"
+            android:layout_marginBottom="50sp"
+            android:layout_marginTop="40sp"
             android:layout_weight="1">
 
             <Button
-                android:id="@+id/btnEnd"
+                android:id="@+id/btnRecord"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
@@ -135,7 +151,7 @@
                 android:layout_marginLeft="50sp"
                 android:layout_marginRight="50sp"
                 android:background="@drawable/button"
-                android:text="Login"
+                android:text="即時量測"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/title_font_size" />

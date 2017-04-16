@@ -39,10 +39,10 @@ public class listProcess {
         emg = new ArrayList<>();
         pulse = new ArrayList<>();
     }
-    public void addAttention(String attention){
+    public synchronized void addAttention(String attention){
         this.attention.add(attention);
     }
-    public void addArray(String delta,String theta,String lalp,String halp,String lbeta,String hbeta,String lgam,String mgam){
+    public synchronized void addArray(String delta,String theta,String lalp,String halp,String lbeta,String hbeta,String lgam,String mgam){
         this.delta.add(delta);
         this.theta.add(theta);
         this.lalp.add(lalp);
@@ -52,16 +52,16 @@ public class listProcess {
         this.lgam.add(lgam);
         this.mgam.add(mgam);
     }
-    public void addGSR(String gsr){
+    public synchronized void addGSR(String gsr){
         this.gsr.add(gsr);
     }
-    public void addEMG(String emg){
+    public synchronized void addEMG(String emg){
         this.emg.add(emg);
     }
-    public void addPULSE(String pulse){
+    public synchronized void addPULSE(String pulse){
         this.pulse.add(pulse);
     }
-    public void setInitial(String student_id,String timestamp,String ques_id,String ques_time,String do_right,String do_wrong,String sound_right,String sound_wrong){
+    public synchronized void setInitial(String student_id,String timestamp,String ques_id,String ques_time,String do_right,String do_wrong,String sound_right,String sound_wrong){
         this.student_id  = student_id;
         this.timestamp = timestamp;
         this.ques_id = ques_id;
@@ -71,7 +71,10 @@ public class listProcess {
         this.sound_wrong = sound_wrong;
         this.sound_right = sound_right;
     }
-    public String printAll(){
+    public synchronized void setInitial(String student_id){
+        this.student_id = student_id;
+    }
+    public synchronized String printAll(){
         Map<String, String> data = new HashMap<>();
         data.put("student_id",student_id);
         //data.put("timestamp",timestamp);
@@ -130,69 +133,48 @@ public class listProcess {
 
         return data.toString()+"\r\n";
     }
+    synchronized void  removeAllData(){
+        this.delta.clear();
+        this.theta.clear();
+        this.lalp.clear();
+        this.halp.clear();
+        this.lbeta.clear();
+        this.hbeta.clear();
+        this.lgam.clear();
+        this.mgam.clear();
+        this.attention.clear();
+        this.gsr.clear();
+        this.emg.clear();
+        this.pulse.clear();
+    }
 
-    HashMap<String,String> returnMapWithAllData(){
+    synchronized HashMap<String,String> returnMapWithAllData(){
         Map<String, String> data = new HashMap<>();
-        String s="";
-        for(String temp:this.delta){
-            s+=temp+",";
-        }
-        data.put("delta",s);
-        s="";
-        for(String temp:this.theta){
-            s+=temp+",";
-        }
-        data.put("theta",s);
-        s="";
-        for(String temp:this.lalp){
-            s+=temp+",";
-        }
-        data.put("lalp",s);
-        s="";
-        for(String temp:this.halp){
-            s+=temp+",";
-        }
-        data.put("halp",s);
-        s="";
-        for(String temp:this.lbeta){
-            s+=temp+",";
-        }
-        data.put("lbeta",s);
-        s="";
-        for(String temp:this.hbeta){
-            s+=temp+",";
-        }
-        data.put("hbeta",s);
-        s="";
-        for(String temp:this.lgam){
-            s+=temp+",";
-        }
-        data.put("lgam",s);
-        s="";
-        for(String temp:this.mgam){
-            s+=temp+",";
-        }
-        data.put("mgam",s);
-        s="";
-        for(String temp:this.attention){
-            s+=temp+",";
-        }
-        data.put("attention",s);
-        s="";
-        for(String temp:this.gsr){
-            s+=temp+",";
-        }
-        data.put("gsr",s);
-        s="";
-        for(String temp:this.emg){
-            s+=temp+",";
-        }
-        data.put("emg",s);
-        s="";
-        for(String temp:this.pulse){
-            s+=temp+",";
-        }
-        data.put("pulse",s);
+        data.put("student_id",student_id);
+
+        data.put("delta",this.delta.toString());
+
+        data.put("theta",this.theta.toString());
+
+        data.put("lalp",this.lalp.toString());
+
+        data.put("halp",this.halp.toString());
+
+        data.put("lbeta",this.lbeta.toString());
+
+        data.put("hbeta",this.hbeta.toString());
+
+        data.put("lgam",this.lgam.toString());
+
+        data.put("mgam",this.mgam.toString());
+
+        data.put("attention",this.attention.toString());
+
+        data.put("gsr", this.gsr.toString());
+
+        data.put("muscle", this.emg.toString());
+
+        data.put("pulse", this.pulse.toString());
 
         return (HashMap<String,String>)data;
     }

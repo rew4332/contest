@@ -27,7 +27,7 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity  {
     EditText etId;
-    Button btnLogin;
+    Button btnRecord,btnTest;
     ImageView ivbrain;
     TextView tvbluetooth;
     Message m;
@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity  {
 
 
     }
+
 
     Handler handler=new Handler(){
         @Override
@@ -118,8 +119,10 @@ public class MainActivity extends AppCompatActivity  {
                 }
                     break;
                 case TGDevice.MSG_POOR_SIGNAL:
-                    tvbluetooth.setText("已連線\tPoor Signal:"+(msg.arg1));
-                    ivbrain.setImageResource(R.drawable.brainwave_bluetooth);
+
+                    Log.e("signal",(100-Integer.parseInt(String.valueOf(msg.arg1))/2)+"");
+                    tvbluetooth.setText("已連線\t訊號強度:"+(100-Integer.parseInt(String.valueOf(msg.arg1))/2)+"%");
+                    Log.e("HelloEEG", "PoorSignal: " + msg.arg1);
 
                     //data.setText("Signal: " + String.valueOf(msg.arg1));
                     break;
@@ -194,7 +197,9 @@ public class MainActivity extends AppCompatActivity  {
         });
 
         etId = (EditText) findViewById(R.id.etId);
-        btnLogin = (Button)findViewById(R.id.btnEnd);
+        btnTest = (Button)findViewById(R.id.btnTest);
+        btnRecord=(Button)findViewById(R.id.btnRecord);
+
         etId.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 if ((event != null && (event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) || (actionId == EditorInfo.IME_ACTION_DONE)) {
@@ -206,7 +211,7 @@ public class MainActivity extends AppCompatActivity  {
                         etId.setText("");
 
                     }
-                    else if(!etId.getText().toString().equals("")){
+                   /* else if(!etId.getText().toString().equals("")){
                         tgDevice.close();
                         fileStorage fs = new fileStorage();
                         fs.createDirectory();
@@ -223,13 +228,13 @@ public class MainActivity extends AppCompatActivity  {
                         intent.setClass(MainActivity.this, RedirectActivity.class);
                         startActivity(intent);
                         MainActivity.this.finish();
-                    }
+                    }*/
                 }
                 return false;
             }
         });
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        btnTest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(etId.getText().toString().equals("setting")){
@@ -254,6 +259,28 @@ public class MainActivity extends AppCompatActivity  {
                     bundle.putString("ActivityName",MainActivity.this.getClass().getSimpleName().toString());
                     intent.putExtras(bundle);
                     intent.setClass(MainActivity.this, RedirectActivity.class);
+                    startActivity(intent);
+                    MainActivity.this.finish();
+                }
+            }
+        });
+        btnRecord.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!etId.getText().toString().equals("")) {
+                    tgDevice.close();
+                    Log.d("close", "true");
+
+                    SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HHmmss");
+                    String currentDateandTime = sdf.format(new Date());
+
+
+                    Intent intent = new Intent();
+                    Bundle bundle = new Bundle();
+                    bundle.putString("ID", etId.getText().toString() + "_" + currentDateandTime);
+                    bundle.putString("ActivityName", MainActivity.this.getClass().getSimpleName().toString());
+                    intent.putExtras(bundle);
+                    intent.setClass(MainActivity.this, MeasureActivity.class);
                     startActivity(intent);
                     MainActivity.this.finish();
                 }

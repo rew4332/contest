@@ -28,24 +28,24 @@
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\1e1abf7387f850b8b05ac05d0b374340ebd7c116\\output\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\brainwave5.png",
-        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\brainwave5.png"
-    },
-    {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\1e1abf7387f850b8b05ac05d0b374340ebd7c116\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\brainwave5.png",
+        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\brainwave5.png"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\circle2.png",
         "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\circle2.png"
     },
     {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\brainwave16.png",
-        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\brainwave16.png"
-    },
-    {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\t7_1d.jpg",
         "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\t7_1d.jpg"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\brainwave16.png",
+        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\brainwave16.png"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
@@ -180,12 +180,12 @@
         "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\t2_1d.jpg"
     },
     {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\t8_3d.jpg",
-        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\t8_3d.jpg"
-    },
-    {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\t6_24.png",
         "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\t6_24.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\t8_3d.jpg",
+        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\t8_3d.jpg"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_clear_material.xml",
@@ -670,6 +670,10 @@
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\t6_36.png",
         "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\t6_36.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background.png",
+        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\drawable\\background.png"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",

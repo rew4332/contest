@@ -1,5 +1,6 @@
 package com.example.loveyoplus.myapplication;
 
+import android.bluetooth.BluetoothDevice;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -26,6 +27,8 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Random;
+import java.util.Set;
+
 import com.neurosky.thinkgear.*;
 import android.bluetooth.BluetoothAdapter;
 
@@ -141,10 +144,23 @@ public class Test3Activity extends AppCompatActivity {
             ivbrain.setImageResource(R.drawable.brainwave_bluetooth_on);
             tvbluetooth.setText("裝置搜尋中");
 
+            BluetoothDevice mmDevice=null;
+            Set<BluetoothDevice> pairedDevices = btAdapter.getBondedDevices();
+            if(pairedDevices.size() > 0)
+            {
+                for(BluetoothDevice device : pairedDevices)
+                {
+                    if(device.getName().equals("MindWave Mobile"))
+                    {
+                        mmDevice = device;
+                        break;
+                    }
+                }
+            }
             tgDevice = new TGDevice(btAdapter, brainHandler);
-            tgDevice.connect(true);
+            tgDevice.connect(mmDevice,true);
+
             tgDevice.start();
-            Log.v("HelloEEG", "CREATED TGDevice");
         }
         else{
 
@@ -314,7 +330,7 @@ public class Test3Activity extends AppCompatActivity {
                 public void onTick(long millisUntilFinished) {
                     //倒數秒數中要做的事
 
-                    tvTimer.setText(""+new SimpleDateFormat("m").format(millisUntilFinished)+":"+ new SimpleDateFormat("s").format(millisUntilFinished));
+                    tvTimer.setText(""+new SimpleDateFormat("mm").format(millisUntilFinished)+":"+ new SimpleDateFormat("ss").format(millisUntilFinished));
                     Log.e("還在倒數",mHandler.obtainMessage()+"qaq");
 
                 }
@@ -358,12 +374,12 @@ public class Test3Activity extends AppCompatActivity {
         iv[1].setImageResource(getResources().getIdentifier(tag[index]+"a","drawable",getPackageName()));
 
         int width =(displayMetrics.widthPixels);// rl1.getMeasuredWidth();
-        int height = (int) (3*(displayMetrics.heightPixels-70*displayMetrics.scaledDensity)/7);//rl1.getMeasuredHeight();50margin and 20 seperate
+        int height = (int) (3*(displayMetrics.heightPixels-20*displayMetrics.scaledDensity)/7);//rl1.getMeasuredHeight();50margin and 20 seperate
         int location[] = new int[2];
         //Log.d("location",getRelativeLeft(iv[0])+"");
         iv[0].measure(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
 
-        final int shiftX=(int)(width-(height*4918/3264.0f))/2;
+        final int shiftX=(int)((width-(height*4918/3264.0f))/2);
 
 
 
@@ -387,9 +403,9 @@ public class Test3Activity extends AppCompatActivity {
         iv.setMinimumHeight((int)(Integer.parseInt(a2[3])*ratio));
         iv2.setMinimumHeight((int)(Integer.parseInt(a2[3])*ratio));
 
-        iv.setAlpha(0.0f);
+        iv.setAlpha(0.7f);
         iv.setId(100+id);
-        iv2.setAlpha(0.0f);
+        iv2.setAlpha(0.7f);
         iv2.setId(200+id);
 
         r1.addView(iv2);

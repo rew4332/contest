@@ -161,7 +161,9 @@ public class MeasureActivity extends AppCompatActivity {
             {
                 if(device.getName().equals(nameOfBluetooth))
                 {
+
                     mmDevice = device;
+
                     break;
                 }
             }
@@ -533,7 +535,7 @@ public class MeasureActivity extends AppCompatActivity {
                         if(!allDeviceConnected[i])break;
                         if(i==2)btnrecord.setEnabled(true);
                     }
-
+                    //btnrecord.setEnabled(true);
 
 
 

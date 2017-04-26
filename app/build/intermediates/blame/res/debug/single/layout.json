@@ -8,12 +8,12 @@
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\1e1abf7387f850b8b05ac05d0b374340ebd7c116\\output\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
-        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\1e1abf7387f850b8b05ac05d0b374340ebd7c116\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
-    },
-    {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\1e1abf7387f850b8b05ac05d0b374340ebd7c116\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\1e1abf7387f850b8b05ac05d0b374340ebd7c116\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
@@ -56,20 +56,20 @@
         "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\layout\\pager_item.xml"
     },
     {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
-        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\1e1abf7387f850b8b05ac05d0b374340ebd7c116\\output\\res\\layout\\abc_screen_toolbar.xml"
-    },
-    {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\1e1abf7387f850b8b05ac05d0b374340ebd7c116\\output\\res\\layout\\abc_list_menu_item_radio.xml"
     },
     {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_t9.xml",
-        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\layout\\activity_t9.xml"
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\1e1abf7387f850b8b05ac05d0b374340ebd7c116\\output\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\1e1abf7387f850b8b05ac05d0b374340ebd7c116\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_t9.xml",
+        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\layout\\activity_t9.xml"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_t3.xml",
@@ -134,6 +134,10 @@
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_t4.xml",
         "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\layout\\activity_t4.xml"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\mylist.xml",
+        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\layout\\mylist.xml"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
@@ -202,6 +206,10 @@
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\1e1abf7387f850b8b05ac05d0b374340ebd7c116\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_updatemanagement.xml",
+        "source": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\src\\main\\res\\layout\\activity_updatemanagement.xml"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",

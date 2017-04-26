@@ -36,6 +36,7 @@ public class FinishActivity extends AppCompatActivity {
     Boolean showAnimate=true;
     android.os.Handler listenhandler;
     String msg;
+    String origin,modify;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -49,6 +50,16 @@ public class FinishActivity extends AppCompatActivity {
         ivwaiting = (ImageView)findViewById(R.id.imageView6) ;
         message = new Message();
         message.what=1;
+        fileStorage fs =new fileStorage();
+        fs.createFile("update");
+        origin=fs.readFile();
+        origin.replace("\r\n","");
+        if(origin.equals(""))modify=ID+"\r\n";
+        else modify=origin+"\r\n"+ID+"\r\n";
+        fs.setContinueWrite(false);
+        fs.writeFile("update",modify);
+
+
         listenhandler = new android.os.Handler(){
             @Override
             public void handleMessage(Message msg) {
@@ -144,6 +155,9 @@ public class FinishActivity extends AppCompatActivity {
                         else{
                             Message m = new Message();
                             m.what = 3;
+                            fileStorage fstmp =new fileStorage();
+                            fstmp.setContinueWrite(false);
+                            fstmp.writeFile("update",origin+"\r\n");
                             FinishActivity.this.listenhandler.sendMessage(m);
                         }
 

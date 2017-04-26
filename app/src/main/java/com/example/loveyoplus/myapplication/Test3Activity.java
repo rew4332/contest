@@ -403,9 +403,9 @@ public class Test3Activity extends AppCompatActivity {
         iv.setMinimumHeight((int)(Integer.parseInt(a2[3])*ratio));
         iv2.setMinimumHeight((int)(Integer.parseInt(a2[3])*ratio));
 
-        iv.setAlpha(0.7f);
+        iv.setAlpha(0.0f);
         iv.setId(100+id);
-        iv2.setAlpha(0.7f);
+        iv2.setAlpha(0.0f);
         iv2.setId(200+id);
 
         r1.addView(iv2);

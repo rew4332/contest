@@ -426,7 +426,8 @@ public class Test9Activity extends AppCompatActivity implements View.OnClickList
             params.height = ((RelativeLayout)v).getHeight();
             ImageView ivX ;
             ivX = new ImageView(this);
-            ivX.setImageResource(R.drawable.circle);
+            ivX.setImageResource(R.drawable.circle3);
+            ivX.setScaleType(ImageView.ScaleType.FIT_XY);
             ivX.setLayoutParams(params);
 
             Log.e("sound:","ok");

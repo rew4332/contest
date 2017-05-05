@@ -1,5 +1,13 @@
 package com.example.loveyoplus.myapplication;
 
+import android.util.Log;
+
+import com.google.gson.Gson;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -53,12 +61,18 @@ public class listProcess {
         this.mgam.add(mgam);
     }
     public synchronized void addGSR(String gsr){
+
+        gsr=gsr.replaceAll("\r","");
         this.gsr.add(gsr);
+
+
     }
     public synchronized void addEMG(String emg){
+        emg=emg.replaceAll("\r","");
         this.emg.add(emg);
     }
     public synchronized void addPULSE(String pulse){
+        pulse=pulse.replaceAll("\r","");
         this.pulse.add(pulse);
     }
     public synchronized void setInitial(String student_id,String timestamp,String ques_id,String ques_time,String do_right,String do_wrong,String sound_right,String sound_wrong){
@@ -85,53 +99,35 @@ public class listProcess {
         data.put("sound_right",sound_right);
         data.put("sound_wrong",sound_wrong);
 
-        String s="";
-        for(String temp:this.delta){
-            s+=temp+",";
-        }
-        data.put("delta",s);
-        s="";
-        for(String temp:this.theta){
-            s+=temp+",";
-        }
-        data.put("theta",s);
-        s="";
-        for(String temp:this.lalp){
-            s+=temp+",";
-        }
-        data.put("lalp",s);
-        s="";
-        for(String temp:this.halp){
-            s+=temp+",";
-        }
-        data.put("halp",s);
-        s="";
-        for(String temp:this.lbeta){
-            s+=temp+",";
-        }
-        data.put("lbeta",s);
-        s="";
-        for(String temp:this.hbeta){
-            s+=temp+",";
-        }
-        data.put("hbeta",s);
-        s="";
-        for(String temp:this.lgam){
-            s+=temp+",";
-        }
-        data.put("lgam",s);
-        s="";
-        for(String temp:this.mgam){
-            s+=temp+",";
-        }
-        data.put("mgam",s);
-        s="";
-        for(String temp:this.attention){
-            s+=temp+",";
-        }
-        data.put("attention",s);
+        data.put("delta",this.delta.toString());
 
-        return data.toString()+"\r\n";
+        data.put("theta",this.theta.toString());
+
+        data.put("lalp",this.lalp.toString());
+
+        data.put("halp",this.halp.toString());
+
+        data.put("lbeta",this.lbeta.toString());
+
+        data.put("hbeta",this.hbeta.toString());
+
+        data.put("lgam",this.lgam.toString());
+
+        data.put("mgam",this.mgam.toString());
+
+        data.put("attention",this.attention.toString());
+
+        data.put("gsr", this.gsr.toString());
+
+        data.put("emg", this.emg.toString());
+
+        data.put("pulse", this.pulse.toString());
+
+
+        Gson gson = new Gson();
+
+
+        return gson.toJson(data)+"\r\n";
     }
     synchronized void  removeAllData(){
         this.delta.clear();
@@ -172,7 +168,7 @@ public class listProcess {
 
         data.put("gsr", this.gsr.toString());
 
-        data.put("muscle", this.emg.toString());
+        data.put("emg", this.emg.toString());
 
         data.put("pulse", this.pulse.toString());
 

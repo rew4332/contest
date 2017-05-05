@@ -3,7 +3,10 @@ package com.example.loveyoplus.myapplication;
 import android.os.Environment;
 import android.util.Log;
 
+import com.google.gson.Gson;
+
 import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -11,6 +14,7 @@ import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.ObjectInputStream;
 import java.io.OutputStreamWriter;
 import java.io.StringReader;
 import java.util.HashMap;
@@ -86,19 +90,17 @@ public class fileStorage {
         return myData;
     }
     public HashMap<String, String> readFile2Map(int i){
+
         String str=readFile().split("\r\n")[i];
+        Log.e("str",str);
+        Map<String, String> map = new HashMap<String, String>();
+        map = new Gson().fromJson(str,map.getClass());
         // use properties to restore the map
-        Properties props = new Properties();
-        try {
-            props.load(new StringReader(str.substring(1, str.length() - 1).replace(", ", "\n")));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        Map<String, String> map2 = new HashMap<String, String>();
-        for (Map.Entry<Object, Object> e : props.entrySet()) {
-            map2.put((String)e.getKey(), (String)e.getValue());
-        }
-        return (HashMap<String, String>) map2;
+
+
+
+
+        return (HashMap<String, String>) map;
         /*
         Log.e("delta",((HashMap<String, String>) map2).get("delta"));
         Log.e("student_id",((HashMap<String, String>) map2).get("student_id"));

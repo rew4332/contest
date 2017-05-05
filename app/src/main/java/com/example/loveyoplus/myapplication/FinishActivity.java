@@ -73,6 +73,7 @@ public class FinishActivity extends AppCompatActivity {
                         break;
                     case 2:
                         Toast.makeText(FinishActivity.this,"上傳失敗 請檢查網路狀態",Toast.LENGTH_LONG).show();
+                        btnupdate.setEnabled(true);
                         break;
                     case 3:
                         Toast.makeText(FinishActivity.this,"上傳成功",Toast.LENGTH_LONG).show();
@@ -89,6 +90,7 @@ public class FinishActivity extends AppCompatActivity {
         btnupdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                showAnimate=true;
                 new Thread(new Runnable(){
                     public void run(){
                         while(showAnimate) {
@@ -146,10 +148,11 @@ public class FinishActivity extends AppCompatActivity {
                         }
                         showAnimate=false;
                         if(count>30){
-                            btnupdate.setEnabled(true);
+
                             Message m = new Message();
                             m.what = 2;
                             FinishActivity.this.listenhandler.sendMessage(m);
+
 
                         }
                         else{

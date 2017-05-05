@@ -39,6 +39,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\loveyoplus\Desktop\contest\app\libs\ThinkGear.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b4f0f0a355dcc5315e5bef25b775beaa52b2d208">
+        <dex dex="C:\Users\loveyoplus\Desktop\contest\app\build\intermediates\pre-dexed\debug\ThinkGear_d2344b32686382cbd81482682d1b7c237505b5f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\loveyoplus\.android\build-cache\b5d685a4fd7dbb9d9ec2816aa0eff347b922420e\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -81,6 +90,15 @@
         revision="25.0.2"
         sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
         <dex dex="C:\Users\loveyoplus\AndroidStudioProjects\contest\app\build\intermediates\pre-dexed\debug\classes_e79b27c6026c321217325fa04c417d29be9cd45f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\loveyoplus\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="C:\Users\loveyoplus\Desktop\contest\app\build\intermediates\pre-dexed\debug\gson-2.3.1_f422533fb9e101271af3c8f0c3a0ac2545f25d73.jar" />
     </item>
     <item
         is-multidex="false"

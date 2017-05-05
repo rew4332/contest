@@ -20,11 +20,7 @@
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_text_light_focused.9.png"
     },
     {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_light_disabled.9.png",
-        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_disabled.9.png"
-    },
-    {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_dark_pressed.9.png",
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_dark_pressed.9.png",
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_dark_pressed.9.png"
     },
     {
@@ -32,12 +28,156 @@
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_text_light_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_dark_disabled.9.png",
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_full_open_on_phone.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_full_open_on_phone.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_text_light_focused.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_icon_light_pressed.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_light_disabled.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_disabled.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_text_dark_normal.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_focused.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_full_open_on_phone.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_full_open_on_phone.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_text_light_disabled.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_text_light_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_light_normal.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_light_normal.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_text_light_disabled.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_text_light_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_text_dark_focused.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_focused.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_text_light_normal.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_light_pressed.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_text_dark_pressed.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_text_dark_normal.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_text_light_normal.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_dark_focused.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_normal.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_dark_disabled.9.png",
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_dark_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_full_open_on_phone.png",
-        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_full_open_on_phone.png"
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_dark_focused.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_icon_light_disabled.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_icon_light_disabled.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_text_dark_focused.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_light_pressed.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_text_light_focused.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_text_light_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_text_dark_focused.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_icon_light_focused.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_light_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_text_light_pressed.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_light_disabled.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_text_dark_normal.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_text_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_text_dark_pressed.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_dark_pressed.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_dark_normal.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_dark_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_dark_disabled.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_dark_disabled.9.png"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_icon_light_focused.9.png",
@@ -56,56 +196,48 @@
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_text_light_focused.9.png"
     },
     {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_text_dark_disabled.9.png",
-        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_disabled.9.png"
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_icon_light_normal.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_light_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_text_light_normal.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_text_light_normal.9.png"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_text_light_pressed.9.png",
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_text_light_pressed.9.png"
     },
     {
+        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_disabled.9.png"
+    },
+    {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_icon_light_pressed.9.png",
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_light_pressed.9.png"
-    },
-    {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_text_dark_normal.9.png",
-        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_normal.9.png"
-    },
-    {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_focused.9.png",
-        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_focused.9.png"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_text_light_disabled.9.png",
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_text_light_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_light_normal.9.png",
-        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_normal.9.png"
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_light_focused.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_focused.9.png"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_text_dark_disabled.9.png",
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_text_dark_disabled.9.png"
     },
     {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_text_light_normal.9.png",
-        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_text_light_normal.9.png"
-    },
-    {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_light_pressed.9.png",
-        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_light_pressed.9.png"
-    },
-    {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_text_dark_pressed.9.png",
-        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_text_dark_pressed.9.png"
-    },
-    {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_icon_light_normal.9.png",
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_light_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_icon_dark_focused.9.png",
-        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_icon_dark_focused.9.png"
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_pressed.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_text_dark_pressed.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_text_dark_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_text_light_normal.9.png",
@@ -116,8 +248,8 @@
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_dark_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_plus_signin_btn_icon_light_disabled.9.png",
-        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_plus_signin_btn_icon_light_disabled.9.png"
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_text_light_pressed.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_text_light_pressed.9.png"
     },
     {
         "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_text_dark_pressed.9.png",
@@ -128,7 +260,7 @@
         "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_text_dark_normal.9.png"
     },
     {
-        "merged": "C:\\Users\\loveyoplus\\AndroidStudioProjects\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_text_dark_focused.9.png",
-        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_text_dark_focused.9.png"
+        "merged": "C:\\Users\\loveyoplus\\Desktop\\contest\\app\\build\\intermediates\\res\\merged\\debug\\drawable-tvdpi\\common_google_signin_btn_text_dark_disabled.9.png",
+        "source": "C:\\Users\\loveyoplus\\.android\\build-cache\\88b99b803435e3425476545b2bd9ceb9ac3acff7\\output\\res\\drawable-tvdpi\\common_google_signin_btn_text_dark_disabled.9.png"
     }
 ]

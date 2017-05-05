@@ -2,6 +2,7 @@ package com.example.loveyoplus.myapplication;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothSocket;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -24,11 +25,15 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.security.acl.Group;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Random;
 import java.util.Set;
+import java.util.UUID;
 import java.util.concurrent.ThreadFactory;
 
 import android.os.Handler;
@@ -38,6 +43,8 @@ import com.neurosky.thinkgear.*;
 
 import static android.R.attr.strokeColor;
 import static android.R.attr.strokeWidth;
+import static com.example.loveyoplus.myapplication.R.id.ivanimate;
+import static com.example.loveyoplus.myapplication.R.id.list;
 
 
 public class Test1Activity extends AppCompatActivity implements View.OnClickListener {
@@ -58,6 +65,11 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
     Boolean brainWave = false;
     listProcess dataList;
     ImageView ivbrain;
+    Boolean allDeviceConnected[] = new Boolean[3];
+    Handler listenhandler;
+    BluetoothSocket bt[] =new BluetoothSocket[3];
+    InputStream is[] = new InputStream[3];
+    Boolean isWorked=true;
 
 
     @Override
@@ -73,11 +85,13 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
         initView();
         GAMETIME=loadSetting(1);
 
-        blutoothSetting();
         mHandler = new Handler();
+        listenhandler = new Handler();
+        blutoothSetting();
+
         //mHandler.post(countdowntimer);
 
-        mHandler.post(startCountdowntimer);
+
         RelativeLayout.LayoutParams rlp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,RelativeLayout.LayoutParams.MATCH_PARENT);
         ImageView tempiv =  new ImageView(Test1Activity.this);
         tempiv.setScaleType(ImageView.ScaleType.FIT_XY);
@@ -87,38 +101,230 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
 
     }
     void blutoothSetting(){
-        btAdapter = BluetoothAdapter.getDefaultAdapter();
 
-        if(btAdapter != null &&btAdapter.isEnabled()) {
+        btAdapter = BluetoothAdapter.getDefaultAdapter();
+        allDeviceConnected = new Boolean[3];
+        allDeviceConnected[0]=false;
+        allDeviceConnected[1]=false;
+        allDeviceConnected[2]=false;
+
+        if (btAdapter != null && btAdapter.isEnabled()) {
             ivbrain.setImageResource(R.drawable.brainwave_bluetooth_on);
             tvbluetooth.setText("裝置搜尋中");
 
-            BluetoothDevice mmDevice=null;
-            Set<BluetoothDevice> pairedDevices = btAdapter.getBondedDevices();
-            if(pairedDevices.size() > 0)
-            {
-                for(BluetoothDevice device : pairedDevices)
-                {
-                    if(device.getName().equals("MindWave Mobile"))
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+
+                    try {
+
+                        bluetoothtest("pulse");
+
+                        bluetoothtest("gsr");
+
+                        bluetoothtest("emg");
+                        BluetoothDevice mmDevice=null;
+                        Set<BluetoothDevice> pairedDevices = btAdapter.getBondedDevices();
+                        if(pairedDevices.size() > 0)
+                        {
+                            for(BluetoothDevice device : pairedDevices)
+                            {
+                                if(device.getName().equals("MindWave Mobile"))
+                                {
+                                    mmDevice = device;
+                                    break;
+                                }
+                            }
+                        }
+                        tgDevice = new TGDevice(btAdapter, brainHandler);
+                        tgDevice.connect(mmDevice,true);
+
+                        tgDevice.start();
+                        mHandler.post(startCountdowntimer);
+
+
+
+
+                    }catch (Exception consumed)
                     {
-                        mmDevice = device;
-                        break;
+                        Log.e("interrupted",consumed+"");
                     }
                 }
-            }
-            tgDevice = new TGDevice(btAdapter, brainHandler);
-            tgDevice.connect(mmDevice,true);
+            }).start();
 
-            tgDevice.start();
         }
         else{
 
             ivbrain.setImageResource(R.drawable.brainwave_bluetooth_off);
             Log.v("HelloEEG", "bluetooth off");
             tvbluetooth.setText("未開啟藍芽");
+
         }
 
+
     }
+
+    public void bluetoothtest(String nameOfBluetooth){
+        int blueToothID;
+        BluetoothSocket mmSocket;
+
+        BluetoothDevice mmDevice=null;
+
+
+        InputStream mmInputStream =null;
+
+        Set<BluetoothDevice> pairedDevices = btAdapter.getBondedDevices();
+        UUID uuid = UUID.fromString("00001101-0000-1000-8000-00805F9B34FB"); //Standard SerialPortService ID
+
+        if(pairedDevices.size() > 0)
+        {
+            for(BluetoothDevice device : pairedDevices)
+            {
+                if(device.getName().equals(nameOfBluetooth))
+                {
+
+                    mmDevice = device;
+
+                    break;
+                }
+            }
+        }
+
+        try {
+            mmSocket = mmDevice.createRfcommSocketToServiceRecord(uuid);
+
+
+            mmSocket.connect();
+
+
+            mmInputStream = mmSocket.getInputStream();
+            switch (nameOfBluetooth){
+                case "gsr":
+                    bt[0]=mmSocket;
+                    is[0]=mmInputStream;
+                    break;
+                case "emg":
+                    bt[1]=mmSocket;
+                    is[1]=mmInputStream;
+                    break;
+                case "pulse":
+                    bt[2]=mmSocket;
+                    is[2]=mmInputStream;
+                    break;
+            }
+
+        } catch (IOException e) {
+
+            e.printStackTrace();
+        }
+        if(mmInputStream!=null) {
+            switch (nameOfBluetooth){
+                case "gsr":
+                    allDeviceConnected[0]=true;
+                    break;
+                case "emg":
+                    allDeviceConnected[1]=true;
+                    break;
+                case "pulse":
+                    allDeviceConnected[2]=true;
+                    break;
+            }
+            beginListenForData(mmInputStream, nameOfBluetooth);
+        }
+
+
+    }
+    void beginListenForData(final InputStream input, final String nameOfBluetooth)
+    {
+        final byte[] readBuffer;
+
+
+        final byte delimiter = 10; //This is the ASCII code for a newline character
+
+
+
+        readBuffer = new byte[1024];
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+                int readBufferPosition = 0;
+
+                while (!Thread.currentThread().isInterrupted()&&isWorked) {
+                    try {
+                        int bytesAvailable = input.available();
+                        if (bytesAvailable > 0) {
+                            byte[] packetBytes = new byte[bytesAvailable];
+                            input.read(packetBytes);
+                            for (int i = 0; i < bytesAvailable; i++) {
+                                byte b = packetBytes[i];
+                                if (b == delimiter) {
+                                    byte[] encodedBytes = new byte[readBufferPosition];
+                                    System.arraycopy(readBuffer, 0, encodedBytes, 0, encodedBytes.length);
+                                    final String data = new String(encodedBytes, "US-ASCII");
+                                    readBufferPosition = 0;
+                                    int count = 0;
+                                    listenhandler.post(new Runnable() {
+                                        public void run() {
+                                            if (nameOfBluetooth.equals("pulse")) {
+
+                                                dataList.addPULSE(data + "");
+
+                                            } else if (nameOfBluetooth.equals("gsr")) {
+
+                                                dataList.addGSR(data + "");
+                                            } else if (nameOfBluetooth.equals("emg")) {
+
+                                                dataList.addEMG(data + "");
+                                            }
+                                            //myLabel.setText(data);
+                                        }
+                                    });
+                                } else {
+                                    readBuffer[readBufferPosition++] = b;
+                                }
+                            }
+                        }
+                    } catch (IOException ex) {
+
+                    }
+
+                }
+                try {
+                    switch (nameOfBluetooth){
+                        case "gsr":
+                            if(bt[0]!=null){
+                                is[0].close();
+                                bt[0].close();
+                            }
+                            break;
+                        case "emg":
+                            if(bt[1]!=null) {
+                                is[1].close();
+                                bt[1].close();
+                            }
+                            break;
+                        case "pulse":
+                            if(bt[2]!=null){
+                                is[2].close();
+                                bt[2].close();
+                            }
+                            break;
+                    }
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+
+            }
+
+        }).start();
+
+
+
+    }
+
     private Handler brainHandler = new Handler() {
 
 
@@ -311,32 +517,49 @@ public class Test1Activity extends AppCompatActivity implements View.OnClickList
                     disableBtn();
 
 
-                    fileStorage fs = new fileStorage();
 
-                    //String endDateandTime = new SimpleDateFormat("yyyy-MM-dd,HH:mm:ss").format(new Date());
-                    //String content = "{\"timestamp\":"+startDateandTime+",\"ques_id\":"+1+",\"ques_time:\""+GAMETIME+",\"do_right\":"+result[1]+",\"do_wrong\":"+result[0]+"}\r\n";
-                    dataList.setInitial(ID.split("_")[0],startDateandTime,"1",(GAMETIME/1000)+"",result[1]+"",result[0]+"","0","0");
-                    String content = dataList.printAll();
-                    Log.e("printAll",content);
-                    fs.writeFile(ID,content);
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
 
-                    //fs.readFile2Map();
-                    tgDevice.close();
 
-                    Intent intent = new Intent();
-                    Bundle bundle = new Bundle();
-                    bundle.putString("ID",ID);
-                    bundle.putString("ActivityName",Test1Activity.this.getClass().getSimpleName().toString());
-                    intent.putExtras(bundle);
-                    intent.setClass(Test1Activity.this, RedirectActivity.class);
-                    startActivity(intent);
-                    Test1Activity.this.finish();
+                            fileStorage fs = new fileStorage();
+
+                            //String endDateandTime = new SimpleDateFormat("yyyy-MM-dd,HH:mm:ss").format(new Date());
+                            //String content = "{\"timestamp\":"+startDateandTime+",\"ques_id\":"+1+",\"ques_time:\""+GAMETIME+",\"do_right\":"+result[1]+",\"do_wrong\":"+result[0]+"}\r\n";
+                            dataList.setInitial(ID.split("_")[0],startDateandTime,"1",(GAMETIME/1000)+"",result[1]+"",result[0]+"","0","0");
+                            String content = dataList.printAll();
+                            Log.e("printAll",content);
+                            fs.writeFile(ID,content);
+
+
+                            //Log.e("map content",fs.readFile2Map(1).toString());
+
+                            //fs.readFile2Map();
+
+
+
+
+                            tgDevice.close();
+                            isWorked=false;
+                            Intent intent = new Intent();
+                            Bundle bundle = new Bundle();
+                            bundle.putString("ID",ID);
+                            bundle.putString("ActivityName",Test1Activity.this.getClass().getSimpleName().toString());
+                            intent.putExtras(bundle);
+                            intent.setClass(Test1Activity.this, RedirectActivity.class);
+                            startActivity(intent);
+                            Test1Activity.this.finish();
+                        }
+
+                    }).start();
 
                 }
             }.start();
 
         }
     };
+
     //鎖住所有按鈕
     public void disableBtn(){
         for(int i = 0 ;i<9;i++){
